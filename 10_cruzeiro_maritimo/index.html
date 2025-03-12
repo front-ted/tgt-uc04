@@ -21,6 +21,11 @@
     <link rel="stylesheet" href="../assets/css/preloader.css">
     <!-- Áudio customizado -->
     <link rel="stylesheet" href="../assets/css/player.css">
+    
+    <!--Atividade arrasta e solta-->
+    <link rel="stylesheet" href="../assets/atividades/arrasta_solta/dragula.css">
+    <link rel="stylesheet" href="../assets/atividades/arrasta_solta/game-custom.css">
+
     <!-- Estilos do template -->
     <link rel="stylesheet" href="../assets/css/cores.css">
     <link rel="stylesheet" href="../print/print/print.css">
@@ -283,9 +288,140 @@
                 <p>
                     Que tal praticar seus conhecimentos? 
                 </p>
-                <div class="espera">
-                    espera atividade arrastar
+                <!--  -->
+                
+                <div class="box-atividade d-none d-lg-block">
+                    <p class="titulo-ativ"><strong>O que NÃO levar a um cruzeiro? </strong></p>
+                    <p>Como guia de turismo, é fundamental garantir que todos os passageiros tenham uma experiência tranquila e segura desde o início da viagem. Para evitar contratempos no momento de embarque, é importante reforçar as orientações relacionadas aos itens proibidos na bagagem de mão. </p>
+                    <p><strong>Instruções </strong></p>
+                    <ol>
+                        <li>Leia a lista de itens a seguir.</li>
+                        <li>Clique e arraste cada item para a área "Proibido" ou "Permitido". </li>
+                        <li>Ao finalizar, clique no botão "Verificar" para conferir suas respostas.</li>
+                    </ol>
+                    <div id="content-game">
+                        <div class="container-fluid game-body no-print" style="padding:0;">
+                            <div class="row">
+                                <div id="slots" class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 mt-3 mb-3">
+                                            <div class="game-titulo">
+                                                <p>Proibido</p>
+                                            </div>
+                                            <div id="slot-1" class="slot">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 mt-3 mb-3">
+                                            <div class="game-titulo">
+                                                <p>Permitido</p>
+                                            </div>
+                                            <div id="slot-2" class="slot">
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+
+                                
+                            
+                                 
+                            
+                                
+                            
+                                
+                            
+                                 
+                                <div id="cardPile" class="game-itens-container">
+
+                                    <div id="card-8" class="card" data-target="slot-2">
+                                        Pacote de bolachas 
+                                    </div>
+
+
+                                    <div id="card-3" class="card" data-target="slot-1">
+                                        Drone
+                                    </div>
+
+                                    <div id="card-4" class="card" data-target="slot-1">
+                                        Garrafa de vinho 
+                                    </div>
+                                    <div id="card-5" class="card" data-target="slot-1">
+                                        Chaleira elétrica 
+                                    </div>
+                                    
+                                    <div id="card-2" class="card" data-target="slot-1">
+                                        Ferro de passar roupas 
+                                    </div>
+                                    <div id="card-6" class="card" data-target="slot-1">
+                                        Isqueiro
+                                    </div>
+                                    <div id="card-7" class="card" data-target="slot-2">
+                                        Prancha de cabelo com desligamento automático 
+                                    </div>
+                                    
+                                    <div id="card-1" class="card" data-target="slot-1">
+                                        Faca de cozinha 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="bgmodal-acerto" tabindex="-1" aria-labelledby="bgmodal-passou"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-check    "></i>
+                                        Resposta correta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <img src="../assets/atividades/arrasta_solta/resposta_pos.svg"
+                                                class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-12 col-lg-8">
+                                            <p>Parabéns! A bagagem está pronta para embarcar com segurança!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal fade" id="bgmodal-erro" tabindex="-1" aria-labelledby="bgmodal-passou"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-danger">
+                                    <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times"></i> Resposta
+                                        incorreta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <img src="../assets/atividades/arrasta_solta/resposta_neg.svg"
+                                                class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-12 col-lg-8">
+                                            <p>Opa! Reveja as regras e tente novamente para garantir uma viagem tranquila!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!--  -->
                 <h3>Desembarque</h3>
                 <figure class="my-5">
                     <img src="" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Fotografia de turistas acessando com suas malas uma porta com uma grande placa em que está escrito “desembarque”. ">
@@ -371,6 +507,11 @@
     <!--Prog'n'roll - barra de progresso conforme rola a página-->
     <script src="../assets/js/prognroll.min.js"></script>
     <script src="../print/print/template.config.js"></script>
+    
+    <!--Atividade arrasta e solta-->
+    <script src='../assets/atividades/arrasta_solta/dragula.min.js'></script>
+    <script src="../assets/atividades/arrasta_solta/game-custom.js"></script>
+    
     <!--Scripts gerais-->
     <script src="../assets/js/geral.js"></script>
 
