@@ -104,7 +104,7 @@ var EsquemaDaBru = {
     }
 }
 
-EsquemaDaBru.init();
+// EsquemaDaBru.init();
 
 var MultiSelect = {
     alternatives: null,
@@ -226,4 +226,42 @@ function AtividadeClick(id){
 
 $(document).ready(function(){   
     EsquemaDaBru.init()
+    
+            // Seleciona todos os botões de alternativas
+            const buttons = document.querySelectorAll(".esquemaDaBru.multipla-escolha button");
+
+            // Itera sobre os botões para adicionar eventos de clique
+            buttons.forEach((button) => {
+                button.addEventListener("click", function () {
+                    // Encontra o contêiner da atividade atual
+                    const atividade = this.closest(".esquemaDaBru");
+
+                    // Remove a classe 'selected' de todos os botões da atividade atual
+                    atividade.querySelectorAll("button").forEach((btn) => btn.classList.remove("selected"));
+
+                    // Adiciona a classe 'selected' ao botão clicado
+                    this.classList.add("selected");
+
+                    // Obtém o feedback personalizado do botão clicado
+                    const feedback = this.getAttribute("data-feedback");
+
+                    // Seleciona os elementos de feedback da atividade atual
+                    const feedbackPositivo = atividade.querySelector(".f-positivo");
+                    const feedbackNegativo = atividade.querySelector(".f-negativo");
+                    const feedbackText = atividade.querySelectorAll(".feedback-text");
+
+                    // Verifica se o botão clicado é correto ou errado
+                    if (this.classList.contains("alt-c")) {
+                        // Exibe o feedback positivo
+                        feedbackPositivo.style.display = "block";
+                        feedbackNegativo.style.display = "none";
+                        feedbackText[0].textContent = feedback; // Atualiza o texto do feedback
+                    } else {
+                        // Exibe o feedback negativo
+                        feedbackNegativo.style.display = "block";
+                        feedbackPositivo.style.display = "none";
+                        feedbackText[1].textContent = feedback; // Atualiza o texto do feedback
+                    }
+                });
+            });
 })
