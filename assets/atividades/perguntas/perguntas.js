@@ -255,12 +255,15 @@ $(document).ready(function(){
                         // Exibe o feedback positivo
                         feedbackPositivo.style.display = "block";
                         feedbackNegativo.style.display = "none";
-                        feedbackText[0].textContent = feedback; // Atualiza o texto do feedback
+
+                        if(feedbackText[0]) 
+                            feedbackText[0].textContent = feedback; // Atualiza o texto do feedback
                     } else {
                         // Exibe o feedback negativo
                         feedbackNegativo.style.display = "block";
                         feedbackPositivo.style.display = "none";
-                        feedbackText[1].textContent = feedback; // Atualiza o texto do feedback
+                        if(feedbackText[1])
+                            feedbackText[1].textContent = feedback; // Atualiza o texto do feedback
                     }
                 });
             });
