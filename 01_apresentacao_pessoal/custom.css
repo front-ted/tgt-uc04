@@ -1,0 +1,68 @@
+.paginas{
+    background-image: url('img/bg.jpg');
+    background-size: 100% 100%;
+}
+.container{
+    padding-top: 50px;
+    position: relative;
+}
+.header-img{
+    max-width: 100%;
+}
+.box-paralax{
+    height: 300px;
+    background-attachment:fixed;
+}
+.paralax01{
+    background-image: url('img/paralaxe.png');
+}
+.float-left{
+    position: absolute;
+    top: 5500px;
+    left: 0;
+    width: 300px;
+}
+.float-left2{
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    width: 200px;
+}
+
+.painel_clicavel_bt01,.painel_clicavel_bt02,.painel_clicavel_bt03,.painel_clicavel_bt04,.painel_clicavel_bt05{
+    width: 300px;
+    height: 91px;
+    background-size: 100%;
+    background-color: transparent;
+    border: 0px;
+    margin-top: 30px;
+}
+.painel_clicavel_bt01:hover,.painel_clicavel_bt02:hover,.painel_clicavel_bt03:hover,.painel_clicavel_bt04:hover,.painel_clicavel_bt05:hover{
+    border-radius: 0px !important;
+    background-color: transparent;
+    background-size: cover;
+    box-shadow: none;
+}
+.painel_clicavel_bt01, .painel_clicavel_bt01:hover{
+    background-image: url('img/painel_btn_1.png');
+    border-radius: none;
+}
+.painel_clicavel_bt02, .painel_clicavel_bt02:hover{
+    background-image: url('img/painel_btn_2.png');
+    border-radius: none
+}
+.painel_clicavel_bt03, .painel_clicavel_bt03:hover{
+    background-image: url('img/painel_btn_3.png');
+    border-radius: none
+}
+.painel_clicavel_bt04, .painel_clicavel_bt04:hover{
+    background-image: url('img/painel_btn_4.png');
+    border-radius: none
+}
+.painel_clicavel_bt05, .painel_clicavel_bt05:hover{
+    background-image: url('img/painel_btn_5.png');
+    border-radius: none
+}
+.img-painel-clicavel{
+    max-width: 550px;
+}
