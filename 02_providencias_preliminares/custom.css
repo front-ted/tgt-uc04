@@ -1,0 +1,64 @@
+.paginas{
+    background-image: url('img/background_2.jpg');
+    background-size: 100% 100%;
+}
+.bloco1{
+    background-image: url('img/background_1.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+h2, h3, h4, h5 {
+    color: #700003;
+}
+
+.bloco1 h2{ color: #fff;}
+.box-paralax{
+    height: 300px;
+    background-attachment:fixed;
+}
+.paralax01{
+    background-image: url('img/paralaxe_1.jpg');
+}
+.paralax02{
+    background-image: url('img/paralaxe_2.jpg');
+}
+.painel_clicavel_bt01,.painel_clicavel_bt02,.painel_clicavel_bt03{
+    width: 285px;
+    height: 270px;
+    background-size: 100%;
+    background-color: transparent;
+    border: 0px;
+    margin: 10px 5px;
+    display: inline-block;
+    border-radius: 0px;
+}
+.painel_clicavel_bt01:hover,.painel_clicavel_bt02:hover,.painel_clicavel_bt03:hover,.painel_clicavel_bt04:hover,.painel_clicavel_bt05:hover{
+    border-radius: 0px !important;
+    background-color: transparent;
+    background-size: 100%;
+    box-shadow: none;
+}
+.painel_clicavel_bt01, .painel_clicavel_bt01:hover{
+    background-image: url('img/btn_1.png');
+    border-radius: none;
+}
+.painel_clicavel_bt02, .painel_clicavel_bt02:hover{
+    background-image: url('img/btn_2.png');
+    border-radius: none;
+}
+.painel_clicavel_bt03, .painel_clicavel_bt03:hover{
+    background-image: url('img/btn_3.png');
+    border-radius: none;
+}
+.painel_clicavel_bt01:hover,.painel_clicavel_bt02:hover,.painel_clicavel_bt03:hover,
+.painel_clicavel_bt01:active,.painel_clicavel_bt02:active,.painel_clicavel_bt03:active,
+.painel_clicavel_bt01:focus,.painel_clicavel_bt02:focus,.painel_clicavel_bt03:focus{
+    border-radius: 0px !important;
+    background-color: transparent;
+    background-size: cover;
+    box-shadow: none;
+}
+.img-pdf-print{
+    max-width: 250px;
+}

@@ -1,3 +1,7 @@
+
+h2, h3, h4, h5 {
+    color: #700003;
+}
 .paginas{
     background-image: url('img/bg.jpg');
     background-size: 100% 100%;
@@ -18,15 +22,18 @@
 }
 .float-left{
     position: absolute;
-    top: 5500px;
+    top: 6000px;
     left: 0;
     width: 300px;
+    z-index: 100;
+    max-width: 17%;
 }
 .float-left2{
     position: absolute;
     bottom: 150px;
     left: 0;
     width: 200px;
+    z-index: 100;
 }
 
 .painel_clicavel_bt01,.painel_clicavel_bt02,.painel_clicavel_bt03,.painel_clicavel_bt04,.painel_clicavel_bt05{
@@ -35,9 +42,13 @@
     background-size: 100%;
     background-color: transparent;
     border: 0px;
-    margin-top: 30px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 0px;
 }
-.painel_clicavel_bt01:hover,.painel_clicavel_bt02:hover,.painel_clicavel_bt03:hover,.painel_clicavel_bt04:hover,.painel_clicavel_bt05:hover{
+.painel_clicavel_bt01:hover,.painel_clicavel_bt02:hover,.painel_clicavel_bt03:hover,.painel_clicavel_bt04:hover,.painel_clicavel_bt05:hover,
+.painel_clicavel_bt01:active,.painel_clicavel_bt02:active,.painel_clicavel_bt03:active,.painel_clicavel_bt04:active,.painel_clicavel_bt05:active,
+.painel_clicavel_bt01:focus,.painel_clicavel_bt02:focus,.painel_clicavel_bt03:focus,.painel_clicavel_bt04:focus,.painel_clicavel_bt05:focus{
     border-radius: 0px !important;
     background-color: transparent;
     background-size: cover;
@@ -64,5 +75,9 @@
     border-radius: none
 }
 .img-painel-clicavel{
-    max-width: 550px;
+    max-width: 90%;
+    width: 550px;
+}
+.box-painel-clicavel .hvr-grow-shadow:active, .box-painel-clicavel .hvr-grow-shadow:focus, .box-painel-clicavel .hvr-grow-shadow:hover {
+    box-shadow: none;
 }
