@@ -6,10 +6,9 @@
 .exercise {
     display: none;
     background: white;
-    padding: 30px;
+    padding: 0px 30px 30px;
     border-radius: 15px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    margin: 20px 0;
+    /* margin: 20px 0; */
 }
 .exercise.active {
     display: block;
@@ -34,9 +33,6 @@
     margin-top: 20px;
 }
 
-.nav-buttons {
-    margin-top: 60px;
-}
 #next-btn {
     background-image: url('../../images/direita_neg.svg');
     background-repeat: no-repeat;

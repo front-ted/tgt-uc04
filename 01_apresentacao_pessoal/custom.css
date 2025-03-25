@@ -11,8 +11,9 @@ h2, h3, h4, h5 {
     position: relative;
 }
 .header-img{
-    max-width: 100%;
+    max-width: 110%;
 }
+h2.titulo_img_header{margin-left: 0;}
 .box-paralax{
     height: 300px;
     background-attachment:fixed;
@@ -20,6 +21,7 @@ h2, h3, h4, h5 {
 .paralax01{
     background-image: url('img/paralaxe.png');
 }
+.titulo-ativ{margin-left: 0;}
 .float-left{
     position: absolute;
     top: 6000px;
@@ -80,4 +82,10 @@ h2, h3, h4, h5 {
 }
 .box-painel-clicavel .hvr-grow-shadow:active, .box-painel-clicavel .hvr-grow-shadow:focus, .box-painel-clicavel .hvr-grow-shadow:hover {
     box-shadow: none;
+}
+@media screen and (max-width: 1400px){
+    .float-left2{ width: 150px;}
+}
+@media screen and (max-width: 1200px){
+    .float-left2{ width: 100px;}
 }
