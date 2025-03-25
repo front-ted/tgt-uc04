@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="../assets/atividades/relacionar_colunas/relacionar-colunas.css">
     <!--Atividade jogo da memória-->
     <link rel="stylesheet" href="../assets/atividades/jogo_memoria/jogoMemoria.css">
+    <!--Atividade jogo da prova-->
+    <link rel="stylesheet" href="../assets/atividades/prova/style.css">
     <!-- Estilos do template -->
     <link rel="stylesheet" href="../assets/css/cores.css">
     <link rel="stylesheet" href="../print/print/print.css">
@@ -192,7 +194,7 @@
                 </div>
                 <img src="img/img_lateral_2.png" class="float-left d-none d-xl-block " alt="">
 
-                    <div class="container">
+                <div class="container">
                     <p>
                         Na atividade turística, o <strong>Código Mundial de Ética do Turismo</strong>, criado pela Organização Mundial do Turismo em 1999, é um grande balizador das práticas que envolvem o desenvolvimento do Turismo. Composto de dez princípios, que se subdividem em outros itens, esse instrumento visa minimizar os efeitos negativos do turismo no meio ambiente e no patrimônio cultural, aumentando assim os benefícios para os residentes nos destinos turísticos. Embora não trate especificamente da função de guia de turismo, as diretrizes apontadas no código englobam também o trabalho deste profissional. Segundo Badaró (2005, p. 128): 
                     </p>
@@ -378,8 +380,116 @@
                    <p>Chimenti e Tavares (2023) destacam que a relação do guia de turismo com os clientes exige cuidado e sensibilidade, já que o profissional trabalha com grupos diversos, compostos de pessoas com características, expectativas e comportamentos únicos. Respeitar essas individualidades é essencial, mas o grande desafio está em harmonizar essas diferenças para criar uma experiência agradável e coesa para todos. </p>
                    <p>Para isso, o guia deve desenvolver empatia, não apenas com os visitantes, mas também com os prestadores de serviços e as comunidades visitadas. Essa postura ajuda a construir um ambiente de respeito mútuo, facilita a interação entre os membros do grupo e valoriza as experiências locais, promovendo um turismo mais humanizado e significativo. Agir com paciência, flexibilidade e compreensão é a chave para lidar com as dinâmicas variadas de cada viagem. </p>
                    <p>Chegou a hora de praticar seus conhecimentos. </p>
-                   
-                   <div class="box-atividade">
+                    <div class="box-atividade">
+                        <div id="app">
+                            <!-- Barra de Progresso -->
+                            <div class="progress">
+                                <div id="progress-bar" class="progress-bar bg-success" role="progressbar"></div>
+                            </div>
+
+                            <!-- Contador -->
+                            <div id="counter" class="text-end mb-3"></div>
+
+                            <!-- Exercícios Estáticos -->
+                            <!-- Adicione mais exercícios aqui -->
+                            
+                            <div id="exercises-container">
+                                <div class="exercise active">
+                                    <p class="titulo-ativ"><strong>Pergunta 1</strong></p>
+                                    <div class="esquemaDaBru multipla-escolha">
+                                        <p class="enunciado" tabindex="0">Durante um passeio, um passageiro oferece a você gorjeta como forma de reconhecimento do seu trabalho. O que você deve fazer?  </p>
+                                        <button class="alt-e"> Recusar educadamente, afirmando que não pode aceitar gorjetas em nenhuma circunstância.</button>
+                                        <button class="alt-c">Aceitar a gorjeta, mas garantir que seja feito de forma discreta e sem a presença de outros passageiros. </button>
+                                        <button class="alt-e">Informar ao passageiro que só pode aceitar gorjetas se todos do grupo contribuírem igualmente. </button>
+                                        <button class="alt-e">Pedir aos demais passageiros que também ofereçam uma gorjeta para manter a igualdade. </button>
+                                        <div class="feedbacks">
+                                            <p class="f-positivo"><i class="fas fa-check"></i> Parabéns! Aceitar gorjetas de forma discreta e educada é permitido, desde que não interfira na experiência do grupo. </p>
+                                            <p class="f-negativo"><i class="fas fa-times"></i> Lembre-se de que aceitar gorjetas de forma discreta é uma prática comum, desde que alinhada às normas da empresa e sem constrangimentos ao grupo. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="exercise">
+                                    <p class="titulo-ativ"><strong>Pergunta 2</strong></p>
+                                    <div class="esquemaDaBru multipla-escolha">
+                                    <p class="enunciado" tabindex="0">Qual atitude a seguir é considerada uma infração ética pelo Código de Ética do Guia de Turismo? </p>
+                                    <button class="alt-e">Sugerir alternativas de restaurantes alinhadas ao perfil socioeconômico do grupo.  </button>
+                                    <button class="alt-c">Emitir comentários discriminatórios sobre a cultura local durante uma explicação.  </button>
+                                    <button class="alt-e">Respeitar os costumes religiosos das comunidades visitadas.  </button>
+                                    <button class="alt-e">Participar de cursos e seminários para aprimorar suas habilidades.  </button>
+                                    <div class="feedbacks">
+                                        <p class="f-positivo"><i class="fas fa-check"></i> Isso mesmo! Comentários discriminatórios são inaceitáveis e ferem o Código de Ética do Guia de Turismo.  </p>
+                                        <p class="f-negativo"><i class="fas fa-times"></i>Evitar discriminação e respeitar culturas locais são princípios fundamentais da ética profissional.   </p>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="exercise">
+                                    <p class="titulo-ativ"><strong>Pergunta 3</strong></p>
+                                    <div class="esquemaDaBru multipla-escolha">
+                                        <p class="enunciado" tabindex="0">Durante um roteiro, você decide alterar o itinerário sem consultar o grupo ou a agência, apenas para visitar um atrativo turístico que oferece comissão. Essa atitude </p>
+                                        <button class="alt-e">é aceitável, desde que o atrativo seja de boa qualidade. </button>
+                                        <button class="alt-c">é antiética, pois prioriza o seu benefício em detrimento da experiência do grupo.  </button>
+                                        <button class="alt-e">é permitida se você informar o grupo sobre a alteração.  </button>
+                                        <button class="alt-e">depende do contrato entre você e a agência. </button>
+                                        <div class="feedbacks">
+                                            <p class="f-positivo"><i class="fas fa-check"></i>Exatamente! Alterar o roteiro para benefícios pessoais é antiético e prejudica a confiança do grupo e da agência.   </p>
+                                            <p class="f-negativo"><i class="fas fa-times"></i> Alterações no itinerário devem sempre considerar os interesses do grupo e estar alinhadas com a programação da agência.  </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="exercise">
+                                    <p class="titulo-ativ"><strong>Pergunta 4</strong></p>
+                                    <div class="esquemaDaBru multipla-escolha">
+                                        <p class="enunciado" tabindex="0">Por que você deve evitar o consumo de álcool ou drogas ilícitas durante a prestação de serviços? </p>
+                                        <button class="alt-e">Porque isso pode gerar mal-entendidos ou relatos exagerados por parte do grupo.  </button>
+                                        <button class="alt-e">É uma infração ética que compromete sua credibilidade e a segurança do grupo. </button>
+                                        <button class="alt-e">Alguns países permitem o uso de drogas, mas isso não isenta a sua responsabilidade profissional com o grupo. </button>
+                                        <button class="alt-c">Todas as alternativas estão corretas. </button>
+                                        <div class="feedbacks">
+                                            <p class="f-positivo"><i class="fas fa-check"></i> Perfeito! Todas as alternativas explicam por que é crucial manter-se sóbrio e profissional durante o trabalho.  </p>
+                                            <p class="f-negativo"><i class="fas fa-times"></i>Lembre-se, consumir álcool ou drogas durante o serviço compromete não só a ética, mas também a segurança e a confiança do grupo. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="exercise">
+                                    <p class="titulo-ativ"><strong>Pergunta 5</strong></p>
+                                    <div class="esquemaDaBru multipla-escolha">
+                                        <p class="enunciado" tabindex="0">Como guia de turismo, você é responsável por criar um ambiente harmônico com o grupo. Qual das atitudes a seguir demonstra essa competência? </p>
+                                        <button class="alt-e">Ignorar conflitos entre passageiros para evitar envolvimento. </button>
+                                        <button class="alt-c">Promover empatia com visitantes, prestadores de serviços e comunidades visitadas. </button>
+                                        <button class="alt-e">Privilegiar passageiros com os quais você tem mais afinidade. </button>
+                                        <button class="alt-e">Fazer piadas para descontrair, mesmo que possam ser interpretadas como ofensivas. </button>
+                                        <div class="feedbacks">
+                                            <p class="f-positivo"><i class="fas fa-check"></i>Excelente! Demonstrar empatia com todos os envolvidos é essencial para criar uma experiência harmoniosa e agradável. </p>
+                                            <p class="f-negativo"><i class="fas fa-times"></i> O guia deve sempre prezar pelo respeito e pela empatia, evitando atitudes que possam gerar desconforto no grupo ou nas comunidades visitadas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                                <!-- Mensagem de Conclusão -->
+                            <div id="completion-message">
+                                <h3 class="text-success">🎉 Parabéns!</h3>
+                                <p>Você completou todos os exercícios!</p>
+                                <button onclick="restartExercise()" id="restart-btn" class="botao btn">
+                                    Reiniciar
+                                </button>
+                            </div>
+
+                            <!-- Botões de Navegação -->
+                            <div class="nav-buttons">
+                                <button id="prev-btn" class="botao btn" onclick="prevExercise()">Anterior</button>
+                                <button id="next-btn" class="botao btn" onclick="nextExercise()">Próximo</button>
+                                <button id="complete-btn" class="botao btn" onclick="showCompletion()" style="display: none;">
+                                    Concluir
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="box-atividade">
                     <p class="titulo-ativ"><strong>Pergunta 1</strong></p>
                     <div class="esquemaDaBru multipla-escolha">
                         <p class="enunciado" tabindex="0">Durante um passeio, um passageiro oferece a você gorjeta como forma de reconhecimento do seu trabalho. O que você deve fazer?  </p>
@@ -393,10 +503,10 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="box-atividade">
-                    <p class="titulo-ativ"><strong>Pergunta 2</strong></p>
-                    <div class="esquemaDaBru multipla-escolha">
+                    </div>
+                    <div class="box-atividade">
+                        <p class="titulo-ativ"><strong>Pergunta 2</strong></p>
+                        <div class="esquemaDaBru multipla-escolha">
                         <p class="enunciado" tabindex="0">Qual atitude a seguir é considerada uma infração ética pelo Código de Ética do Guia de Turismo? </p>
                         <button class="alt-e">Sugerir alternativas de restaurantes alinhadas ao perfil socioeconômico do grupo.  </button>
                         <button class="alt-c">Emitir comentários discriminatórios sobre a cultura local durante uma explicação.  </button>
@@ -406,9 +516,9 @@
                             <p class="f-positivo"><i class="fas fa-check"></i> Isso mesmo! Comentários discriminatórios são inaceitáveis e ferem o Código de Ética do Guia de Turismo.  </p>
                             <p class="f-negativo"><i class="fas fa-times"></i>Evitar discriminação e respeitar culturas locais são princípios fundamentais da ética profissional.   </p>
                         </div>
+                        </div>
                     </div>
-                </div>
-                <div class="box-atividade">
+                    <div class="box-atividade">
                     <p class="titulo-ativ"><strong>Pergunta 3</strong></p>
                     <div class="esquemaDaBru multipla-escolha">
                         <p class="enunciado" tabindex="0">Durante um roteiro, você decide alterar o itinerário sem consultar o grupo ou a agência, apenas para visitar um atrativo turístico que oferece comissão. Essa atitude </p>
@@ -421,8 +531,8 @@
                             <p class="f-negativo"><i class="fas fa-times"></i> Alterações no itinerário devem sempre considerar os interesses do grupo e estar alinhadas com a programação da agência.  </p>
                         </div>
                     </div>
-                </div>
-                <div class="box-atividade">
+                    </div>
+                    <div class="box-atividade">
                     <p class="titulo-ativ"><strong>Pergunta 4</strong></p>
                     <div class="esquemaDaBru multipla-escolha">
                         <p class="enunciado" tabindex="0">Por que você deve evitar o consumo de álcool ou drogas ilícitas durante a prestação de serviços? </p>
@@ -435,8 +545,8 @@
                             <p class="f-negativo"><i class="fas fa-times"></i>Lembre-se, consumir álcool ou drogas durante o serviço compromete não só a ética, mas também a segurança e a confiança do grupo. </p>
                         </div>
                     </div>
-                </div>
-                <div class="box-atividade">
+                    </div>
+                    <div class="box-atividade">
                     <p class="titulo-ativ"><strong>Pergunta 5</strong></p>
                     <div class="esquemaDaBru multipla-escolha">
                         <p class="enunciado" tabindex="0">Como guia de turismo, você é responsável por criar um ambiente harmônico com o grupo. Qual das atitudes a seguir demonstra essa competência? </p>
@@ -449,7 +559,7 @@
                             <p class="f-negativo"><i class="fas fa-times"></i> O guia deve sempre prezar pelo respeito e pela empatia, evitando atitudes que possam gerar desconforto no grupo ou nas comunidades visitadas.</p>
                         </div>
                     </div>
-                </div>
+                    </div> -->
                 </div>
                 <img src="img/encerramento.png" class="float-left2" alt="">
 
@@ -461,21 +571,17 @@
                 <p>
                     Além disso, o Código de Ética do Guia de Turismo e o Código Mundial de Ética do Turismo são documentos indispensáveis para orientar sua atuação ética. Eles reforçam a importância de respeitar os direitos dos consumidores, preservar os patrimônios culturais e ambientais e promover uma relação de confiança entre os diversos públicos envolvidos no turismo. Mantenha-se atualizado sobre as normas da profissão e esteja sempre preparado para adaptar suas atitudes às demandas de cada situação. Agir de acordo com esses princípios é a base para construir um turismo mais responsável, sustentável e respeitoso. 
                 </p>
-
-                    
-                    
-
-
                 </div>
+                
                 <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>
             </div>
         </section>
         <!-- Paginação-->
-        <footer class="text-center no-print d-flex justify-content-center mx-auto">
+        <!-- <footer class="text-center no-print d-flex justify-content-center mx-auto">
             <ul class="pagination">
 
             </ul>
-        </footer>
+        </footer> -->
     </section>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
@@ -496,6 +602,8 @@
     <script src="../assets/atividades/arrasta_solta/game-custom.js"></script>
     <!--Atividade associar colunas-->
     <script src="../assets/atividades/relacionar_colunas/relacionar-colunas.js"></script>
+    <!--Atividade associar prova-->
+    <script src="../assets/atividades/prova/js.js"></script>
     <!--Scripts gerais-->
     <script src="../assets/js/geral.js"></script>
 
