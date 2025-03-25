@@ -21,7 +21,7 @@ h2.titulo_img_header{margin-left: 0;}
 .paralax01{
     background-image: url('img/paralaxe.png');
 }
-.titulo-ativ{margin-left: 0;}
+/* .titulo-ativ{margin-left: 0;} */
 .float-left{
     position: absolute;
     top: 6000px;
@@ -88,4 +88,10 @@ h2.titulo_img_header{margin-left: 0;}
 }
 @media screen and (max-width: 1200px){
     .float-left2{ width: 100px;}
+}
+@media screen and (max-width: 1120px){
+    .float-left2{ width: 50px;}
+}
+@media screen and (max-width: 1040px){
+    .float-left2{ display: none;}
 }
