@@ -18,8 +18,24 @@ h2.titulo_img_header{margin-left: 0;}
     height: 300px;
     background-attachment:fixed;
 }
+.paralax00{
+    height: 435px;
+    background-image: url('img/header.png');
+}
 .paralax01{
-    background-image: url('img/paralaxe.png');
+    background-image: url('img/paralaxe_1.jpg');
+}
+.paralax02{
+    background-image: url('img/paralaxe_2.jpg');
+}
+.paralax03{
+    background-image: url('img/paralaxe_3.jpg');
+}
+.paralax04{
+    background-image: url('img/paralaxe_4.jpg');
+}
+.paralax05{
+    background-image: url('img/paralaxe_5.jpg');
 }
 /* .titulo-ativ{margin-left: 0;} */
 .float-left{

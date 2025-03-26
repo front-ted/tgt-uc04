@@ -83,6 +83,9 @@ h2.titulo_img_header{margin-left: 0;}
 .box-painel-clicavel .hvr-grow-shadow:active, .box-painel-clicavel .hvr-grow-shadow:focus, .box-painel-clicavel .hvr-grow-shadow:hover {
     box-shadow: none;
 }
+.ultimo-container{
+    padding-top: 0px;
+}
 @media screen and (max-width: 1400px){
     .float-left2{ width: 150px;}
 }
