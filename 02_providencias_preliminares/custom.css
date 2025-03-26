@@ -1,6 +1,7 @@
 .paginas{
     background-image: url('img/background_2.jpg');
     background-size: 100% 100%;
+    padding-bottom: 70px;
 }
 .bloco1{
     background-image: url('img/background_1.jpg');
@@ -24,14 +25,15 @@ h2, h3, h4, h5 {
     background-image: url('img/paralaxe_2.jpg');
 }
 .painel_clicavel_bt01,.painel_clicavel_bt02,.painel_clicavel_bt03{
-    width: 285px;
-    height: 270px;
+    width: 29%;
+    height: 260px;
     background-size: 100%;
     background-color: transparent;
     border: 0px;
-    margin: 10px 5px;
+    margin: 10px 1.9%;
     display: inline-block;
     border-radius: 0px;
+    background-repeat: no-repeat;
 }
 .painel_clicavel_bt01:hover,.painel_clicavel_bt02:hover,.painel_clicavel_bt03:hover,.painel_clicavel_bt04:hover,.painel_clicavel_bt05:hover{
     border-radius: 0px !important;
@@ -56,9 +58,84 @@ h2, h3, h4, h5 {
 .painel_clicavel_bt01:focus,.painel_clicavel_bt02:focus,.painel_clicavel_bt03:focus{
     border-radius: 0px !important;
     background-color: transparent;
-    background-size: cover;
     box-shadow: none;
+    background-repeat: no-repeat;
 }
 .img-pdf-print{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
     max-width: 250px;
+}
+/* bts */
+.painel_clicavel_bt010,.painel_clicavel_bt011,.painel_clicavel_bt012,.painel_clicavel_bt013,.painel_clicavel_bt014,.painel_clicavel_bt015,.painel_clicavel_bt016,
+.painel_clicavel_bt017,.painel_clicavel_bt018{
+    max-width: 331px;
+    width: 100%;
+    height: 79px;
+    background-size: 100%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0px;
+    margin: 10px 5px;
+    display: inline-block;
+    border-radius: 0px !important;
+    border-radius: 0px;
+}
+.painel_clicavel_bt010:hover,.painel_clicavel_bt011:hover,.painel_clicavel_bt012:hover,.painel_clicavel_bt013:hover,.painel_clicavel_bt014:hover,.painel_clicavel_bt015:hover,
+.painel_clicavel_bt016:hover,.painel_clicavel_bt017:hover,.painel_clicavel_bt018:hover{
+    border-radius: 0px !important;
+    background-color: transparent;
+    background-size: 100%;
+    box-shadow: none;
+    background-repeat: no-repeat;
+}
+.painel_clicavel_bt010, .painel_clicavel_bt010:hover{
+    background-image: url('img/painel_clicavel_btn_1.png');
+    border-radius: none;
+}
+.painel_clicavel_bt011, .painel_clicavel_bt011:hover{
+    background-image: url('img/painel_clicavel_btn_2.png');
+    border-radius: none;
+}
+.painel_clicavel_bt012, .painel_clicavel_bt012:hover{
+    background-image: url('img/painel_clicavel_btn_3.png');
+    border-radius: none;
+}
+.painel_clicavel_bt013, .painel_clicavel_bt013:hover{
+    background-image: url('img/painel_clicavel_btn_4.png');
+    border-radius: none;
+}
+.painel_clicavel_bt014, .painel_clicavel_bt014:hover{
+    background-image: url('img/painel_clicavel_btn_5.png');
+    border-radius: none;
+}
+.painel_clicavel_bt015, .painel_clicavel_bt015:hover{
+    background-image: url('img/painel_clicavel_btn_6.png');
+    border-radius: none;
+}
+.painel_clicavel_bt016, .painel_clicavel_bt016:hover{
+    background-image: url('img/painel_clicavel_btn_7.png');
+    border-radius: none;
+}
+.painel_clicavel_bt017, .painel_clicavel_bt017:hover{
+    background-image: url('img/painel_clicavel_btn_8.png');
+    border-radius: none;
+}
+.painel_clicavel_bt018, .painel_clicavel_bt018:hover{
+    background-image: url('img/painel_clicavel_btn_9.png');
+    border-radius: none;
+}
+.painel_clicavel_bt010:hover,.painel_clicavel_bt012:hover,.painel_clicavel_bt013:hover,
+.painel_clicavel_bt010:active,.painel_clicavel_bt012:active,.painel_clicavel_bt013:active,
+.painel_clicavel_bt010:focus,.painel_clicavel_bt012:focus,.painel_clicavel_bt013:focus
+.painel_clicavel_bt011:hover,.painel_clicavel_bt014:hover,.painel_clicavel_bt015:hover,
+.painel_clicavel_bt011:active,.painel_clicavel_bt014:active,.painel_clicavel_bt015:active,
+.painel_clicavel_bt011:focus,.painel_clicavel_bt014:focus,.painel_clicavel_bt015:focus
+.painel_clicavel_bt016:hover,.painel_clicavel_bt017:hover,.painel_clicavel_bt018:hover,
+.painel_clicavel_bt016:active,.painel_clicavel_bt017:active,.painel_clicavel_bt018:active,
+.painel_clicavel_bt016:focus,.painel_clicavel_bt017:focus,.painel_clicavel_bt018:focus{
+    border-radius: 0px !important;
+    background-color: transparent;
+    box-shadow: none;
 }
