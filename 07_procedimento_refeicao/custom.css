@@ -17,9 +17,12 @@ h2.titulo_img_header{margin-left: 0;}
 .box-paralax{
     height: 300px;
     background-attachment:fixed;
+    margin: 60px 0px;
 }
+h2{margin-top: 0;}
 .paralax00{
     height: 435px;
+    margin-top: 0;
     background-image: url('img/header.png');
 }
 .paralax01{
@@ -55,10 +58,12 @@ h2.titulo_img_header{margin-left: 0;}
 }
 
 .painel_clicavel_bt01,.painel_clicavel_bt02,.painel_clicavel_bt03,.painel_clicavel_bt04,.painel_clicavel_bt05{
-    width: 300px;
-    height: 91px;
+    width: 403px;
+    height: 112px;
     background-size: 100%;
+    background-repeat: no-repeat;
     background-color: transparent;
+    background-size: 100%;
     border: 0px;
     margin: 10px auto;
     display: block;
@@ -73,24 +78,74 @@ h2.titulo_img_header{margin-left: 0;}
     box-shadow: none;
 }
 .painel_clicavel_bt01, .painel_clicavel_bt01:hover{
-    background-image: url('img/painel_btn_1.png');
+    background-image: url('img/btn_1.png');
     border-radius: none;
 }
 .painel_clicavel_bt02, .painel_clicavel_bt02:hover{
-    background-image: url('img/painel_btn_2.png');
+    background-image: url('img/btn_2.png');
     border-radius: none
 }
 .painel_clicavel_bt03, .painel_clicavel_bt03:hover{
-    background-image: url('img/painel_btn_3.png');
+    background-image: url('img/btn_3.png');
     border-radius: none
 }
 .painel_clicavel_bt04, .painel_clicavel_bt04:hover{
-    background-image: url('img/painel_btn_4.png');
+    background-image: url('img/btn_4.png');
     border-radius: none
 }
 .painel_clicavel_bt05, .painel_clicavel_bt05:hover{
-    background-image: url('img/painel_btn_5.png');
-    border-radius: none
+    background-image: url('img/btn_5.png');
+    border-radius: none;
+}
+.painel_clicavel_bt06, .painel_clicavel_bt06:hover{
+    background-image: url('img/piramide_btn.png');
+    border-radius: none;
+    top: 50px;
+}
+.painel_clicavel_bt06.check.visitado::after,
+.painel_clicavel_bt07.check.visitado::after,
+.painel_clicavel_bt08.check.visitado::after,
+.painel_clicavel_bt09.check.visitado::after,
+.painel_clicavel_bt010.check.visitado::after{
+    height: 32px;
+    width: 32px;
+    top: 0px;
+    right: 0px;
+}
+.painel_clicavel_bt07, .painel_clicavel_bt07:hover{
+    background-image: url('img/piramide_btn.png');
+    border-radius: none;
+    top: 120px;
+
+}
+.painel_clicavel_bt08, .painel_clicavel_bt08:hover{
+    background-image: url('img/piramide_btn.png');
+    border-radius: none;
+    top: 195px;
+}
+.painel_clicavel_bt09, .painel_clicavel_bt09:hover{
+    background-image: url('img/piramide_btn.png');
+    border-radius: none;
+    top: 270px;
+}
+.painel_clicavel_bt010, .painel_clicavel_bt010:hover{
+    background-image: url('img/piramide_btn.png');
+    border-radius: none;
+    top: 350px;
+}
+.box-painel-clicavel2{
+    position: relative;
+}
+.painel_clicavel_bt06, .painel_clicavel_bt07, .painel_clicavel_bt08, .painel_clicavel_bt09, .painel_clicavel_bt010{
+    position: absolute;
+    left: -200px;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+    margin: 0 auto;
 }
 .img-painel-clicavel{
     max-width: 90%;
