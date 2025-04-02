@@ -43,17 +43,38 @@ h2{margin-top: 0;}
 /* .titulo-ativ{margin-left: 0;} */
 .float-left{
     position: absolute;
-    top: 6000px;
+    top: 60px;
     left: 0;
-    width: 300px;
+    width: 400px;
     z-index: 100;
-    max-width: 17%;
+    max-width: 19%;
+}
+.float-dir{
+    position: absolute;
+    top: 260px;
+    right: 5%;
+    width: 176px;
+    z-index: 100;
 }
 .float-left2{
     position: absolute;
-    bottom: 150px;
-    left: 0;
-    width: 200px;
+    top: 4300px;
+    left: -2%;
+    width: 21%;
+    z-index: 100;
+}
+.float-left3{
+    position: absolute;
+    top: 6700px;
+    left: -2%;
+    width: 21%;
+    z-index: 100;
+}
+.float-left4{
+    position: absolute;
+    top: 9500px;
+    left: -2%;
+    width: 21%;
     z-index: 100;
 }
 

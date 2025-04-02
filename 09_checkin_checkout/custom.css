@@ -1,0 +1,29 @@
+
+h2, h3, h4, h5 {
+    color: #700003;
+}
+.paginas{
+    background-image: url('img/background.jpg');
+    background-size: 100% 100%;
+}
+.pagina{
+    overflow: hidden;
+}
+.header-img{
+    max-width: 100%;
+}
+h2.titulo_img_header{margin-left: 0;}
+.p1600{ width: 100% !important; }
+.relogio_float{
+    margin: 100px 90px !important;
+    padding: 0px 15px !important;
+    background-color: #700003;
+    color: #fff;
+}
+.relogio_float img{
+    float: left;
+    margin-left: -48px;
+    margin-top: -55px;
+    margin-right: 30px;
+}
+.relogio_float p{ padding: 10px 0px; font-size: 1.2em;}
