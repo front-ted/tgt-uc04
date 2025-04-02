@@ -59,45 +59,74 @@
         <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
         <section class="paginas">
             <div class="pagina container">
-                <a href="index.html?page=2" target="_blank" rel="noopener noreferrer" class="troca-pagina" id="linkPage2">Tipos de cruzeiros </a> <br>
-                <a href="index.html?page=3" target="_blank" rel="noopener noreferrer" class="troca-pagina" id="linkPage3">Guia de excursão nacional: acompanhamento de grupo em cruzeiros </a><br>
-                <a href="index.html?page=4" target="_blank" rel="noopener noreferrer" class="troca-pagina" id="linkPage4">Trabalhando em um cruzeiro</a><br>
+                <!-- Bt inicial -->
+                <button type="button" class="botao check hvr-grow-shadow" data-bs-toggle="modal"
+                    data-bs-target="#modal1">
+                    Modal inicial
+                </button>
 
-                <h2>Cruzeiros marítimos: check-in, embarque, acompanhamento e desembarque </h2>
-                <p>
-                    Você sabia que o Brasil tem uma costa de mais de 8 mil km, com características singulares que demonstram grande potencial para o turismo náutico? Neste cenário, os cruzeiros marítimos ganham cada vez mais destaque, atraindo turistas estrangeiros que buscam conhecer o litoral brasileiro com conforto e segurança. 
-                </p>
-                <p>
-                    O estímulo aos cruzeiros está entre as ações estabelecidas pelo Ministério do Turismo no Plano Nacional do Turismo, que visa tornar o Brasil o maior receptor de turistas da América do Sul nos próximos anos. 
-                </p>
-                <p>
-                    O segmento movimenta cerca de US$ 155 bilhões por ano, gerando 1,2 milhão de empregos no mundo. Além da movimentação financeira expressiva, o aumento da competitividade é evidente no setor e, entre os novos produtos, os cruzeiros temáticos ganham força. 
-                </p>
-                <p>
-                    A expansão da indústria de cruzeiros vem impactando toda a cadeia do turismo, fomentando comércio local, serviços de transporte e hotelaria e passeios turísticos nas cidades por onde passam as embarcações. Esse crescimento também traz reflexos positivos para o guia de turismo, com oportunidades de trabalho dentro e fora do navio. 
-                </p>
-                <p>
-                    O aumento de circulação de turistas nas cidades de embarque e desembarque exige uma grande operação envolvendo empresas de receptivos turísticos e consequentemente a contratação de guias de turismo para realização de <i>transfers</i> (transporte de uma pessoa quando ela chega de uma viagem ou deslocamento entre a hospedagem e o ponto de embarque) e passeios nos destinos de parada. Além disso, as próprias operadoras de cruzeiros contratam profissionais específicos para garantir o entretenimento dos passageiros a bordo e o guia de turismo se encaixa perfeitamente em algumas dessas funções. Logo, você deve estar preparado para orientar os viajantes em procedimentos específicos em cruzeiros marítimos. 
-                </p>
-                <p>
-                    Quando se pensa em cruzeiros, a imagem que vem à mente é a de um grande navio navegando pelos oceanos, oferecendo luxo, diversão e experiências inesquecíveis. No entanto, o universo desse serviço é muito mais diversificado do que se imagina. Existem diversas opções de cruzeiros, de luxo e temáticos, com gastronomia requintada e com destinos exóticos. Cada tipo oferece uma experiência única para atender aos mais variados gostos e estilos de viagem. 
-                </p>
-                <p>
-                    Mas, afinal, quais são os tipos de cruzeiros? Conheça os diferentes tipos a seguir: 
-                </p>
-                <!-- Button trigger modal -->
+                <!-- Links -->
+                 <div class="container">
+                    <a href="index.html?page=2" target="_blank" rel="noopener noreferrer" class="troca-pagina" id="linkPage2">Tipos de cruzeiros </a> <br>
+                    <a href="index.html?page=3" target="_blank" rel="noopener noreferrer" class="troca-pagina" id="linkPage3">Guia de excursão nacional: acompanhamento de grupo em cruzeiros </a><br>
+                    <a href="index.html?page=4" target="_blank" rel="noopener noreferrer" class="troca-pagina" id="linkPage4">Trabalhando em um cruzeiro</a><br>
+                 </div>
+                <!-- Encerramento -->
                 <button type="button" class="botao check hvr-grow-shadow" data-bs-toggle="modal"
                     data-bs-target="#modal2">
                     Encerramento
                 </button>
 
                 <!-- Modal grande -->
-                <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Título da modal</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Cruzeiros marítimos: check-in, embarque, acompanhamento e desembarque </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <!-- <h2>Cruzeiros marítimos: check-in, embarque, acompanhamento e desembarque </h2> -->
+                                    <p>
+                                        Você sabia que o Brasil tem uma costa de mais de 8 mil km, com características singulares que demonstram grande potencial para o turismo náutico? Neste cenário, os cruzeiros marítimos ganham cada vez mais destaque, atraindo turistas estrangeiros que buscam conhecer o litoral brasileiro com conforto e segurança. 
+                                    </p>
+                                    <p>
+                                        O estímulo aos cruzeiros está entre as ações estabelecidas pelo Ministério do Turismo no Plano Nacional do Turismo, que visa tornar o Brasil o maior receptor de turistas da América do Sul nos próximos anos. 
+                                    </p>
+                                    <p>
+                                        O segmento movimenta cerca de US$ 155 bilhões por ano, gerando 1,2 milhão de empregos no mundo. Além da movimentação financeira expressiva, o aumento da competitividade é evidente no setor e, entre os novos produtos, os cruzeiros temáticos ganham força. 
+                                    </p>
+                                    <p>
+                                        A expansão da indústria de cruzeiros vem impactando toda a cadeia do turismo, fomentando comércio local, serviços de transporte e hotelaria e passeios turísticos nas cidades por onde passam as embarcações. Esse crescimento também traz reflexos positivos para o guia de turismo, com oportunidades de trabalho dentro e fora do navio. 
+                                    </p>
+                                    <p>
+                                        O aumento de circulação de turistas nas cidades de embarque e desembarque exige uma grande operação envolvendo empresas de receptivos turísticos e consequentemente a contratação de guias de turismo para realização de <i>transfers</i> (transporte de uma pessoa quando ela chega de uma viagem ou deslocamento entre a hospedagem e o ponto de embarque) e passeios nos destinos de parada. Além disso, as próprias operadoras de cruzeiros contratam profissionais específicos para garantir o entretenimento dos passageiros a bordo e o guia de turismo se encaixa perfeitamente em algumas dessas funções. Logo, você deve estar preparado para orientar os viajantes em procedimentos específicos em cruzeiros marítimos. 
+                                    </p>
+                                    <p>
+                                        Quando se pensa em cruzeiros, a imagem que vem à mente é a de um grande navio navegando pelos oceanos, oferecendo luxo, diversão e experiências inesquecíveis. No entanto, o universo desse serviço é muito mais diversificado do que se imagina. Existem diversas opções de cruzeiros, de luxo e temáticos, com gastronomia requintada e com destinos exóticos. Cada tipo oferece uma experiência única para atender aos mais variados gostos e estilos de viagem. 
+                                    </p>
+                                    <p>
+                                        Mas, afinal, quais são os tipos de cruzeiros? Conheça os diferentes tipos a seguir: 
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="botao hvr-grow-shadow"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal grande -->
+                <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel2">Título da modal</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
