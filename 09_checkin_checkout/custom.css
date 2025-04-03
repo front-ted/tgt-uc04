@@ -27,3 +27,9 @@ h2.titulo_img_header{margin-left: 0;}
     margin-right: 30px;
 }
 .relogio_float p{ padding: 10px 0px; font-size: 1.2em;}
+
+@media screen and (max-width: 800px){
+    .relogio_float{
+        margin: 50px auto !important;
+    }
+}

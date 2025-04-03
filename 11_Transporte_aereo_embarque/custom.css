@@ -1,0 +1,79 @@
+
+h2, h3, h4, h5 {
+    color: #700003;
+}
+.paginas{
+    background-image: url('img/background_2.jpg');
+    background-size: 100% 100%;
+}
+.pagina{
+    overflow: hidden;
+}
+.bloco1{
+    background-image: url('img/bg_01-100.jpg');
+    background-size: 100% 100%;
+    margin-top: -51px;
+    /* padding-top: 60px; */
+    padding-bottom: 50px;
+    color: #fff;
+}
+.bloco1 h2, .bloco1 h3{ color: #fff !important;}
+.bloco1 h2{ padding-top: 50px;}
+.bloco1 h3{ margin-bottom: 20px;}
+.painel_clicavel_bt01,.painel_clicavel_bt02,.painel_clicavel_bt03,.painel_clicavel_bt04,.painel_clicavel_bt05,
+.painel_clicavel_bt06,.painel_clicavel_bt07{
+    width: 170px;
+    height: 137px;
+    background-size: 100%;
+    background-color: transparent;
+    border: 0px;
+    margin: 10px 1.9%;
+    display: inline-block;
+    border-radius: 0px;
+    background-repeat: no-repeat;
+}
+.painel_clicavel_bt01:hover,.painel_clicavel_bt02:hover,.painel_clicavel_bt03:hover,.painel_clicavel_bt04:hover,.painel_clicavel_bt05:hover
+,.painel_clicavel_bt06:hover,.painel_clicavel_bt07:hover{
+    border-radius: 0px !important;
+    background-color: transparent;
+    background-size: 100%;
+    box-shadow: none;
+    border-radius: none;
+}
+.painel_clicavel_bt01, .painel_clicavel_bt01:hover{
+    background-image: url('img/icon_01.png');
+}
+.painel_clicavel_bt02, .painel_clicavel_bt02:hover{
+    background-image: url('img/icon_02.png');
+}
+.painel_clicavel_bt03, .painel_clicavel_bt03:hover{
+    background-image: url('img/icon_03.png');
+}
+.painel_clicavel_bt04, .painel_clicavel_bt04:hover{
+    background-image: url('img/icon_04.png');
+}
+.painel_clicavel_bt05, .painel_clicavel_bt05:hover{
+    background-image: url('img/icon_05.png');
+}
+.painel_clicavel_bt06, .painel_clicavel_bt06:hover{
+    background-image: url('img/pn2_icon_01.png');
+}
+.painel_clicavel_bt07, .painel_clicavel_bt07:hover{
+    background-image: url('img/pn2_icon_02.png');
+}
+.painel_clicavel_bt01:hover,.painel_clicavel_bt02:hover,.painel_clicavel_bt03:hover,.painel_clicavel_bt04:hover,.painel_clicavel_bt05:hover,
+.painel_clicavel_bt06:hover,.painel_clicavel_bt07:hover,
+.painel_clicavel_bt01:active,.painel_clicavel_bt02:active,.painel_clicavel_bt03:active,.painel_clicavel_bt04:active,.painel_clicavel_bt05:active,
+.painel_clicavel_bt06:active,.painel_clicavel_bt07:active,
+.painel_clicavel_bt01:focus,.painel_clicavel_bt02:focus,.painel_clicavel_bt03:focus,.painel_clicavel_bt04:focus,.painel_clicavel_bt05:focus,
+,.painel_clicavel_bt06:focus,.painel_clicavel_bt07:focus{
+    border-radius: 0px !important;
+    background-color: transparent;
+    box-shadow: none;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 800px){
+    .relogio_float{
+        margin: 50px auto !important;
+    }
+}
