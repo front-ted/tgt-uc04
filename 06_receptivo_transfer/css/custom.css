@@ -1,1 +1,43 @@
 .espera-video{border: 2px solid;}
+
+.paginas{
+    background-image: url('../img/bg.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-bottom: 150px;
+}
+.bt1, .bt2, .bt3{
+    width: 351px;
+    height: 354px;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+    position: relative;
+}
+.bt1:hover, .bt2:hover, .bt3:hover{
+    background-color: unset;
+}
+.img-hover{
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    position: absolute;
+}
+.bt1::before, .bt2::before, .bt3::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 56px;
+    left: 18px;
+    width: 164px;
+    height: 164px;
+    background-image: url('../img/hover.png');
+    z-index: -2;
+    transition: all 0.3s;
+}
+.bt1:hover::before,.bt2:hover::before,.bt3:hover::before{
+    transform: rotate(90deg);
+}

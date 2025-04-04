@@ -1,1 +1,45 @@
 .espera-video{border: 2px solid;}
+
+h2, h3, h4, h5 {
+    color: #700003;
+}
+.paginas{
+    background-image: url('img/background_2.jpg');
+    background-size: 100% 100%;
+}
+
+.bloco1{
+    background-image: url('../img/bg_01.jpg');
+    background-size: 100% 100%;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.bloco2{
+    background-image: url('../img/imglateral_01.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.bloco3{
+    position: relative;
+}
+.bloco5{
+    background-color: rgba(255, 119, 0, 0.3);
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.bloco6{
+    background-image: url('../img/imglateral_01.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.float-left{
+    position: absolute;
+    width: 387px;
+    top: 1302px;
+    left: -380px;
+    z-index: 100;
+}

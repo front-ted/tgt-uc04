@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="../assets/css/cores.css">
     <link rel="stylesheet" href="../print/print/print.css">
     <link rel="stylesheet" href="../assets/css/template.css">
+    <link rel="stylesheet" href="custom.css">
 
 </head>
 
@@ -62,7 +63,12 @@
         <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
         <section class="paginas">
             <div class="pagina">
-                <div class="container">
+                <img src="" alt="">
+                <div class="container box-float-left">
+                    <img src="img/prancheta17.png" class="float-left d-none d-xl-block no-print" alt="">
+                    <img src="img/bg_elemento2.png" class="float-right d-none d-xl-block no-print" alt="">
+                    <img src="img/bg_elemento4.png" class="float-left2 d-none d-xl-block no-print" alt="">
+                    <img src="img/bg_elemento5.png" class="float-right2 d-none d-xl-block no-print" alt="">
                     <h2>Procedimentos rodoviários: embarques e desembarques, início da viagem, apresentação dos passageiros, serviço de bordo e parada técnica, entretenimento em ônibus, viagem de volta e encerramento </h2>
                     <p>O transporte rodoviário é um dos meios de locomoção mais populares no Brasil, sendo as viagens de ônibus a escolha de 74% dos viajantes brasileiros, segundo uma pesquisa realizada pelo Google em parceria com a plataforma de vendas de passagens rodoviárias ClickBus (Yamakami, 2024). </p>
                     <p>Desde a década de 1950, o transporte rodoviário ganhou destaque no Brasil, impulsionado por políticas de modernização e pela construção de rodovias como a Via Dutra (rodovia que liga as cidades de São Paulo e Rio de Janeiro) e a BR-101 (rodovia que começa no Rio Grande do Norte e termina no Rio Grande do Sul). O Plano de Metas, instalado no governo de 1950, priorizou a infraestrutura rodoviária para integrar o território e favorecer a indústria automobilística, que começava a se consolidar no país. Com isso, o turismo rodoviário atualmente movimenta milhões de viajantes no Brasil, especialmente por meio de excursões organizadas por agências e operadoras de turismo. Essas viagens, realizadas em veículos fretados, oferecem uma alternativa acessível e prática para explorar destinos regionais ou de longa distância. </p>
@@ -83,30 +89,52 @@
                         Clique ou toque para visualizar o conteúdo.  
                     </p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="botao check hvr-grow-shadow" data-bs-toggle="modal"
-                        data-bs-target="#modal1">
-                        Licença de viagem 
-                    </button>
-                    <button type="button" class="botao check hvr-grow-shadow" data-bs-toggle="modal"
-                        data-bs-target="#modal2">
-                        Lista de passageiros 
-                    </button>
-                    <button type="button" class="botao check hvr-grow-shadow" data-bs-toggle="modal"
-                        data-bs-target="#modal3">
-                        CRLV
-                    </button>
-                    <button type="button" class="botao check hvr-grow-shadow" data-bs-toggle="modal"
-                        data-bs-target="#modal4">
-                        CSV ou LIT 
-                    </button>
-                    <button type="button" class="botao check hvr-grow-shadow" data-bs-toggle="modal"
-                        data-bs-target="#modal5">
-                        Apólice de seguro 
-                    </button>
-                    <button type="button" class="botao check hvr-grow-shadow" data-bs-toggle="modal"
-                    data-bs-target="#modal6">
-                        Documentação do motorista 
-                    </button>
+                     <div class="box-painel1">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 align-self-center">
+                                <img src="img/Painel1_persona_mobile.png" alt="">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="row justify-content-center">
+                                    <button type="button" class="botao check hvr-grow-shadow bt1" data-bs-toggle="modal"
+                                        data-bs-target="#modal1">
+                                        Licença de viagem 
+                                    </button>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <button type="button" class="botao check hvr-grow-shadow bt2" data-bs-toggle="modal"
+                                        data-bs-target="#modal2">
+                                        Lista de passageiros 
+                                    </button>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <button type="button" class="botao check hvr-grow-shadow bt3" data-bs-toggle="modal"
+                                        data-bs-target="#modal3">
+                                        CRLV
+                                    </button>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <button type="button" class="botao check hvr-grow-shadow bt4" data-bs-toggle="modal"
+                                        data-bs-target="#modal4">
+                                        CSV ou LIT 
+                                    </button>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <button type="button" class="botao check hvr-grow-shadow bt5" data-bs-toggle="modal"
+                                        data-bs-target="#modal5">
+                                        Apólice de seguro 
+                                    </button>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <button type="button" class="botao check hvr-grow-shadow bt6" data-bs-toggle="modal"
+                                    data-bs-target="#modal6">
+                                        Documentação do motorista 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                     </div>
                 
                     <!-- Modal grande -->
                     <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -123,9 +151,9 @@
                                         <p>É emitida pela empresa de transporte no sistema da ANTT até 12 horas antes do início da viagem e contém as informações detalhadas do itinerário, como nome da empresa de transporte contratada, informações do veículo usado na viagem, data da viagem, cidade de origem e cidade de destino, nome e número dos documentos do(s) motorista(s) que acompanharão a viagem, cidades que serão visitadas no roteiro e a lista de passageiros (conforme os artigos 31 e 32 da Resolução ANTT nº 4.777/2015). No caso de o motorista presente na viagem não ser o mesmo apresentado na licença de viagem, a informação sobre a alteração deverá ser registrada pela empresa de transporte no verso da licença constando nome, sobrenome e dados de identificação do novo motorista que acompanhará a viagem, junto com o carimbo e a assinatura do responsável legal pela transportadora. Esse novo motorista deve ter vínculo empregatício com a empresa, conforme se verá mais adiante, nas informações sobre a carteira nacional de habilitação (CNH) do motorista. </p>
                                         
                                         <figure class="my-5">
-                                            <img src="" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Cópia de uma licença de viagem da ANTT. ">
-                                            <a href="" target="_blank" class="img-zoom d-block d-md-none no-print">
-                                                <img src=""
+                                            <img src="img/img1.jpg" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Cópia de uma licença de viagem da ANTT. ">
+                                            <a href="img/img1.jpg" target="_blank" class="img-zoom d-block d-md-none no-print">
+                                                <img src="img/img1.jpg"
                                                     class="img-fluid mx-auto p-2 mb-3 radius" alt="Cópia de uma licença de viagem da ANTT. ">
                                             </a>
                                             <figcaption class="figure-caption text-center">Licença de viagem <br>
@@ -157,9 +185,9 @@
                                         <p>No modelo ANTT, a lista de passageiros virá anexada com a licença de viagem mencionada anteriormente. Segundo o artigo 36 da Resolução ANTT nº 4.777/2015, essa lista deve incluir o nome, ao menos um sobrenome, o número do documento de identificação e o órgão emissor de cada passageiro. Será com ela que você fará a conferência dos passageiros e liberará o embarque no transporte. </p>
                                         
                                         <figure class="my-5">
-                                            <img src="" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Parte de uma lista de passageiros, modelo da ANTT. ">
-                                            <a href="" target="_blank" class="img-zoom d-block d-md-none no-print">
-                                                <img src=""
+                                            <img src="img/img2.jpg" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Parte de uma lista de passageiros, modelo da ANTT. ">
+                                            <a href="img/img2.jpg" target="_blank" class="img-zoom d-block d-md-none no-print">
+                                                <img src="img/img2.jpg"
                                                     class="img-fluid mx-auto p-2 mb-3 radius" alt="Parte de uma lista de passageiros, modelo da ANTT.  ">
                                             </a>
                                             <figcaption class="figure-caption text-center">Lista de passageiros <br>
@@ -188,9 +216,9 @@
                                     <div class="container">
                                         <p>É o documento que atesta que o veículo está legalmente registrado e licenciado para circular e está citado no inciso I do parágrafo 3º do artigo 31 da Resolução ANTT nº 4.777/2015.  </p>
                                         <figure class="my-5">
-                                            <img src="" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Fotografia de um certificado de registro e licenciamento de veículo (CRLV). ">
-                                            <a href="" target="_blank" class="img-zoom d-block d-md-none no-print">
-                                                <img src=""
+                                            <img src="img/img3.jpg" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Fotografia de um certificado de registro e licenciamento de veículo (CRLV). ">
+                                            <a href="img/img3.jpg" target="_blank" class="img-zoom d-block d-md-none no-print">
+                                                <img src="img/img3.jpg"
                                                     class="img-fluid mx-auto p-2 mb-3 radius" alt="Fotografia de um certificado de registro e licenciamento de veículo (CRLV).  ">
                                             </a>
                                             <figcaption class="figure-caption text-center">CRLV <br>
@@ -222,9 +250,9 @@
                                     <div class="container">
                                         <p>É o documento que atesta que um veículo atende às normas de segurança. É importante salientar que guias de turismo não têm competência técnica para avaliar as condições mecânicas do veículo que será usado na viagem, o que inclui pneus, faróis, entre outros. O certificado de segurança veicular (ou laudo de inspeção técnica) é o documento que atesta que o veículo está em boas condições de uso para a viagem (artigo 31, parágrafo 3º, inciso II, da Resolução ANTT nº 4.777/2015). Essa inspeção é feita pelos órgãos competentes anualmente, mas ônibus com mais de 15 anos de fabricação precisam passar por avaliações a cada seis meses. Você deverá conferir o número da placa do veículo e a data de validade deste documento. </p>
                                         <figure class="my-5">
-                                            <img src="" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Certificado de segurança veicular (CSV) ou laudo de inspeção técnica (LIT).">
-                                            <a href="" target="_blank" class="img-zoom d-block d-md-none no-print">
-                                                <img src=""
+                                            <img src="img/img4.jpg" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Certificado de segurança veicular (CSV) ou laudo de inspeção técnica (LIT).">
+                                            <a href="img/img4.jpg" target="_blank" class="img-zoom d-block d-md-none no-print">
+                                                <img src="img/img4.jpg"
                                                     class="img-fluid mx-auto p-2 mb-3 radius" alt="Certificado de segurança veicular (CSV) ou laudo de inspeção técnica (LIT).">
                                             </a>
                                             <figcaption class="figure-caption text-center">CSV <br>
@@ -255,9 +283,9 @@
                                             Fica vigente durante toda a viagem e é emitida em nome da empresa de transporte. Essa apólice garante indenização em caso de danos causados a passageiros ou aos seus dependentes em decorrência de acidentes durante a viagem, conforme previsto nos artigos 31, parágrafo 3º, inciso III, e 44 da Resolução ANTT nº 4.777/2015. Você deverá conferir o número da placa do veículo e a data de validade deste documento. 
                                         </p>
                                         <figure class="my-5">
-                                            <img src="" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Digitalização de uma apólice de seguro de responsabilidade civil.">
-                                            <a href="" target="_blank" class="img-zoom d-block d-md-none no-print">
-                                                <img src=""
+                                            <img src="img/img5.jpg" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Digitalização de uma apólice de seguro de responsabilidade civil.">
+                                            <a href="img/img5.jpg" target="_blank" class="img-zoom d-block d-md-none no-print">
+                                                <img src="img/img5.jpg"
                                                     class="img-fluid mx-auto p-2 mb-3 radius" alt="Digitalização de uma apólice de seguro de responsabilidade civil. ">
                                             </a>
                                             <figcaption class="figure-caption text-center">Apólice de seguro <br>
@@ -290,9 +318,9 @@
                                             É a comprovação de regularidade do cadastro na ANTT, conforme a regulamentação específica. Você deverá conferir o nome do motorista, a data de validade da carteira nacional de habilitação (CNH), a categoria D, que permite que o profissional dirija veículos para o transporte de passageiros com mais de oito lugares (ônibus, micro-ônibus e <i>vans</i>), além das informações: “Exerce atividade remunerada” e “Transporte coletivo de passageiros”, no verso do documento. Essas informações demonstram o vínculo empregatício do motorista com a empresa de transporte, bem como a certificação no curso de condução de transporte de passageiros, conforme a Resolução ANTT nº 4.777/2015, artigo 31, parágrafo 3º, inciso IV). 
                                         </p>
                                         <figure class="my-5">
-                                            <img src="" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Fotografia da CNH de um motorista.  ">
-                                            <a href="" target="_blank" class="img-zoom d-block d-md-none no-print">
-                                                <img src=""
+                                            <img src="img/img6.jpg" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Fotografia da CNH de um motorista.  ">
+                                            <a href="img/img6.jpg" target="_blank" class="img-zoom d-block d-md-none no-print">
+                                                <img src="img/img6.jpg"
                                                     class="img-fluid mx-auto p-2 mb-3 radius" alt="Fotografia da CNH de um motorista.  ">
                                             </a>
                                             <figcaption class="figure-caption text-center">CNH <br>
@@ -314,9 +342,9 @@
                         Esses documentos garantem a legalidade e a segurança do transporte, evitando impedimentos durante a fiscalização. Por isso, recomenda-se a leitura na íntegra da Resolução ANTT nº 4.777/2015, disponível no endereço eletrônico da ANTT (Agência Nacional de Transportes Terrestres). Para realizar a conferência dessa documentação, você poderá utilizar uma <i>checklist</i> de documentos, conforme o exemplo a seguir, garantindo que nenhum documento seja esquecido. Este modelo estará disponível para <i>download</i> ao final deste conhecimento. 
                     </p>
                     <figure class="my-5">
-                        <img src="" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Cópia de uma licença de viagem da ANTT. ">
-                        <a href="" target="_blank" class="img-zoom d-block d-md-none no-print">
-                            <img src=""
+                        <img src="img/img7.jpg" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Cópia de uma licença de viagem da ANTT. ">
+                        <a href="img/img7.jpg" target="_blank" class="img-zoom d-block d-md-none no-print">
+                            <img src="img/img7.jpg"
                                 class="img-fluid mx-auto p-2 mb-3 radius" alt="Cópia de uma licença de viagem da ANTT. ">
                         </a>
                         <figcaption class="figure-caption text-center">Checklist dos documentos  </figcaption>
@@ -337,7 +365,7 @@
                     <p class="no-print" aria-hidden="true">
                         Clique ou toque sobre a tela para assistir ao vídeo. 
                     </p>
-                    <div class="ratio ratio-16x9">
+                    <div class="ratio ratio-16x9 mb-5">
                         <iframe src="https://www.youtube.com/embed/1DhSfseMvNk?si=jBpb_1efs-eGcRb8"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -368,7 +396,7 @@
                     <p class="no-print" aria-hidden="true">
                         Clique ou toque sobre a tela para assistir ao vídeo. 
                     </p>
-                    <div class="ratio ratio-16x9">
+                    <div class="ratio ratio-16x9 mb-5">
                         <iframe src="https://www.youtube.com/embed/1DhSfseMvNk?si=jBpb_1efs-eGcRb8"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -391,24 +419,32 @@
                     <p>
                         Não se esqueça de que todos os documentos são exigidos por normas e regulamentos governamentais e estão sujeitos a alterações. Portanto, consulte sempre a legislação para estar atualizado antes de uma viagem. A apresentação de documento de identificação é indispensável para o embarque de todos os passageiros, <strong>inclusive do guia de turismo</strong>. Conheça agora quais documentos são válidos para a sistemática de identificação dos passageiros, conforme a Resolução ANTT nº 4.308, de 10 de abril de 2014: 
                     </p>
+                </div>
+                <img src="img/bg_elemento3.png"  class="d-none d-sm-block no-print mt-2 mb-5" aria-hidden="true" alt="">
+                <div class="container">
                     <p class="no-print">Clique ou toque para visualizar o conteúdo. </p>
+                <div class="row mb-5 mt-2">
                     <!-- Button trigger modal -->
-                    <button type="button" class="botao check hvr-grow-shadow" data-bs-toggle="modal"
+                    
+                    <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt01" data-bs-toggle="modal"
                         data-bs-target="#modal1">
-                        Adultos (maiores de 18 anos) 
+                        <span>Adultos</span>
                     </button>
-                    <button type="button" class="botao check hvr-grow-shadow" data-bs-toggle="modal"
-                        data-bs-target="#modal2">Adolescentes (entre 12 e 18 anos incompletos) 
+                    <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt02" data-bs-toggle="modal"
+                        data-bs-target="#modal2"><span>Adolescentes</span>
                     </button>
-                    <button type="button" class="botao check hvr-grow-shadow" data-bs-toggle="modal"
-                        data-bs-target="#modal3">Crianças (até 12 anos incompletos) 
+                    <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt03" data-bs-toggle="modal"
+                        data-bs-target="#modal3"><span>Crianças</span>
                     </button>
-                    <button type="button" class="botao check hvr-grow-shadow" data-bs-toggle="modal"
-                        data-bs-target="#modal4">Indígenas
+                    <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt04" data-bs-toggle="modal"
+                        data-bs-target="#modal4"><span>Indígenas</span>
                     </button>
-                    <button type="button" class="botao check hvr-grow-shadow" data-bs-toggle="modal"
-                        data-bs-target="#modal5">Estrangeiros
+                    <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt05" data-bs-toggle="modal"
+                        data-bs-target="#modal5"><span>Estrangeiros</span>
                     </button>
+                    
+                </div>
+
                     <!-- Modal grande -->
                     <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
@@ -588,12 +624,11 @@
                         Cada profissional prepara o seu <i>speech</i> de acordo com suas características e as peculiaridades de cada grupo. Procure identificar o perfil do grupo. Para grupos mistos, o indicado é um <i>speech</i> mais formal; já para grupos específicos, como de jovens ou de crianças, a linguagem poderá ser mais descontraída. De maneira geral, as pessoas costumam ser mais suscetíveis a uma linguagem descontraída. Avalie o que melhor se adapta ao grupo e lembre-se sempre de obedecer às normas da língua portuguesa e à imparcialidade e ter um distanciamento adequado. Confira um exemplo de <i>speech</i> proposto por Chimenti e Tavares (2007, p. 67): 
                     </p>
                     <figure class="my-5">
-                        <img src="" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Cópia de uma licença de viagem da ANTT. ">
-                        <a href="" target="_blank" class="img-zoom d-block d-md-none no-print">
-                            <img src=""
+                        <img src="img/modelo_folha.jpg" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Cópia de uma licença de viagem da ANTT. ">
+                        <a href="img/modelo_folha.jpg" target="_blank" class="img-zoom d-block d-md-none no-print">
+                            <img src="img/modelo_folha.jpg"
                                 class="img-fluid mx-auto p-2 mb-3 radius" alt="Cópia de uma licença de viagem da ANTT. ">
                         </a>
-                        <figcaption class="figure-caption text-center"> recriar modelo em imagem abaixo como se fosse uma “folha de papel” </figcaption>
                     </figure>
 
                     <p>Confira a seguir o <i>checklist</i> para o <i>speech</i> inicial. </p>
@@ -658,20 +693,46 @@
                     <p>O contato inicial é o momento em que você deve estabelecer uma relação de liderança e de cumplicidade com o grupo. Enfatize a importância do cumprimento dos horários estabelecidos, para que a programação possa ser mais bem-aproveitada. Se a viagem for noturna, você poderá entrar em acordo com o grupo sobre um horário para que as luzes sejam apagadas e para que se faça silêncio, assim, todos poderão descansar. </p>
                     <p>O que você achou dos procedimentos até aqui? Antes de continuar aprendendo os conceitos do restante da viagem, confira um resumo dos procedimentos de embarque: </p>
                     Esteja com o ônibus no local marcado com 30 minutos a 1 hora de antecedência. 
-                    <ul class="marcador-check">
-                        <li>Equipe o ônibus com o serviço de bordo (verificar bebidas e copos). </li>
-                        <li>Guarde ou esconda os brindes (se for o caso). </li>
-                        <li>Apresente o roteiro para o motorista e estabeleça desde o início uma parceria com ele. </li>
-                        <li>Faça o reconhecimento do ônibus (documentos e equipamentos). </li>
-                        <li>Tenha em mãos uma prancheta com a lista dos passageiros e o espelho do ônibus. </li>
-                        <li>Encaminhe os passageiros para a etiquetagem das malas com o motorista. </li>
-                        <li>Ajude os passageiros idosos ou com dificuldades de locomoção a subir no ônibus e a carregar sua bagagem. </li>
-                        <li>Tenha atenção com os passageiros que descem do ônibus depois de já embarcados. </li>
-                        <li>Determine um período de tolerância para os passageiros atrasados. </li>
-                        <li>Viaje somente com passageiros que constem na lista de passageiros (lembrando da regra de inclusão e substituição). </li>
-                        <li>Antes de dar a partida com o motorista, verifique se todos os passageiros estão embarcados. </li>
-                        <li>Traga o seu speech inicial junto ao grupo. </li>
-                    </ul>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <ul class="marcador-check">
+                                <li>Equipe o ônibus com o serviço de bordo (verificar bebidas e copos). </li>
+                                <li>Guarde ou esconda os brindes (se for o caso). </li>
+                                <li>Apresente o roteiro para o motorista e estabeleça desde o início uma parceria com ele. </li>
+                                <li>Faça o reconhecimento do ônibus (documentos e equipamentos). </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="img/ilustra1.png" style="max-width: 100%;" class="no-print d-block mx-auto" alt="">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <img src="img/ilustra2.png" style="max-width: 100%;" class="no-print d-none d-md-block mx-auto" alt="">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <ul class="marcador-check">
+                                <li>Tenha em mãos uma prancheta com a lista dos passageiros e o espelho do ônibus. </li>
+                                <li>Encaminhe os passageiros para a etiquetagem das malas com o motorista. </li>
+                                <li>Ajude os passageiros idosos ou com dificuldades de locomoção a subir no ônibus e a carregar sua bagagem. </li>
+                                <li>Tenha atenção com os passageiros que descem do ônibus depois de já embarcados. </li>
+                            </ul>
+                            <img src="img/ilustra2.png" style="max-width: 100%;" class="no-print d-block d-md-none mx-auto" alt="">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <ul class="marcador-check">
+                                <li>Determine um período de tolerância para os passageiros atrasados. </li>
+                                <li>Viaje somente com passageiros que constem na lista de passageiros (lembrando da regra de inclusão e substituição). </li>
+                                <li>Antes de dar a partida com o motorista, verifique se todos os passageiros estão embarcados. </li>
+                                <li>Traga o seu speech inicial junto ao grupo. </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="img/ilustra3.png" style="max-width: 100%;" class="no-print d-block mx-auto" alt="">
+                        </div>
+                    </div>
                     <p>
                         Com todo o grupo embarcado e informado sobre a programação, dê continuidade à viagem realizando outros procedimentos junto aos passageiros. No próximo tópico, entenda mais o serviço de bordo. 
                     </p>
@@ -770,21 +831,26 @@
                         </div>
                     </div>
                     <p>Antes, ou mesmo após as refeições, é possível organizar atividades de entretenimento para tornar a viagem mais agradável. Você pode promover dinâmicas interativas com o grupo, realizar brincadeiras ou jogos ou ainda exibir filmes ou documentários que sejam do interesse dos passageiros e alinhados ao tema da viagem. Essas atividades ajudam a criar um ambiente descontraído e engajado, promovendo a integração entre os participantes. No próximo tópico, serão mostrados mais detalhes de como planejar e executar essas iniciativas. </p>
+                    
+                </div>
+                <img src="img/bg_elemento6.png"  class="d-none d-sm-block no-print mt-5 mb-3" aria-hidden="true" alt="">
+                <div class="container">
                     <h3>Entretenimento em bordo </h3>
                     <p>O meio de transporte que mais permite atividades recreativas é o ônibus. Existem alguns desafios para o guia de turismo na condução dessas atividades, como a falta de espaço e o cuidado que deve ter para evitar que os passageiros se locomovam dentro do veículo. É preciso sempre ter em mente a segurança do grupo, propondo <strong>atividades que possam ser realizadas com todos os passageiros sentados.</strong> </p>
                     <p>Você deverá preparar as atividades de entretenimento com antecedência, na fase de planejamento da viagem. Para selecionar as mais adequadas, leve em consideração o tipo de transporte que será utilizado no roteiro. Além disso, é bom preparar mais atividades do que o necessário, assim, você poderá selecioná-las de acordo com o grupo. </p>
+                    
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <img src="img/ilustra4.jpg" style="max-width: 100%;" class="no-print d-block mx-auto" alt="">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p>
+                                No início do contato com os passageiros, é interessante promover uma <strong>dinâmica de apresentação</strong> para conhecer o perfil de cada integrante e estimular a interação entre eles. Essa atividade ajuda a criar proximidade, favorecendo a integração e estabelecendo um clima leve e descontraído. Além disso, permite que os viajantes descubram interesses em comum, fortalecendo conexões e criando um ambiente propício para novas amizades e uma convivência harmoniosa durante a viagem. Você poderá pedir que cada passageiro diga seu nome, onde mora e sua profissão, e até relate outras viagens que já realizou com a agência de turismo em questão. 
+                            </p>
 
-                    <figure class="my-5">
-                        <img src="" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Cópia de uma licença de viagem da ANTT. ">
-                        <a href="" target="_blank" class="img-zoom d-block d-md-none no-print">
-                            <img src=""
-                                class="img-fluid mx-auto p-2 mb-3 radius" alt="Cópia de uma licença de viagem da ANTT. ">
-                        </a>
-                        <figcaption class="figure-caption text-center"> inserir imagem que remeta ao guia falando para o ônibus </figcaption>
-                    </figure>
-                    <p>
-                        No início do contato com os passageiros, é interessante promover uma <strong>dinâmica de apresentação</strong> para conhecer o perfil de cada integrante e estimular a interação entre eles. Essa atividade ajuda a criar proximidade, favorecendo a integração e estabelecendo um clima leve e descontraído. Além disso, permite que os viajantes descubram interesses em comum, fortalecendo conexões e criando um ambiente propício para novas amizades e uma convivência harmoniosa durante a viagem. Você poderá pedir que cada passageiro diga seu nome, onde mora e sua profissão, e até relate outras viagens que já realizou com a agência de turismo em questão. 
-                    </p>
+                        </div>
+                    </div>
+                   
                     <div class="grafismo">
                         <div class="destaque gradiente icone refletir">
                             <p>
@@ -795,17 +861,18 @@
                     <p>
                         Algumas pessoas podem se negar a participar das atividades por questões pessoais, como timidez ou mau humor. A sua função como guia de turismo é incentivar a participação de todos, mas, se perceber que um passageiro realmente não quer participar, não insista. Você não deve constranger ou pressionar ninguém. Há aqueles que se divertem apenas olhando a participação dos outros e que, assim, se sentem muito mais à vontade. Oferecer prêmios e brindes pode motivar o grupo a participar das dinâmicas. Isso aumenta a disputa e a animação. 
                     </p>
-                    <figure class="my-5">
-                        <img src="" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Cópia de uma licença de viagem da ANTT. ">
-                        <a href="" target="_blank" class="img-zoom d-block d-md-none no-print">
-                            <img src=""
-                                class="img-fluid mx-auto p-2 mb-3 radius" alt="Cópia de uma licença de viagem da ANTT. ">
-                        </a>
-                        <figcaption class="figure-caption text-center">  inserir imagem que remeta a jogos –  </figcaption>
-                    </figure>
-                    <p>
-                        Várias atividades de recreação, quando adaptadas, podem ser realizadas no transporte rodoviário. As mais comuns são bingo, cantoria, jogos de adivinhação, desafios, entre outras. Tenha em mente apenas que algumas atividades indicadas para um tipo de grupo podem ser totalmente inadequadas para outros. É fundamental adequar as atividades programadas ao perfil do grupo. Antes de iniciar a brincadeira, certifique-se de que as regras e os objetivos estabelecidos ficaram bem explicados para todos. Considere as suas próprias características, pois certas atividades podem se tornar desastrosas caso o guia não as saiba conduzir. Além disso, algumas atividades podem requerer pulso firme e autoridade, dependendo do rumo que tomarem. 
-                    </p>
+                    
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <p>
+                                Várias atividades de recreação, quando adaptadas, podem ser realizadas no transporte rodoviário. As mais comuns são bingo, cantoria, jogos de adivinhação, desafios, entre outras. Tenha em mente apenas que algumas atividades indicadas para um tipo de grupo podem ser totalmente inadequadas para outros. É fundamental adequar as atividades programadas ao perfil do grupo. Antes de iniciar a brincadeira, certifique-se de que as regras e os objetivos estabelecidos ficaram bem explicados para todos. Considere as suas próprias características, pois certas atividades podem se tornar desastrosas caso o guia não as saiba conduzir. Além disso, algumas atividades podem requerer pulso firme e autoridade, dependendo do rumo que tomarem. 
+                            </p>
+
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="img/ilustra5.jpg" style="max-width: 100%;" class="no-print d-block mx-auto" alt="">
+                        </div>
+                    </div>
                     <div class="grafismo">
                         <div class="destaque gradiente icone nota">
                             <p>
@@ -933,7 +1000,7 @@
                     <p class="no-print" aria-hidden="true">
                         Clique ou toque sobre a tela para assistir ao vídeo. 
                     </p>
-                    <div class="ratio ratio-16x9">
+                    <div class="ratio ratio-16x9 mb-5">
                         <iframe src="https://www.youtube.com/embed/1DhSfseMvNk?si=jBpb_1efs-eGcRb8"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -949,8 +1016,7 @@
                     </div>
                     <p class="no-print">Clique ou toque no botão a seguir para fazer o download dos arquivos disponíveis neste conhecimento. </p>
     
-                    <h3>Botão para baixar PDF</h3>
-                    <a role="button" class="botao bt-pdf hvr-grow-shadow" href="" target="_blank">
+                    <a role="button" class="botao bt-pdf hvr-grow-shadow" href="img/documentos.pdf" target="_blank">
                         Baixar PDF
                     </a>
                     <h2>Encerramento</h2>
@@ -961,15 +1027,17 @@
 
 
                 </div>
+            <img src="img/bg_elemento7.png"  class="d-none d-sm-block no-print mt-5" aria-hidden="true" alt="">
+
                 <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>
             </div>
         </section>
         <!-- Paginação-->
-        <footer class="text-center no-print d-flex justify-content-center mx-auto">
+        <!-- <footer class="text-center no-print d-flex justify-content-center mx-auto">
             <ul class="pagination">
 
             </ul>
-        </footer>
+        </footer> -->
     </section>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>

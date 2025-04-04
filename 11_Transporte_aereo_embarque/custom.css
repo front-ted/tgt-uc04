@@ -1,6 +1,6 @@
 
 h2, h3, h4, h5 {
-    color: #700003;
+    /* color: #700003; */
 }
 .paginas{
     background-image: url('img/background_2.jpg');
@@ -34,6 +34,18 @@ h2, h3, h4, h5 {
     border-radius: 0px;
     background-repeat: no-repeat;
     z-index: 20;
+    position: relative;
+}
+.painel_clicavel_bt06{
+    width: 276px;
+    height: 275px;
+    background-size:255px 223px;
+}
+.painel_clicavel_bt07{
+    width: 276px;
+    height: 275px;
+    background-size:219px 267px;
+    background-position: 0px 0px;
 }
 .painel_clicavel_bt01:hover,.painel_clicavel_bt02:hover,.painel_clicavel_bt03:hover,.painel_clicavel_bt04:hover,.painel_clicavel_bt05:hover
 ,.painel_clicavel_bt06:hover,.painel_clicavel_bt07:hover{
@@ -70,6 +82,11 @@ h2, h3, h4, h5 {
     width: 213px;
     height: 213px;
 }
+.painel_clicavel_bt06:hover,.painel_clicavel_bt07:hover{
+    background-image: url('img/pn2_hoover.png');
+    width: 275px;
+    height: 275px;
+}
 
 .painel_clicavel_bt01:hover::before,.painel_clicavel_bt02:hover::before,.painel_clicavel_bt03:hover::before,.painel_clicavel_bt04:hover::before,
 .painel_clicavel_bt05:hover::before{
@@ -79,6 +96,18 @@ h2, h3, h4, h5 {
     position: relative;
     width: 213px;
     height: 213px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+}
+
+.painel_clicavel_bt06:hover::before,.painel_clicavel_bt07:hover::before{
+    content: '';
+    z-index: 1;
+    display: block;
+    position: relative;
+    width: 275px;
+    height: 275px;
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: transparent;
@@ -103,6 +132,15 @@ h2, h3, h4, h5 {
     background-image: url('img/icon_05.png') !important;
     background-size:170px 137px;
 }
+.painel_clicavel_bt06:hover::before{
+    background-image: url('img/pn2_icon_01.png') !important;
+    background-size:255px 223px;
+}
+.painel_clicavel_bt07:hover::before{
+    background-image: url('img/pn2_icon_02.png') !important;
+    background-size:219px 267px;
+    background-position-x: 20px;
+}
 /* .painel_clicavel_bt01:hover::before{
     content: '';
     z-index: 1;
@@ -125,7 +163,50 @@ h2, h3, h4, h5 {
     box-shadow: none;
     background-repeat: no-repeat;
 }
+
+.painel_clicavel_bt01:hover span,.painel_clicavel_bt02:hover span,.painel_clicavel_bt03:hover span,.painel_clicavel_bt04:hover span,.painel_clicavel_bt05:hover span{}
+.painel_clicavel_bt06:hover span,.painel_clicavel_bt07:hover span{
+
+}
+.painel_clicavel_bt01 span,.painel_clicavel_bt02 span,.painel_clicavel_bt03 span,.painel_clicavel_bt04 span,.painel_clicavel_bt05 span{
+    position: absolute;
+    display: block;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 10px;
+    color: black;
+    font-weight: 400;
+    border: 1px solid orange;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 0.8em;
+    line-height: 0.8em;
+
+}
+.painel_clicavel_bt06 span,.painel_clicavel_bt07 span{
+    position: absolute;
+    display: block;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -50px;
+    padding: 10px 10px;
+    color: black;
+    font-weight: 400;
+    border: 1px solid orange;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+.container-painel2, .container-painel1{
+    margin-bottom: 100px;
+}
 .marcador-padrao{position: relative; max-width: 700px;}
+.box-float-left{position: relative;}
 .float-left{
     position: absolute;
     top: 0px;
@@ -133,12 +214,20 @@ h2, h3, h4, h5 {
     width: 400px;
     z-index: 100;
 }
-.float-left2{
+.float-right{
     position: absolute;
-    bottom: 150px;
-    left: 0;
-    width: 200px;
+    top: 0px;
+    left: -520px;
+    width: 488px;
     z-index: 100;
+}
+.paralax01 {
+    background-image: url(img/imgparonamica_01.jpg);
+}
+.box-paralax {
+    height: 433px;
+    /* background-attachment: fixed; */
+    margin: 60px 0px;
 }
 @media screen and (max-width: 800px){
     .relogio_float{
