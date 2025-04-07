@@ -336,4 +336,8 @@
   ol[type="a"] li{list-style-type: lower-alpha !important;}
 
   .bt-tooltip{text-decoration: underline;}
+
+  .accordion-transcricao, .modal.transcricao {
+    border: 0px solid !important;
+  }
 }

@@ -322,4 +322,8 @@ td {
 tbody td:first-child {
   border-left: 0;
 }
+
+.accordion-transcricao, .modal.transcricao {
+  border: 0px solid !important;
+}
 }

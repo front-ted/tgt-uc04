@@ -42,21 +42,21 @@
     position: absolute;
     width: 465px;
     top: 8802px;
-    left: -432px;
+    left: -482px;
     z-index: 100;
 }
 .float-right{
     position: absolute;
     width: 450px;
     top: 2000px;
-    right: -432px;
+    right: -471px;
     z-index: 100;
 }
 .float-right2{
     position: absolute;
     width: 367px;
     top: 12000px;
-    right: -432px;
+    right: -482px;
     z-index: 100;
 }
 /* bts moda */
