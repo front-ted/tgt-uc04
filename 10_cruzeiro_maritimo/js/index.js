@@ -63,12 +63,11 @@ if (URLHREF.includes("?page")) {
     animeCrop.classList.remove("d-none");
     btnsMobile.classList.remove("d-none");
     p1.querySelector(".btnsDesk").click();
-    const getRandomInt = (max) => {
-      return Math.floor(Math.random() * max);
-    };
   }
 }
-
+const getRandomInt = (max) => {
+  return Math.floor(Math.random() * max);
+};
 // inicio do controle das animações por sprites
 
 let globalId;
@@ -160,15 +159,19 @@ const animateArmInConfig = {
   direction: "normal",
 };
 
-const toggleHigh = (nodes) => {
+const toggleHigh = (nodes, event) => {
   nodes.forEach((node) => {
-    node.classList.toggle("high");
+    if (event == "over") {
+      node.classList.add("high");
+    } else {
+      node.classList.remove("high");
+    }
   });
 };
 
 if (p2) {
   p2.addEventListener("mouseover", (e) => {
-    toggleHigh([p3Img, mouthWaiter, tray, arm, p2Img]);
+    toggleHigh([p3Img, tray, arm, p2Img], "over");
     mouthWaiter.classList.toggle("mouth2");
     mouthWaiter.classList.toggle("mouth1");
     mouthWaiter.setAttribute(
@@ -200,7 +203,7 @@ if (p2) {
 
 if (p3) {
   p3.addEventListener("mouseover", (e) => {
-    toggleHigh([p3Img, tray, arm, p2Img]);
+    toggleHigh([p3Img, tray, arm, p2Img], "over");
     mouthWaiter.classList.toggle("mouth2");
     mouthWaiter.classList.toggle("mouth1");
     mouthWaiter.setAttribute(
@@ -229,11 +232,11 @@ if (p3) {
   });
 }
 if (n3) {
-  n3.addEventListener("mouseover", (e) => toggleHigh([n3Img, n4Img]));
+  n3.addEventListener("mouseover", (e) => toggleHigh([n3Img, n4Img], "over"));
   n3.addEventListener("mouseout", (e) => toggleHigh([n3Img, n4Img]));
 }
 if (n4) {
-  n4.addEventListener("mouseover", (e) => toggleHigh([n3Img, n4Img]));
+  n4.addEventListener("mouseover", (e) => toggleHigh([n3Img, n4Img], "over"));
   n4.addEventListener("mouseout", (e) => toggleHigh([n3Img, n4Img]));
 }
 // Final do controle das animações de hover

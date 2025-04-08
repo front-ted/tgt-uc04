@@ -107,10 +107,13 @@ img {
       font-size: 1px;
       img {
         cursor: pointer;
+        &:hover {
+          filter: drop-shadow(0 0 10px gold);
+        }
       }
       &:hover {
         img {
-          filter: drop-shadow(0 0 0 gold);
+          filter: drop-shadow(0 0 10px gold);
         }
       }
     }
