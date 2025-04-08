@@ -1,3 +1,460 @@
-.marcador-custom{
-    list-style-type: '⚓';  padding-inline-start: 3ch;
+.marcador-custom {
+  list-style-type: "⚓";
+  padding-inline-start: 3ch;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.overHidden {
+  overflow: hidden;
+}
+#topo {
+  border-width: 0;
+  border-color: #c01c02;
+  border-style: solid;
+  border-bottom-width: 3px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  transition: filter 0.5s;
+
+  &.high {
+    filter: drop-shadow(0 0 10px gold);
+  }
+}
+
+.d-none {
+  display: none;
+}
+.btnsMobile {
+  display: none;
+
+  @media (max-width: 991px) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 25px;
+    padding: 25px 25px;
+    width: 100%;
+    border: 3px solid #c01c02;
+    background-color: #fff1d3;
+    flex-grow: 1;
+  }
+  button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #fff1d3;
+    position: relative;
+    color: #c01c02;
+    font-weight: 600;
+    font-size: 15px;
+    border: 2px solid #c01c02;
+    box-shadow: 2px 2px 5px black;
+    &:hover {
+      box-shadow: inset 2px 2px 5px black;
+    }
+    &.click {
+      box-shadow: inset 2px 2px 5px black;
+    }
+  }
+}
+.animeCrop {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    aspect-ratio: 16/9;
+    width: 100%;
+    display: block;
+    @media (max-width: 991px) {
+      z-index: 99;
+      touch-action: none;
+      pointer-events: none;
+    }
+  }
+
+  .scene {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    top: 0;
+    left: calc(50% - 1920px / 2);
+    right: 0;
+    bottom: 0;
+    border: 6px solid #c01c02;
+    border-top-width: 0;
+    @media (max-width: 991px) {
+      border-bottom-width: 0;
+    }
+
+    .btnsDesk {
+      border: 2px solid transparent;
+      background: transparent;
+      color: transparent;
+      font-size: 1px;
+      img {
+        cursor: pointer;
+      }
+      &:hover {
+        img {
+          filter: drop-shadow(0 0 0 gold);
+        }
+      }
+    }
+    .obj {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .back {
+      .logos {
+        position: absolute;
+        top: 5%;
+        left: 0;
+        z-index: 4;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .logo {
+          width: 30%;
+          filter: drop-shadow(0 0 10px #c01c02);
+        }
+        .title {
+          width: 60%;
+        }
+      }
+    }
+    .middle {
+      position: absolute;
+      display: grid;
+      grid-template-columns: repeat(50, 1fr);
+      grid-template-rows: repeat(50, 1fr);
+    }
+    .front {
+      position: absolute;
+      display: grid;
+      grid-template-columns: repeat(50, 1fr);
+      grid-template-rows: repeat(50, 1fr);
+
+      .n1,
+      .n2,
+      .n3,
+      .n4 {
+        width: auto;
+        height: auto;
+        z-index: 1;
+        animation-name: waveBoats;
+        transform: translate(0, 0);
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+      }
+      .n2,
+      .n3,
+      .p2,
+      .p1,
+      .h {
+        position: relative;
+        &::before {
+          content: "";
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translate(-50%, -100%);
+          border-radius: 50%;
+          border: 3px solid rgba(255, 242, 213, 1);
+          background-image: url("../img/animations/circle-question-regular.svg"),
+            repeating-linear-gradient(
+              0deg,
+              rgba(255, 242, 213, 1) 10px,
+              rgba(251, 228, 189, 1) 20px
+            );
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          @media (max-width: 991px) {
+            display: none;
+          }
+        }
+        &.click {
+          &::before {
+            content: "";
+            background-image: url("../img/animations/check.svg");
+            background-color: transparent;
+            border-color: transparent;
+          }
+        }
+      }
+      .n1 {
+        grid-row: span 7 / span 7;
+        grid-column: span 7 / span 7;
+        grid-column-start: 32;
+        grid-row-start: 21;
+        animation-duration: 5s;
+      }
+      .n2 {
+        grid-row: span 7 / span 7;
+        grid-column: span 6 / span 6;
+        grid-column-start: 21;
+        grid-row-start: 21;
+        animation-duration: 5.5s;
+      }
+      .n3 {
+        grid-row: span 10 / span 10;
+        grid-column: span 7 / span 7;
+        grid-column-start: 7;
+        grid-row-start: 21;
+        animation-duration: 7s;
+      }
+      .n4 {
+        grid-row: span 4 / span 4;
+        grid-column: span 3 / span 3;
+        grid-column-start: 12;
+        grid-row-start: 26;
+        animation-duration: 6.5s;
+        .n {
+          transform: translate(0%, 10%);
+        }
+      }
+      .h {
+        grid-row: span 12 / span 12;
+        grid-column: span 9 / span 9;
+        grid-column-start: 38;
+        grid-row-start: 4;
+        transform: rotateZ(-30deg);
+        z-index: 1;
+        width: auto;
+        height: auto;
+        z-index: 1;
+        animation-name: fly;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+        &::before {
+          left: 0;
+          transform: rotate(30deg) translate(-50%, -100%);
+        }
+      }
+      &.wave {
+        animation-name: wave;
+        animation-duration: 7s;
+        transform: translate(0, 0);
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+      }
+      .p1 {
+        grid-row: span 4 / span 16;
+        grid-column: span 3 / span 8;
+        grid-column-start: 19;
+        grid-row-start: 27;
+        z-index: 2;
+        &::before {
+          left: 0;
+          transform: translate(-50%, 0);
+          background-image: url("../img/animations/Camada\ 2.png"),
+            repeating-linear-gradient(
+              0deg,
+              rgba(255, 242, 213, 1) 10px,
+              rgba(251, 228, 189, 1) 20px
+            );
+        }
+      }
+      .hair-woman {
+        grid-column: span 1 / span 1;
+        grid-row: span 1 / span 1;
+        grid-column-start: 21;
+        grid-row-start: 29;
+        z-index: 3;
+        transform: translate(-10%, -70%);
+        img {
+          transform-origin: bottom left;
+          animation-name: hair;
+          animation-duration: 5s;
+          transform: translate(0, 0);
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: backwards;
+          animation-iteration-count: infinite;
+        }
+      }
+      .p2 {
+        grid-row: span 4 / span 10;
+        grid-column: span 3 / span 10;
+        grid-column-start: 27;
+        grid-row-start: 28;
+        transform: translate(-5%, -6%);
+        z-index: 2;
+        &::before {
+          left: 40%;
+          top: -40%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .mouthMan {
+        grid-column: span 1 / span 1;
+        grid-row: span 1 / span 1;
+        grid-column-start: 28;
+        grid-row-start: 29;
+        z-index: 3;
+        /* transform: translate(45%, 0%); */
+        transform: translate(45%, -15%);
+        img {
+          width: inherit;
+          height: inherit;
+        }
+      }
+      .hair-man {
+        grid-column: span 1 / span 1;
+        grid-row: span 2 / span 1;
+        grid-column-start: 28;
+        grid-row-start: 27;
+        transform: translate(0%, 35%);
+        z-index: 3;
+        img {
+          transform-origin: bottom left;
+          animation-name: hair;
+          animation-duration: 5s;
+          transform: translate(0, 0);
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: backwards;
+          animation-iteration-count: infinite;
+        }
+      }
+      .arm {
+        grid-column: span 2 / span 2;
+        grid-row: span 4 / span 5;
+        grid-column-start: 29;
+        grid-row-start: 26;
+        z-index: 2;
+        transform: translate(-10%, 0);
+        img {
+          transform-origin: bottom left;
+          transform: rotateZ(45deg);
+          &.animate {
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: backwards;
+            &.in {
+              animation-name: arm;
+            }
+            &.out {
+              animation-name: arm;
+              animation-direction: reverse;
+            }
+          }
+        }
+      }
+      .p3 {
+        grid-row: span 4 / span 19;
+        grid-column: span 3 / span 3;
+        grid-column-start: 32;
+        grid-row-start: 20;
+        z-index: 1;
+      }
+      .mouthWaiter {
+        grid-column: span 1 / span 1;
+        grid-row: span 1 / span 1;
+        grid-column-start: 33;
+        grid-row-start: 23;
+        z-index: 3;
+        img {
+          width: inherit;
+          height: inherit;
+        }
+        .mouth1 {
+          /* transform: translate(45%, -55%); */
+          transform: translate(45%, -140%);
+        }
+        .mouth2 {
+          /* transform: translate(25%, -50%); */
+          transform: translate(25%, -100%);
+        }
+      }
+      .tray {
+        grid-row: span 3 / span 3;
+        grid-column: span 2 / span 2;
+        grid-column-start: 31;
+        grid-row-start: 25;
+        z-index: 3;
+        transform: translate(10%, 0);
+      }
+      .navio {
+        touch-action: none;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, 3px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(0, 3px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes waveBoats {
+  0% {
+    transform: rotateZ(5deg) translate(5px, 0);
+  }
+  50% {
+    transform: rotateZ(-5deg) translate(-5px, 5px);
+  }
+  100% {
+    transform: rotateZ(5deg) translate(5px, 0);
+  }
+}
+
+@keyframes fly {
+  0% {
+    transform: translateY(-10px) rotateZ(-30deg);
+  }
+  50% {
+    transform: translateY(10px) rotateZ(-30deg);
+  }
+  100% {
+    transform: translateY(-10px) rotateZ(-30deg);
+  }
+}
+
+@keyframes hair {
+  0% {
+    transform: rotateZ(5deg);
+  }
+  50% {
+    transform: rotateZ(-5deg);
+  }
+  100% {
+    transform: rotateZ(5deg);
+  }
 }
