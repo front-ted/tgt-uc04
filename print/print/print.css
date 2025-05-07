@@ -292,8 +292,29 @@
     page-break-inside: avoid;
   }
 
+  /*
   .splide__pagination{display: none !important;}
   .splide__list li{list-style: none !important;}
+  */
+
+  .pagina ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+  }
+  .pagina ul {
+    display: block;
+    list-style-type: circle;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+  }
 
   /* código para tabela não desconfigurar na versão impressa */
   table.text-left.align-middle {
@@ -339,5 +360,12 @@
 
   .accordion-transcricao, .modal.transcricao {
     border: 0px solid !important;
+  }
+
+  .modal-header h5{
+    margin-top: -40px !important;
+  }
+  .modal-body .container{
+    padding: 0px;
   }
 }
