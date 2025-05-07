@@ -117,3 +117,7 @@ h2.titulo_img_header{margin-left: 0;}
 @media screen and (max-width: 1040px){
     .float-left2{ display: none;}
 }
+
+@media screen and (max-width: 500px){
+    .paralax01, .paralax02{ display: none;}
+}
