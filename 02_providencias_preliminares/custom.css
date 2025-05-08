@@ -3,6 +3,12 @@
     background-size: 100% 100%;
     padding-bottom: 70px;
 }
+
+.pagina{
+    background: url("img/flutuante_1.png") no-repeat left 0px top 26% / 17%,
+                url("img/flutuante_2.png") no-repeat right 0px bottom 37% / 17%;
+}
+
 .bloco1{
     background-image: url('img/background_1.jpg');
     background-size: cover;
@@ -198,3 +204,4 @@ h2, h3, h4, h5 {
         transform: rotate(360deg);
     }
 }
+
