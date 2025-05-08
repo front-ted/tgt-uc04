@@ -758,6 +758,7 @@ ol[type="a"] li{list-style-type: lower-alpha !important;}
 
 .modal-header h5{
   margin: 30px 0px 20px 0px !important;
+  font-size: 16px !important;
 }
 .modal-body .container{
   padding: 0px;
