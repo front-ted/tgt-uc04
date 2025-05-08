@@ -44,7 +44,7 @@ h2, h3, h4, h5 {
 .painel_clicavel_bt01::before, .painel_clicavel_bt02::before, .painel_clicavel_bt03::before{
     content: '';
     position: absolute;
-    top: -21px;
+    top: -22px;
     left: -15px;
     width: 280px;
     height: 280px;
@@ -56,7 +56,7 @@ h2, h3, h4, h5 {
 }
 .painel_clicavel_bt01:hover::before, .painel_clicavel_bt02:hover::before, .painel_clicavel_bt03:hover::before{
     opacity: 1;
-    animation: rotate 4s linear infinite;
+    animation: rotate 5s linear infinite;
 }
 .painel_clicavel_bt01::after {
     content: '';
@@ -99,6 +99,14 @@ h2, h3, h4, h5 {
     transition: opacity 5s ease-in;
     border-radius: 20px;
     z-index: -1;
+}
+
+.img-check{
+    position: absolute;
+    width: 35px;
+    right: -16px;
+    margin-top: 30px;
+    display: none;
 }
 
 
