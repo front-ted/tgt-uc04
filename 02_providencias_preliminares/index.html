@@ -63,6 +63,7 @@
         <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
         <section class="paginas">
             <div class="pagina">
+                <p class="sr-only no-print">Atenção: este conhecimento contém diversos exemplos em PDF para download na versão digital. Assim, para imprimir o arquivo em PDF desejado, acesse a tela inicial do curso e clique no botão de impressão, na opção “Documentos da pasta do Guia”. Nela constam todos os exemplos em PDF que estão também disponíveis no conteúdo digital.</p>
                 <div class="bloco1">
                     <div class="container">
                         <h2>Providências preliminares à prestação de serviços: equipamentos e utensílios para guiamento e documentos da <strong>pasta do guia</strong> </h2>
@@ -76,21 +77,19 @@
                     <p>A atividade de guiar turistas envolve uma complexa rede de responsabilidades, compartilhadas entre o guia de turismo, a agência de viagens e a transportadora. Cada um desses atores desempenha um papel crucial para garantir uma experiência segura e satisfatória aos viajantes. </p>
                     <p>Assim, para uma preparação e um planejamento eficientes, o guia precisa ter o conhecimento do que exigir da agência que o está contratando, bem como da empresa transportadora que realizará a viagem. </p>
                     <p>Cada um desses profissionais e entidades têm responsabilidades distintas, e o guia de turismo precisa ser capaz de se adaptar às diversas realidades de trabalho conforme as diretrizes e orientações das empresas aos quais presta o serviço. </p>
-                    <p>Clique ou toque para visualizar o conteúdo. </p>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt01" data-bs-toggle="modal"
-                    data-bs-target="#modal1" aria-label="Responsabilidades do guia de turismo">
-                        
-                    </button>
-                    <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt02" data-bs-toggle="modal"
-                        data-bs-target="#modal2" aria-label="Responsabilidades da agência de turismo ">
-                        
-                    </button>
-                    <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt03" data-bs-toggle="modal"
-                        data-bs-target="#modal3" aria-label="Responsabilidades da empresa transportadora">
-                        
-                    </button>
-                
+                    <p class="no-print">Clique ou toque para visualizar o conteúdo. </p>
+                    <div class="my-5 text-center no-print">
+                        <button type="button" class="painel_clicavel_bt01" data-bs-toggle="modal" data-bs-target="#modal1" aria-label="Responsabilidades do guia de turismo">
+                            <img src="../assets/images/check.svg" class="img-check check-bt01">
+                        </button>
+                        <button type="button" class="painel_clicavel_bt02" data-bs-toggle="modal" data-bs-target="#modal2" aria-label="Responsabilidades da agência de turismo">
+                            <img src="../assets/images/check.svg" class="img-check check-bt02">
+                        </button>
+                        <button type="button" class="painel_clicavel_bt03" data-bs-toggle="modal" data-bs-target="#modal3" aria-label="Responsabilidades da empresa transportadora">
+                            <img src="../assets/images/check.svg" class="img-check check-bt03">
+                        </button>
+                    </div>
+
                     <!-- Modal grande -->
                     <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
@@ -166,14 +165,14 @@
                             </div>
                         </div>
                     </div>
+
                     <p>
                         Compreendidos os papéis de cada entidade em um roteiro de viagem, é fundamental que o guia de turismo exerça suas atividades com dedicação, respeito e responsabilidade, zelando tanto pelo turismo no Brasil quanto pela empresa para a qual presta serviços. 
                     </p>
                     <p>A seguir, aprenda mais detalhes sobre os procedimentos preliminares à viagem, começando pelo contrato de trabalho. 
                     </p>
                     <h3>Procedimentos preliminares: contrato de trabalho </h3>
-                    <p>
-                        O mercado de trabalho oferece diferentes áreas de atuação ao profissional guia de turismo. As atividades do guia têm natureza autônoma, e ele geralmente é contratado por trabalho, como free-lancer. No entanto, nada impede que seja contratado por agência de turismo por regime de CLT (Consolidação das Leis do Trabalho). </p>
+                    <p>O mercado de trabalho oferece diferentes áreas de atuação ao profissional guia de turismo. As atividades do guia têm natureza autônoma, e ele geralmente é contratado por trabalho, como <i>free-lancer</i>. No entanto, nada impede que seja contratado por agência de turismo por regime de CLT (Consolidação das Leis do Trabalho). </p>
                     <p>Cabe ressaltar que o artigo 12 da Portaria MTUR nº 37, de 11 de novembro de 2021, indica que o guia de turismo poderá exercer suas atividades não só como funcionário de agência de turismo ou de transportadora turística, mas também como contratado diretamente pelo consumidor final. 
                     </p>
                     <div class="grafismo">
@@ -186,15 +185,15 @@
                     <p>Além do valor do serviço prestado e das despesas relacionadas com a sua operação e a sua prestação, o contratante deve definir como serão custeadas as despesas de viagem do profissional, que incluem transporte, alimentação, hospedagem, ingressos e seguro. </p>
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <img src="img/print_1.png" class="img-fluid d-block borda-colorida mx-auto mb-4 print mt-5" alt="">
+                            <img src="img/print_1.png" class="img-fluid d-none d-md-block mx-auto mb-4 no-print mt-5" alt="">
                         </div>
                         <div class="col-12 col-md-8">
                             <h4>Contrato de trabalho </h4>
-                            <p>
-                                O contrato de trabalho é a única garantia do profissional para ter respeitados seus direitos e deveres e também para evitar inadimplência no pagamento. Trabalhar sem assinar um contrato representa alto risco, pois, sem ele, não há formalização das condições dos serviços que o guia de turismo prestará. Além disso, o contrato também protege o contratante. 
-                            </p>
-                            <p>Confira um modelo de contrato de prestação de serviços, adaptado do portal do Sindicato dos Guias de Turismo do Estado de São Paulo (Sindegtur SP). Esse modelo estará disponível para download ao final deste conhecimento. 
-                            </p>
+                            <p>O contrato de trabalho é a única garantia do profissional para ter respeitados seus direitos e deveres e também para evitar inadimplência no pagamento. Trabalhar sem assinar um contrato representa alto risco, pois, sem ele, não há formalização das condições dos serviços que o guia de turismo prestará. Além disso, o contrato também protege o contratante. </p>
+                            <p>Este é um modelo de contrato de prestação de serviços, adaptado do portal do Sindicato dos Guias de Turismo do Estado de São Paulo (Sindegtur SP), que estará disponível para <i>download</i> ao afinal deste conhecimento.</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="img/print_1.png" class="img-fluid mx-auto mb-4 only-print mt-5 d-block d-md-none" alt="">
                         </div>
                     </div>
                     <div class="grafismo">
@@ -212,20 +211,20 @@
                 <div class="container">
                     <h3>Procedimentos de documentação preliminar </h3>
                     <p>O primeiro passo é obter todas as informações a respeito do roteiro que você executará e obter as orientações de conduta da agência. Assim, inicia-se a etapa de preparação, que inclui organizar toda a documentação necessária e preparar o material de apoio para a condução do grupo durante a viagem. </p>
-                    <p>Esses documentos necessários para a viagem costumam ser reunidos na pasta do guia, entregue pela agência alguns dias antes da execução do roteiro. Nesta pasta constarão todos os documentos que serão utilizados e servirão como elementos norteadores para toda a condução do roteiro. </p>
+                    <p>Esses documentos necessários para a viagem costumam ser reunidos na <b>pasta do guia</b>, entregue pela agência alguns dias antes da execução do roteiro. Nesta pasta constarão todos os documentos que serão utilizados e servirão como elementos norteadores para toda a condução do roteiro. </p>
                     <p>Lembre-se de sempre fazer a conferência da documentação junto ao seu contratante na entrega do material. Fique atento a todos os detalhes da programação da viagem, inclusive às condições gerais, para que possa esclarecer todas as dúvidas nesse momento. </p>
                     <p>Vale lembrar que a forma de organização pode variar entre empresas. Algumas consolidam as informações em um único documento, como o roteiro do guia combinado com contatos de fornecedores e a ordem de serviço. No entanto, certos documentos são indispensáveis, como o roteiro, a lista de passageiros e a <i>rooming list</i>, entre outros. </p>
                     <p>Ainda, ao realizar algum roteiro com contratação direta pelo consumidor final, ou seja, o turista, você será o único responsável por organizar a documentação da viagem e, por isso, é fundamental que domine o conhecimento de cada um dos documentos. </p>
                     <p>O guia de turismo deve cumprir rigorosamente o programa contratado pelos passageiros, realizando os passeios acordados, orientando sobre procedimentos ao longo da viagem e prestando atendimento sempre que necessário. Para desempenhar essas funções com eficiência e segurança, é essencial reunir informações detalhadas sobre o roteiro, incluindo meios de transporte, hospedagem, restaurantes e passeios, garantindo assim uma organização prévia adequada. </p>
                     <p>Confira antecipadamente com o contratante as informações a respeito do roteiro. Essas informações referem-se basicamente a: </p>
-                    <figure class="my-5 no-print" aria-hidden="true">
+                    <figure class="my-5 print" aria-hidden="true">
                         <img src="img/prancheta.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="">
                         <a href="img/prancheta.png" target="_blank" class="img-zoom d-block d-md-none no-print">
                             <img src="img/prancheta.png"
                                 class="img-fluid mx-auto p-2 mb-3 radius" alt="">
                         </a>
                     </figure>
-                    <ul class="marcador-check print visually-hidden">
+                    <ul class="marcador-check no-print visually-hidden">
                         <li>Tipo de veículo a ser utilizado (van, micro-ônibus, ônibus convencional, leito ou double-decker etc.) </li>
                         <li>Distâncias a serem percorridas por dia e tempo previsto para a viagem </li>
                         <li>Rodovias utilizadas </li>
@@ -237,38 +236,29 @@
                         <li>Hotéis do roteiro (localização, infraestrutura, acesso etc.) </li>
                         <li>Restaurantes utilizados (alimentação inclusa, tipo de refeição e culinária disponíveis, localização, acesso etc.) </li>
                     </ul>
-                    <p>
-                        Depois de toda a preparação, é o momento de o guia estudar o roteiro e os locais a serem visitados para que possa estar preparado no dia da viagem. Assim, poderá explanar aos seus turistas os aspectos históricos, geográficos, culturais e ambientais com segurança e qualidade. 
-                    </p>
-                    <p>
-                        Conheça agora cada um dos documentos que compõem a <strong>pasta do guia</strong>. 
-                    </p>
+                    <p>Depois de toda a preparação, é o momento de o guia estudar o roteiro e os locais a serem visitados para que possa estar preparado no dia da viagem. Assim, poderá explanar aos seus turistas os aspectos históricos, geográficos, culturais e ambientais com segurança e qualidade.</p>
+                    <p>Conheça agora cada um dos documentos que compõem a <strong>pasta do guia</strong>.</p>
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <img src="img/print_2.png" class="img-fluid d-block borda-colorida mx-auto mb-4 print mt-5" alt="">
+                            <img src="img/print_2.png" class="img-fluid d-none d-md-block mx-auto mb-4 no-print mt-5" alt="">
                         </div>
                         <div class="col-12 col-md-8">
                             <h4>Roteiro detalhado</h4>
-                            <p>
-                                Entre os materiais que o guia recebe, um dos mais essenciais é o roteiro detalhado. Nesse roteiro constarão todas as informações que serão determinantes para que o guia desempenhe o seu trabalho e programe seus estudos. Geralmente, o roteiro é dividido pelos dias, pelos atrativos que serão visitados, pelos períodos de visitas e pelos horários previstos para chegada em cada lugar. Ele é similar ao roteiro entregue aos passageiros, porém com todos os detalhes específicos para o guia de turismo. Ainda nesse documento devem estar especificadas as condições gerais do contrato, pois podem ser importantes em alguns casos. O modelo de roteiro detalhado a seguir estará disponível para <i>download</i> ao final deste conhecimento. 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-8">
-                            <h4>
-                                Lista de contatos dos prestadores de serviços 
-                            </h4>
-                            <p>
-                                A agência contratante entrega ao guia uma lista com os contatos de todos os fornecedores e prestadores de serviços que ele precisará contatar durante a condução do roteiro. Nessa lista devem constar os nomes dos responsáveis, o telefone de contato, a empresa, todos os dados dos prestadores de serviço e a referência dos serviços que serão efetuados por cada um. 
-                            </p>
-                            <h4>Ordem de serviço </h4>
-                            <p>
-                                Nesse documento estão todas as informações sobre o trabalho que deve ser desenvolvido pelo guia de turismo. É como se fosse o contrato de prestação de serviços. Na ordem de serviço estarão descritas todas as informações relevantes para a viagem, os dados da transportadora e do motorista, o ponto de encontro com o grupo, a lista de hotéis e endereços, restaurantes, todos os serviços, passeios inclusos e os dados das empresas que foram contratadas (exemplo: passeios de barco, teleférico etc.). Incluem-se aí todas as informações de pagamento aos fornecedores, o que já foi pago e o que deverá ser pago pelo guia diretamente no local. O modelo a seguir estará disponível para download ao final deste conhecimento. 
-                            </p>
+                            <p>Entre os materiais que o guia recebe, um dos mais essenciais é o roteiro detalhado. Nesse roteiro constarão todas as informações que serão determinantes para que o guia desempenhe o seu trabalho e programe seus estudos. Geralmente, o roteiro é dividido pelos dias, pelos atrativos que serão visitados, pelos períodos de visitas e pelos horários previstos para chegada em cada lugar. Ele é similar ao roteiro entregue aos passageiros, porém com todos os detalhes específicos para o guia de turismo. Ainda nesse documento devem estar especificadas as condições gerais do contrato, pois podem ser importantes em alguns casos. <span class="no-print">Um modelo de roteiro detalhado estará disponível para <i>download</i> ao final deste conhecimento.</span></p>
                         </div>
                         <div class="col-12 col-md-4">
-                            <img src="img/print_3.png" class="img-fluid d-block borda-colorida mx-auto mb-4 print mt-5" alt="">
+                            <img src="img/print_2.png" class="img-fluid mx-auto mb-4 only-print mt-5 d-block d-md-none" alt="">
+                        </div>
+                    </div>
+                    <h4>Lista de contatos dos prestadores de serviços</h4>
+                    <p>A agência contratante entrega ao guia uma lista com os contatos de todos os fornecedores e prestadores de serviços que ele precisará contatar durante a condução do roteiro. Nessa lista devem constar os nomes dos responsáveis, o telefone de contato, a empresa, todos os dados dos prestadores de serviço e a referência dos serviços que serão efetuados por cada um.</p>
+                    <div class="row">
+                        <div class="col-12 col-md-8">
+                            <h4>Ordem de serviço</h4>
+                            <p>Nesse documento estão todas as informações sobre o trabalho que deve ser desenvolvido pelo guia de turismo. É como se fosse o contrato de prestação de serviços. Na ordem de serviço estarão descritas todas as informações relevantes para a viagem, os dados da transportadora e do motorista, o ponto de encontro com o grupo, a lista de hotéis e endereços, restaurantes, todos os serviços, passeios inclusos e os dados das empresas que foram contratadas (exemplo: passeios de barco, teleférico etc.). Incluem-se aí todas as informações de pagamento aos fornecedores, o que já foi pago e o que deverá ser pago pelo guia diretamente no local. <span class="no-print">O modelo a seguir estará disponível para <i>download</i> ao final deste conhecimento.</span></p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="img/print_3.png" class="img-fluid d-block mx-auto mb-4 print mt-5" alt="">
                         </div>
                     </div>
 
@@ -277,37 +267,34 @@
                             <img src="img/personagem_1.png" class="img-fluid mx-auto p-2 mb-3 radius no-print" style="margin: 0 auto;display: block;" alt="">
                         </div>
                         <div class="col-12 col-md-8">
-                            <h4>
-                                Materiais informativos 
-                            </h4>
-                            <p>
-                                A agência contratante, em alguns casos, entrega materiais informativos sobre os locais que serão visitados. Esses materiais podem conter informações interessantes sobre os destinos, como dados sobre as cidades ou guias de serviços, e podem ser entregues somente para os guias ou também para os passageiros, caso a agência tenha a quantidade necessária para todos. 
-                            </p>
+                            <h4>Materiais informativos</h4>
+                            <p>A agência contratante, em alguns casos, entrega materiais informativos sobre os locais que serão visitados. Esses materiais podem conter informações interessantes sobre os destinos, como dados sobre as cidades ou guias de serviços, e podem ser entregues somente para os guias ou também para os passageiros, caso a agência tenha a quantidade necessária para todos.</p>
                         </div>
                     </div>
                     <h4>Espelho do ônibus </h4>
-                    <p>
-                        O espelho do ônibus, que também pode ser chamado de croqui, possibilita ao guia de turismo saber qual tipo de veículo será utilizado e se os lugares já estão reservados para os passageiros. Nesses casos, é importante estar atento para que cada passageiro se acomode em seu respectivo lugar no momento do embarque. É preciso atenção máxima para que não aconteçam conflitos. 
-                    </p>
+                    <p>O espelho do ônibus, que também pode ser chamado de croqui, possibilita ao guia de turismo saber qual tipo de veículo será utilizado e se os lugares já estão reservados para os passageiros. Nesses casos, é importante estar atento para que cada passageiro se acomode em seu respectivo lugar no momento do embarque. É preciso atenção máxima para que não aconteçam conflitos.</p>
                     <figure class="my-5">
-                        <img src="img/onibus_1.png" class="borda-colorida img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt=" Espelho de um ônibus de dois andares com 42 poltronas, bar e banheiro no andar de cima e 8 poltronas, banheiro e sofá no andar de baixo. ">
+                        <img src="img/onibus_1.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius no-print" alt=" Espelho de um ônibus de dois andares com 42 poltronas, bar e banheiro no andar de cima e 8 poltronas, banheiro e sofá no andar de baixo. ">
+                        <img src="img/onibus_1.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius only-print" style="width: 90% !important;max-width: 90% !important" alt=" Espelho de um ônibus de dois andares com 42 poltronas, bar e banheiro no andar de cima e 8 poltronas, banheiro e sofá no andar de baixo. ">
+                        
                         <a href="img/onibus_1.png" target="_blank" class="img-zoom d-block d-md-none no-print">
                             <img src="img/onibus_1.png"
                                 class="img-fluid mx-auto p-2 mb-3 radius" alt=" Espelho de um ônibus de dois andares com 42 poltronas, bar e banheiro no andar de cima e 8 poltronas, banheiro e sofá no andar de baixo. ">
                         </a>
-                        <figcaption class="figure-caption text-center">Ônibus double-decker (dois andares) <br>
+                        <figcaption class="figure-caption text-center">Ônibus <i>double-decker</i> (dois andares) <br>
 
                             Fonte: Adaptado de Pedra Azul Turismo (c2020b) </figcaption>
                     </figure>
                     <figure class="my-5">
-                        <img src="img/onibus_2.png" class="borda-colorida img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Espelho de um ônibus executivo com 44 poltronas e banheiro. ">
+                        <img src="img/onibus_2.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius no-print" alt="Espelho de um ônibus executivo com 44 poltronas e banheiro. ">
+                        <img src="img/onibus_2.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius only-print" style="width: 90% !important;max-width: 90% !important" alt="Espelho de um ônibus executivo com 44 poltronas e banheiro. ">
                         <a href="img/onibus_2.png" target="_blank" class="img-zoom d-block d-md-none no-print">
-                            <img src="img/onibus_2.png"
-                                class="img-fluid mx-auto p-2 mb-3 radius" alt="Espelho de um ônibus executivo com 44 poltronas e banheiro. ">
+                            <img src="img/onibus_2.png" class="img-fluid mx-auto p-2 mb-3 radius" alt="Espelho de um ônibus executivo com 44 poltronas e banheiro. ">
                         </a>
-                        <figcaption class="figure-caption text-center">Ônibus executivo <br>
-
-                            Fonte: Adaptado de Pedra Azul Turismo (c2020b) </figcaption>
+                        <figcaption class="figure-caption text-center">
+                            Ônibus executivo <br>
+                            Fonte: Adaptado de Pedra Azul Turismo (c2020b)
+                        </figcaption>
                     </figure>
                     
                 </div>
@@ -316,11 +303,8 @@
                 </div>
                 <div class="container">
                     <h4>Relação de passageiros (PAX), relação de menores e autorizações </h4>
-                    <p>
-                        A lista de passageiros precisa conter o nome completo de cada viajante, o número do documento, a data de nascimento e telefone de contato. Os responsáveis devem enviá-la às autoridades rodoviárias no máximo 24 horas antes da viagem. Após o recebimento, essas autoridades emitem uma lista oficial, que deve ser mantida pelo guia durante toda a viagem. Essa lista pode ser solicitada para conferência pelas autoridades rodoviárias ao longo do trajeto, sendo imprescindível que todas as informações estejam corretas. 
-                    </p>
-                    <p>Você utilizará essa lista logo no embarque dos passageiros. Lembre-se de conferir a relação de menores de idade e suas respectivas autorizações de viagem pelos responsáveis. 
-                    </p>
+                    <p>A lista de passageiros precisa conter o nome completo de cada viajante, o número do documento, a data de nascimento e telefone de contato. Os responsáveis devem enviá-la às autoridades rodoviárias no máximo 24 horas antes da viagem. Após o recebimento, essas autoridades emitem uma lista oficial, que deve ser mantida pelo guia durante toda a viagem. Essa lista pode ser solicitada para conferência pelas autoridades rodoviárias ao longo do trajeto, sendo imprescindível que todas as informações estejam corretas. </p>
+                    <p>Você utilizará essa lista logo no embarque dos passageiros. Lembre-se de conferir a relação de menores de idade e suas respectivas autorizações de viagem pelos responsáveis. </p>
                     <div class="grafismo">
                         <div class="destaque gradiente icone observacao">
                             <p>Para viagens internacionais, precisam constar na lista o nome completo (sem abreviações), o sexo, a data de nascimento e a nacionalidade. Além disso, é necessário ter atenção na documentação de imigração, que deve ser entregue na alfândega com os mesmos dados da lista de passageiros em viagens rodoviárias. Nas viagens aéreas, cada passageiro faz o seu procedimento individualmente. </p>
@@ -329,81 +313,63 @@
                     
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <img src="img/print_4.png" class="img-fluid d-block borda-colorida mx-auto mb-4 print" alt="">
+                            <img src="img/print_4.png" class="img-fluid d-block mx-auto mb-4 print" alt="">
                         </div>
                         <div class="col-12 col-md-8">
-                            <p>
-                                O guia deve sempre confirmar com a contratante as informações sobre passageiros com horários de chegada diferentes do grupo, especialmente em voos. Além disso, é necessário que o guia solicite ao setor operacional os horários dos voos e os contatos dos responsáveis pelo <i>transfer</i>. 
-                            </p>
-                            <p>
-                                Observe a seguir um modelo de lista de passageiros. Este documento estará disponível para <i>download</i> ao final deste conhecimento. 
-                            </p>
+                            <p>O guia deve sempre confirmar com a contratante as informações sobre passageiros com horários de chegada diferentes do grupo, especialmente em voos. Além disso, é necessário que o guia solicite ao setor operacional os horários dos voos e os contatos dos responsáveis pelo <i>transfer</i>.</p>
+                            <p>Observe a seguir um modelo de lista de passageiros. <span class="no-print">Este documento estará disponível para <i>download</i> ao final deste conhecimento.</span></p>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-12 col-md-8">
                             <h4><i>Rooming list</i></h4>
-                            <p>
-                                Rooming list é a lista de hóspedes por apartamento que especifica a forma de acomodação dos passageiros por quarto (quartos duplos, quartos triplos etc.) e o nome de cada um dos ocupantes. É feita uma rooming list para cada hotel nos casos de roteiros que incluem diferentes cidades. 
-                            </p>
-                            <p>No processo de reserva dos apartamentos, a contratante faz um bloqueio com o número de apartamentos que deseja reservar, e o hotel dá um prazo para a confirmação e o envio da rooming list. Portanto, a listagem deve ser enviada antecipadamente ao hotel e o guia de turismo deve conferi-la sempre, tendo atenção para alguns detalhes, como a distribuição dos quartos. O guia também deve estar atento à existência de casais homoafetivos e de pessoas com dificuldade de locomoção para, assim, evitar transtornos e situações constrangedoras no percurso. Confira a seguir um modelo de rooming list. Este documento estará disponível para download ao final deste conhecimento. 
-                            </p>
+                            <p><i>Rooming list</i> é a lista de hóspedes por apartamento que especifica a forma de acomodação dos passageiros por quarto (quartos duplos, quartos triplos etc.) e o nome de cada um dos ocupantes. É feita uma <i>rooming list</i> para cada hotel nos casos de roteiros que incluem diferentes cidades. </p>
+                            <p>No processo de reserva dos apartamentos, a contratante faz um bloqueio com o número de apartamentos que deseja reservar, e o hotel dá um prazo para a confirmação e o envio da <i>rooming list</i>. Portanto, a listagem deve ser enviada antecipadamente ao hotel e o guia de turismo deve conferi-la sempre, tendo atenção para alguns detalhes, como a distribuição dos quartos. O guia também deve estar atento à existência de casais homoafetivos e de pessoas com dificuldade de locomoção para, assim, evitar transtornos e situações constrangedoras no percurso. Confira a seguir um modelo de <i>rooming list</i>. <span class="no-print">Este documento estará disponível para <i>download</i> ao final deste conhecimento.</span></p>
                         </div>
                         <div class="col-12 col-md-4">
-                            <img src="img/print_5.png" class="img-fluid d-block borda-colorida mx-auto mb-4 print mt-5" alt="">
+                            <img src="img/print_5.png" class="img-fluid d-block mx-auto mb-4 print mt-5" alt="">
                         </div>
                     </div>
+                    <h4>Horários de voos</h4>
+                    <p>Em viagens aéreas, o guia precisa ter em sua documentação os localizadores (código de confirmação) das reservas, os horários e o número dos voos, as informações da companhia aérea, o tempo de antecedência para <i>check-in</i>, o tempo estimado de viagem, as escalas e as conexões.</p>
+                    <figure class="my-5">
+                        <img src="img/voucher_voo.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius no-print">
+                        <img src="img/voucher_voo.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius  only-print" style="width: 90% !important;max-width: 90% !important">
+
+                        <a href="img/voucher_voo.png" target="_blank" class="img-zoom d-block d-md-none no-print">
+                            <img src="img/voucher_voo.png" class="img-fluid mx-auto p-2 mb-3 radius">
+                        </a>
+                        <figcaption class="figure-caption text-center">
+                            Cartão de embarque <br>
+                            Fonte: Adaptado de GOL (s. d.)
+                        </figcaption>
+                    </figure>
                     <div class="row">
-                        <div class="col-12 col-md-8">
-                            <h4>Horários de voos </h4>
-                            <p>
-                                Em viagens aéreas, o guia precisa ter em sua documentação os localizadores (código de confirmação) das reservas, os horários e o número dos voos, as informações da companhia aérea, o tempo de antecedência para <i>check-in</i>, o tempo estimado de viagem, as escalas e as conexões. 
-                            </p>
-                        </div>
                         <div class="col-12 col-md-4">
-                            <img src="img/voucher_voo.png" class="img-fluid d-block borda-colorida mx-auto mb-4 print mt-5" alt="">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-4">
-                            <img src="img/etiqueta_bagagem.png" class="img-fluid d-none d-md-block borda-colorida mx-auto mb-4 no-print mt-5" alt="">
+                            <img src="img/etiqueta_bagagem.png" class="img-fluid d-none d-md-block mx-auto mb-4 no-print mt-5" alt="">
                         </div>
                         <div class="col-12 col-md-8">
                             <h4>Etiqueta de identificação de malas </h4>
-                            <p>
-                                As etiquetas de bagagem são utilizadas para identificar as malas de cada passageiro e podem ser personalizadas com o logotipo da contratante, devendo ter espaço para os dados pessoais dos viajantes. Algumas contratantes não têm etiquetas de identificação personalizadas, que são, nesses casos, geralmente fornecidas pela transportadora. 
-                            </p>
-                            <p>
-                                As etiquetas facilitam o controle e são colocadas na bagagem de cada passageiro já no início da viagem. Elas fazem parte da documentação entregue ao guia antes da viagem, e o profissional deve utilizá-las para auxiliar os passageiros no despacho da bagagem. 
-                            </p>
-                            
-                            <img src="img/etiqueta_bagagem.png" style="max-width: 100%;" class="print d-block d-md-none mx-auto" alt="">
+                            <p>As etiquetas de bagagem são utilizadas para identificar as malas de cada passageiro e podem ser personalizadas com o logotipo da contratante, devendo ter espaço para os dados pessoais dos viajantes. Algumas contratantes não têm etiquetas de identificação personalizadas, que são, nesses casos, geralmente fornecidas pela transportadora.</p>
+                            <p>As etiquetas facilitam o controle e são colocadas na bagagem de cada passageiro já no início da viagem. Elas fazem parte da documentação entregue ao guia antes da viagem, e o profissional deve utilizá-las para auxiliar os passageiros no despacho da bagagem.</p>
+                            <img src="img/etiqueta_bagagem.png" style="max-width: 100%;" class="no-print d-block d-md-none mx-auto" alt="">
                         </div>
                     </div>
                  
-                    <h4>Voucher</h4>
-                    <p>
-                        O <i>voucher</i> de serviços é um documento no qual consta a descrição dos serviços que o prestador deve realizar e comprova a reserva ou o pagamento do serviço. Ele é impresso em duas, três ou mais vias para que fique uma via com o fornecedor, outra com o passageiro e uma com a agência/operadora. Nele estão informados os dados da empresa e tudo o que foi contratado para que seja entregue ao prestador de serviços comprovando o que foi solicitado. 
-                    </p>
+                    <h4><i>Voucher</i></h4>
+                    <p>O <i>voucher</i> de serviços é um documento no qual consta a descrição dos serviços que o prestador deve realizar e comprova a reserva ou o pagamento do serviço. Ele é impresso em duas, três ou mais vias para que fique uma via com o fornecedor, outra com o passageiro e uma com a agência/operadora. Nele estão informados os dados da empresa e tudo o que foi contratado para que seja entregue ao prestador de serviços comprovando o que foi solicitado. </p>
                     <h4>Comprovantes, reservas, contratos, notas de pagamento, dinheiro para previstos e imprevistos </h4>
-                    <p>
-                        A agência/operadora entrega ao guia os comprovantes dos serviços que estão reservados, as notas de pagamentos realizados e os valores para pagamentos que serão feitos diretamente aos fornecedores, separados por despesa (hotel, restaurantes, cafés, <i>shows</i> etc.). Ao final da viagem, o guia deverá prestar contas dos valores recebidos e apresentar os comprovantes. 
-                    </p>
+                    <p>A agência/operadora entrega ao guia os comprovantes dos serviços que estão reservados, as notas de pagamentos realizados e os valores para pagamentos que serão feitos diretamente aos fornecedores, separados por despesa (hotel, restaurantes, cafés, <i>shows</i> etc.). Ao final da viagem, o guia deverá prestar contas dos valores recebidos e apresentar os comprovantes.</p>
                     
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <img src="img/print_6.png" class="img-fluid  d-none d-md-block borda-colorida mx-auto mb-4 no-print mt-5" alt="">
+                            <img src="img/print_6.png" class="img-fluid  d-none d-md-block mx-auto mb-4 no-print mt-5" alt="">
                         </div>
                         <div class="col-12 col-md-8">
                             <h4>Opinário</h4>
-                            <p>
-                                Os opinários são utilizados para que a contratante possa avaliar a programação realizada e a satisfação dos passageiros com relação ao roteiro executado. Eles podem ser entregues para cada um dos passageiros na viagem de retorno e colocados em um local lacrado ou até mesmo realizados de forma <i>on-line</i> por meio de formulário específico criado pela contratante. 
-                            </p>
-                            <p>
-                                Este é um modelo de opinário, adaptado de Chimenti e Tavares (2013), e estará disponível para <i>download</i> ao final deste conhecimento. 
-                            </p>
-                            
+                            <p>Os opinários são utilizados para que a contratante possa avaliar a programação realizada e a satisfação dos passageiros com relação ao roteiro executado. Eles podem ser entregues para cada um dos passageiros na viagem de retorno e colocados em um local lacrado ou até mesmo realizados de forma <i>on-line</i> por meio de formulário específico criado pela contratante. </p>
+                            <p class="no-print">Este é um modelo de opinário, adaptado de Chimenti e Tavares (2013), e estará disponível para <i>download</i> ao final deste conhecimento.</p>
                             <img src="img/print_6.png" style="max-width: 100%;" class="print d-block d-md-none mx-auto" alt="">
                         </div>
                     </div>
@@ -411,395 +377,391 @@
                     <div class="row">
                         <div class="col-12 col-md-8">
                             <h4>Relatório da viagem ou relatório de ocorrência </h4>
-                            <p>
-                                Esse documento é um instrumento utilizado pelo guia de turismo para relatar tudo o que ocorreu durante a viagem. Nesse documento, o profissional informa os problemas ocorridos e as decisões tomadas, realiza a avaliação dos prestadores de serviços utilizados e inclui todas as informações que julgar necessárias. Com esse relato, a agência poderá melhorar seus serviços e ter a avaliação correta dos seus prestadores de serviços, tendo a indicação do profissional que está na linha de frente desse contato. Confira um modelo desse documento a seguir, que também estará disponível para <i>download</i> ao final deste conhecimento. 
-                            </p>
+                            <p>Esse documento é um instrumento utilizado pelo guia de turismo para relatar tudo o que ocorreu durante a viagem. Nesse documento, o profissional informa os problemas ocorridos e as decisões tomadas, realiza a avaliação dos prestadores de serviços utilizados e inclui todas as informações que julgar necessárias. Com esse relato, a agência poderá melhorar seus serviços e ter a avaliação correta dos seus prestadores de serviços, tendo a indicação do profissional que está na linha de frente desse contato. <span class="no-print">Confira um modelo desse documento a seguir, que também estará disponível para <i>download</i> ao final deste conhecimento.</span></p>
                         </div>
                         <div class="col-12 col-md-4">
-                            <img src="img/print_7.png" class="img-fluid d-block borda-colorida mx-auto mb-4 print mt-5" alt="">
+                            <img src="img/print_7.png" class="img-fluid d-block mx-auto mb-4 print mt-5" alt="">
                         </div>
                     </div>
                     
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <img src="img/personagem_2.png" class="img-fluid d-none d-md-block  borda-colorida mx-auto mb-4 no-print mt-5" alt="">
+                            <img src="img/personagem_2.png" class="img-fluid d-none d-md-block mx-auto mb-4 no-print mt-5" alt="">
                         </div>
                         <div class="col-12 col-md-8">
                             <h4>Mapas do roteiro </h4>
-                            <p>
-                                O guia de turismo deve estudar o local de destino do roteiro. É necessário que ele conheça o trajeto das rodovias que serão utilizadas, bem como os deslocamentos a serem realizados dentro da cidade entre cada atrativo do roteiro. Para isso, a utilização de mapas é fundamental. Esse é um material indispensável nas viagens. 
-                            </p>
-                            <img src="img/personagem_2.png" style="max-width: 100%;" class="print d-block d-md-none mx-auto" alt="">
+                            <p>O guia de turismo deve estudar o local de destino do roteiro. É necessário que ele conheça o trajeto das rodovias que serão utilizadas, bem como os deslocamentos a serem realizados dentro da cidade entre cada atrativo do roteiro. Para isso, a utilização de mapas é fundamental. Esse é um material indispensável nas viagens. </p>
+                            <img src="img/personagem_2.png" style="max-width: 100%;" class="no-print d-block d-md-none mx-auto" alt="">
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-12 col-md-8">
-                            <h4><i>Checklist</i> do veículo </h4>
-                            <p>
-                                É função do guia de turismo realizar a vistoria do veículo antes da partida. Para isso, existe uma <i>checklist</i> com os itens e os equipamentos existentes no veículo. O profissional deve fazer a conferência do veículo, verificando suas condições de uso. 
-                            </p>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <img src="img/print_8.png" class="img-fluid d-block borda-colorida mx-auto mb-4 print mt-5" alt="">
-                        </div>
+                    <h4><i>Checklist</i> do veículo </h4>
+                    <p>É função do guia de turismo realizar a vistoria do veículo antes da partida. Para isso, existe uma <i>checklist</i> com os itens e os equipamentos existentes no veículo. O profissional deve fazer a conferência do veículo, verificando suas condições de uso. </p>
+                    <!-- <figure class="my-5 no-print" aria-hidden="true">
+                        <img src="img/print_8.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print">
+                        <a href="img/print_8.png" target="_blank" class="img-zoom d-block d-md-none no-print">
+                            <img src="img/print_8.png" class="img-fluid mx-auto p-2 mb-3 radius">
+                        </a>
+                    </figure> -->
+                    <div class="table-responsive table  mx-auto" style="max-width: 600px;">
+                        <table class="text-left align-middle">
+                        <thead>
+                            <tr>
+                                <th class="w-25"><i>Checklist</i> do veículo</th>
+                                <th class="w-25"></th>
+                            </tr>
+                        </thead>
+                  
+                                <tbody>
+                                    <tr>
+                                        <th colspan="2"></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Cintos de segurança</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ar-condicionado</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Microfone</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Monitores de televisão</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>DVD</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Limpeza do banheiro</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Descarga</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Papel higiênico</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Papel-toalha</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Serviço de bordo</td>
+                                        <td></td>
+                                    </tr>
+                                </tr>
+                                </tbody>
+                        </tbody>
+                        </table>
                     </div>
-
+              
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <img src="img/print_9.png" class="img-fluid d-none d-md-block borda-colorida mx-auto mb-4 no-print mt-5" alt="">
+                            <img src="img/print_9.png" class="img-fluid d-none d-md-block mx-auto mb-4 no-print mt-5" alt="">
                         </div>
                         <div class="col-12 col-md-8">
                             <h4>Ficha médica </h4>
                             <p>É um documento individual e confidencial pelo qual o guia de turismo conhecerá o histórico médico do passageiro. O profissional acessará essa ficha somente se for necessário. Ali constarão as informações sobre alergia, doença crônica, medicamentos controlados, convênio médico, contato de emergência etc.  </p>
-                            <p>Confira um modelo, que também estará disponível para <i>download</i> ao final deste conhecimento. </p>
+                            <p class="no-print">Confira um modelo, que também estará disponível para <i>download</i> ao final deste conhecimento. </p>
                             
                             <img src="img/print_9.png" style="max-width: 100%;" class="print d-block d-md-none mx-auto" alt="">
                         </div>
                     </div>
                     <h4>Cartaz de identificação do veículo </h4>
                     <p>É uma placa que identifica o grupo e é colocada em frente ao veículo para melhor visualização dos passageiros. Esse cartaz ajuda a identificar à qual ônibus o viajante pertence, principalmente quando se tem mais de um grupo para o mesmo destino. </p>
+                    <figure class="my-5">
+                        <img src="img/placa_aeroporto.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print">
+                        <a href="img/placa_aeroporto.png" target="_blank" class="img-zoom d-block d-md-none no-print">
+                            <img src="img/placa_aeroporto.png" class="img-fluid mx-auto p-2 mb-3 radius">
+                        </a>
+                    </figure>
                     <h3>Equipamento e utensílios para guiamento </h3>
                     <p>Existem alguns equipamentos e utensílios específicos para serviços de guiamento que, por vezes, são materiais de responsabilidade do guia, mas também podem ser fornecidos pelas agências de viagens ou transportadoras.  </p>
                     <p>Os equipamentos e utensílios fundamentais à realização do trabalho do guia de turismo devem fazer parte da sua organização pessoal. Eles são indispensáveis para a execução de roteiros e itinerários turísticos. Então, no momento da sua organização preliminar, informe-se sobre o que é fornecido pela contratante para que possa providenciar o que não for contemplado. Assim, você garantirá uma adequada realização de seu serviço. </p>
                     <p>Conheça a seguir alguns equipamentos para guiamentos. </p>
                     <p class="no-print">Clique ou toque para visualizar o conteúdo. </p>
-                    <div class="row">
-                        <div class="col-4">
+                    <div class="row my-5 no-print">
+                        <div class="col-sm-4 col-xs-12">
+                            <img src="img/painel_clicavel_personagem.png" style="max-width: 100%;" class="no-print d-none d-sm-block" alt="">
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
                             <!-- Button trigger modal -->
-                            <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt010" data-bs-toggle="modal"
-                            data-bs-target="#modal10" aria-label="Crachá do Ministério do Turismo">
-                            
-                            </button>
-                            <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt011" data-bs-toggle="modal"
-                                data-bs-target="#modal011" aria-label="Microfone">
-                                
-                            </button>
-                            <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt012" data-bs-toggle="modal"
-                                data-bs-target="#modal012" aria-label="Uniforme">
-                                
-                            </button>
-                            <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt013" data-bs-toggle="modal"
-                            data-bs-target="#modal013" aria-label="Mapas de roteiro ">
-                            
-                            </button>                            
+                            <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt010" data-bs-toggle="modal" data-bs-target="#modal010" aria-label="Crachá do Ministério do Turismo"></button>
+                            <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt011" data-bs-toggle="modal" data-bs-target="#modal011" aria-label="Microfone"></button>
+                            <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt012" data-bs-toggle="modal" data-bs-target="#modal012" aria-label="Uniforme"></button>
+                            <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt013" data-bs-toggle="modal" data-bs-target="#modal013" aria-label="Mapas de roteiro "></button>                            
+                            <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt014" data-bs-toggle="modal" data-bs-target="#modal014" aria-label="Kit de primeiros socorros"></button>
                         </div>
-                        <div class="col-4">
-                            <img src="img/painel_clicavel_personagem.png" style="max-width: 100%;" class="no-print" alt="">
-                        </div>
-                        <div class="col-4">
-                            <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt014" data-bs-toggle="modal"
-                                data-bs-target="#modal014" aria-label="Kit de primeiros socorros">
-                                 
-                            </button>
-                            <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt015" data-bs-toggle="modal"
-                                data-bs-target="#modal015" aria-label="Material de escritório ">
-                                
-                            </button>
-                            <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt016" data-bs-toggle="modal"
-                            data-bs-target="#modal016" aria-label="Material de lazer">
-                            
-                            </button>
-                            <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt017" data-bs-toggle="modal"
-                                data-bs-target="#modal017" aria-label="Itens para o serviço de bordo ">
-                                
-                            </button>
-                            <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt018" data-bs-toggle="modal"
-                                data-bs-target="#modal018" aria-label="Outros itens ">
-                                
-                            </button>
+                        <div class="col-sm-4 col-xs-12">
+                            <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt015" data-bs-toggle="modal" data-bs-target="#modal015" aria-label="Material de escritório "></button>
+                            <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt016" data-bs-toggle="modal" data-bs-target="#modal016" aria-label="Material de lazer"></button>
+                            <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt017" data-bs-toggle="modal" data-bs-target="#modal017" aria-label="Itens para o serviço de bordo "></button>
+                            <button type="button" class="botao check hvr-grow-shadow painel_clicavel_bt018" data-bs-toggle="modal" data-bs-target="#modal018" aria-label="Outros itens "></button>
                         </div>
                     </div>
-                    
                 
                     <!-- Modal grande -->
-                    <div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Crachá do Ministério do Turismo </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="container">
-                                    <p>No exercício da profissão, é obrigatório que o guia de turismo utilize a credencial emitida pelo Ministério do Turismo. Ela é de responsabilidade do profissional, que deve sempre estar portando seu crachá de uso pessoal e intransferível. </p>
+                    <div class="modal fade" id="modal010" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Crachá do Ministério do Turismo </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <p>No exercício da profissão, é obrigatório que o guia de turismo utilize a credencial emitida pelo Ministério do Turismo. Ela é de responsabilidade do profissional, que deve sempre estar portando seu crachá de uso pessoal e intransferível. </p>
 
-                                    
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="botao hvr-grow-shadow"
-                                        data-bs-dismiss="modal">Fechar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="modal011" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Microfone</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="container">
-                                    <p>O microfone é de uso restrito do guia (salvo algumas exceções) e é seu equipamento de trabalho mais importante, logo, deve acompanhá-lo em todas as viagens. Uma dica é ter cuidado com o manuseio e a manutenção, pois são aparelhos que podem apresentar defeitos com o uso constante </p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="botao hvr-grow-shadow"
-                                        data-bs-dismiss="modal">Fechar</button>
+                                        
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-grow-shadow"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal fade" id="modal012" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Uniforme (caso haja) </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="container">
-                                    <p>
-                                        Algumas empresas exigem e fornecem uniformes ao guia. Eles são recebidos antes do embarque e devem ser devolvidos e higienizados na prestação de contas da viagem. Nos casos em que a contratante não forneça a vestimenta, você mesmo pode criar um modelo de uniforme. Para aprender mais detalhes sobre esse assunto, consulte o conhecimento <strong>Apresentação pessoal e postura profissional do guia de turismo: etiqueta profissional e código de ética do turismo</strong>. 
-                                    </p>
+                    <div class="modal fade" id="modal011" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Microfone</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="botao hvr-grow-shadow"
-                                        data-bs-dismiss="modal">Fechar</button>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <p>O microfone é de uso restrito do guia (salvo algumas exceções) e é seu equipamento de trabalho mais importante, logo, deve acompanhá-lo em todas as viagens. Uma dica é ter cuidado com o manuseio e a manutenção, pois são aparelhos que podem apresentar defeitos com o uso constante.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-grow-shadow"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <div class="modal fade" id="modal012" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Uniforme (caso haja) </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <p>
+                                            Algumas empresas exigem e fornecem uniformes ao guia. Eles são recebidos antes do embarque e devem ser devolvidos e higienizados na prestação de contas da viagem. Nos casos em que a contratante não forneça a vestimenta, você mesmo pode criar um modelo de uniforme. Para aprender mais detalhes sobre esse assunto, consulte o conhecimento <strong>Apresentação pessoal e postura profissional do guia de turismo: etiqueta profissional e código de ética do turismo</strong>. 
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-grow-shadow"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal013" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Mapas de roteiro/guia turístico/GPS </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <p>O guia deve estudar previamente o roteiro a ser executado e os trajetos que serão percorridos, tanto no deslocamento de uma cidade para outra quanto no deslocamento entre os atrativos de uma mesma localidade. Em razão disso, é de extrema importância que o profissional tenha em mãos GPS e os mapas do roteiro, principalmente em locais que não contemplam sinal de internet, para que possa mapear todo o percurso. Esse cuidado é importante inclusive para os casos em que, em função de algum acontecimento, seja necessária a alteração do roteiro. </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-grow-shadow"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal014" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><i>Kit</i> de primeiros socorros</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <p>O <i>kit</i> de primeiros socorros faz parte do material do guia e é utilizado apenas para realizar pequenos procedimentos. Ele deve conter itens básicos para tratar pequenos ferimentos e emergências. </p>
+                                        <p>É importante ressaltar que o guia não deve medicar nenhum passageiro, mas pode carregar seus medicamentos para uso próprio em casos mais comuns, como má digestão, enjoos etc. Os itens específicos sobre procedimentos de primeiros socorros e materiais necessários serão aprofundados mais adiante. </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-grow-shadow"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal015" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Material de escritório (pranchetas, canetas, tesoura, fita adesiva, bloco de anotação) </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <p>O material de escritório é de responsabilidade do guia. Você deve fazer uma relação do que precisará para organização do seu trabalho e dos procedimentos executados, bem como em casos de atividades recreativas que exijam algum desses utensílios. De qualquer forma, a prancheta é indispensável ao trabalho, pois você pode utilizá-la para ficar com seus materiais de apoio durante todo o roteiro (lista de passageiros, roteiro dia a dia, telefones úteis/contatos de emergência, informações dos atrativos etc.). </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-grow-shadow"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal016" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"> Material de lazer </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <p>É destinado ao trabalho do guia de turismo. O guia deve planejar as atividades recreativas com antecedência para que possa selecionar os materiais necessários para sua execução, considerando o perfil do grupo. É interessante preparar mais atividades do que as previstas para que seja possível ter opções caso considere alguma delas inadequada para o momento. O “<i>kit</i> diversão” pode conter opções de jogos, músicas, filmes, entre outros. Mas fique atento, pois os filmes e as músicas devem agradar a maioria do público, tendo temas leves ou relacionados a algum atrativo que será visitado. Você pode pensar também em brindes para esses momentos de descontração em alguma dinâmica utilizada no percurso. </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-grow-shadow"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal017" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Itens para o serviço de bordo </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <p>
+                                            Você precisará de materiais específicos para a execução do serviço de bordo. Prepare o material a ser utilizado de acordo com o que for servido. Inclua bandeja/cestinhas, sacola plástica, panos de limpeza descartáveis, sacos de lixo e outros itens que julgar necessários. 
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-grow-shadow"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal018" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Outros itens </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <p>Existem outros itens importantes que devem ser considerados. </p>
+                                        <p><strong>Lanterna</strong> é um equipamento que poderá facilitar procedimentos em muitos momentos da viagem. Lembre-se de levar sempre pilhas extras, caso ela não seja recarregável. Um modelo interessante para o trabalho são as lanternas de cabeça, que possibilitam que as mãos fiquem livres. </p>
+                                        <p><strong>Câmera fotográfica</strong> é importante para registrar momentos e documentar a viagem. Você pode utilizar seu próprio aparelho de celular. </p>
+                                        <p><strong>Adaptador universal e <i>powerbank</i></strong> ajudam a carregar seus dispositivos eletrônicos em qualquer lugar. </p>
+                                        <p><strong>Repelente e protetor solar</strong> são indispensáveis para se proteger de insetos e dos raios solares. </p>
+                                        <p><strong>Produtos de higiene pessoal</strong>, como álcool em gel, lenço umedecido, escova e creme dental e sabonete, também são imprescindíveis. </p>
+                                        <p><strong>Apito</strong> é um item que facilita o trabalho do guia de turismo, especialmente em atividades realizadas com grandes grupos em áreas naturais ou locais movimentados. </p>
+                                        <p><strong>Óculos de sol</strong> para proteger os olhos dos raios solares não devem ser esquecidos. </p>
+                                        <p><strong>Capa de chuva</strong> poderá ser muito útil para se proteger em casos de mudanças meteorológicas. </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-grow-shadow" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Além desses itens listados, quando realizar atividades de ecoturismo e turismo de aventura, é fundamental que você considere tanto os equipamentos específicos para as atividades quanto aqueles voltados para sua segurança e proteção. Além disso, há itens básicos que devem ser levados em todas as viagens de ecoturismo. Para aventuras mais específicas, será necessário incluir equipamentos adequados ao estilo da atividade escolhida. Não se esqueça de optar por roupas confortáveis e adequadas ao ambiente e ao clima do local. </p>
 
-                    <div class="modal fade" id="modal013" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Mapas de roteiro/guia turístico/GPS </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="container">
-                                    <p>O guia deve estudar previamente o roteiro a ser executado e os trajetos que serão percorridos, tanto no deslocamento de uma cidade para outra quanto no deslocamento entre os atrativos de uma mesma localidade. Em razão disso, é de extrema importância que o profissional tenha em mãos GPS e os mapas do roteiro, principalmente em locais que não contemplam sinal de internet, para que possa mapear todo o percurso. Esse cuidado é importante inclusive para os casos em que, em função de algum acontecimento, seja necessária a alteração do roteiro. </p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="botao hvr-grow-shadow"
-                                        data-bs-dismiss="modal">Fechar</button>
-                                </div>
-                            </div>
+                    <div class="caixa-container destaque icone exemplo borda-colorida">
+                        <div class="caixa-exp">
+                            <p>Alguns itens necessários para atividades de ecoturismo, além dos listados anteriormente, são: </p>
+                            <ul class="marcador-padrao">
+                                <li>Mapas e bússolas para mostrar o detalhamento da região em que você guiará e o ajudá-lo a se orientar no terreno </li>
+                                <li>GPS para navegação em áreas remotas e trilhas pouco sinalizadas </li>
+                                <li>Lanternas, principalmente as especiais para atividades que sejam noturnas e em locais com pouca iluminação </li>
+                                <li>Chapéu e boné para se proteger dos raios solares e evitar mal-estar </li>
+                                <li>Tênis ou bota apropriados para o tipo de prática que exercerá com maior segurança e também um par de meias extras, para trocar ao longo do trajeto, dependendo da distância percorrida </li>
+                                <li>Mochilas ou mochilas cargueiras específicas para o tipo de aventura que exercerá e que suportem o peso de todos os seus equipamentos </li>
+                                <li>Garrafas d’água para hidratação durante o guiamento </li>
+                                <li>Manta térmica para emergências </li>
+                                <li>Canivete, objeto útil em diferentes situações durante a atividade </li>
+                            </ul>
+                            <p>Para atividades com pernoite em ambiente natural, serão necessários mais itens para garantir a sua segurança e a de seus turistas. Para esses casos, consulte os materiais disponíveis no <i>site</i> da ABETA (Associação Brasileira das Empresas de Ecoturismo e Turismo de Aventura). Nele você encontra materiais específicos para cada tipo de atividade desenvolvida em ambientes naturais, assim como orientações de equipamentos indispensáveis ao guiamento. </p>
                         </div>
+                        <button class="btpluscaixa"></button>
                     </div>
-                </div>
-                <div class="modal fade" id="modal014" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel"><i>Kit</i> de primeiros socorros</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="container">
-                                    <p>O <i>kit</i> de primeiros socorros faz parte do material do guia e é utilizado apenas para realizar pequenos procedimentos. Ele deve conter itens básicos para tratar pequenos ferimentos e emergências. </p>
-                                    <p>É importante ressaltar que o guia não deve medicar nenhum passageiro, mas pode carregar seus medicamentos para uso próprio em casos mais comuns, como má digestão, enjoos etc. Os itens específicos sobre procedimentos de primeiros socorros e materiais necessários serão aprofundados mais adiante. </p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="botao hvr-grow-shadow"
-                                        data-bs-dismiss="modal">Fechar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="modal015" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Material de escritório (pranchetas, canetas, tesoura, fita adesiva, bloco de anotação) </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="container">
-                                    <p>O material de escritório é de responsabilidade do guia. Você deve fazer uma relação do que precisará para organização do seu trabalho e dos procedimentos executados, bem como em casos de atividades recreativas que exijam algum desses utensílios. De qualquer forma, a prancheta é indispensável ao trabalho, pois você pode utilizá-la para ficar com seus materiais de apoio durante todo o roteiro (lista de passageiros, roteiro dia a dia, telefones úteis/contatos de emergência, informações dos atrativos etc.). </p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="botao hvr-grow-shadow"
-                                        data-bs-dismiss="modal">Fechar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal fade" id="modal016" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel"> Material de lazer </h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container">
-                                <p>É destinado ao trabalho do guia de turismo. O guia deve planejar as atividades recreativas com antecedência para que possa selecionar os materiais necessários para sua execução, considerando o perfil do grupo. É interessante preparar mais atividades do que as previstas para que seja possível ter opções caso considere alguma delas inadequada para o momento. O “<i>kit</i> diversão” pode conter opções de jogos, músicas, filmes, entre outros. Mas fique atento, pois os filmes e as músicas devem agradar a maioria do público, tendo temas leves ou relacionados a algum atrativo que será visitado. Você pode pensar também em brindes para esses momentos de descontração em alguma dinâmica utilizada no percurso. </p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="botao hvr-grow-shadow"
-                                    data-bs-dismiss="modal">Fechar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="modal017" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Itens para o serviço de bordo </h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container">
-                                <p>
-                                    Você precisará de materiais específicos para a execução do serviço de bordo. Prepare o material a ser utilizado de acordo com o que for servido. Inclua bandeja/cestinhas, sacola plástica, panos de limpeza descartáveis, sacos de lixo e outros itens que julgar necessários. 
-                                </p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="botao hvr-grow-shadow"
-                                    data-bs-dismiss="modal">Fechar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="modal018" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Outros itens </h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container">
-                                <p>Existem outros itens importantes que devem ser considerados. </p>
-                                <p><strong>Lanterna</strong> é um equipamento que poderá facilitar procedimentos em muitos momentos da viagem. Lembre-se de levar sempre pilhas extras, caso ela não seja recarregável. Um modelo interessante para o trabalho são as lanternas de cabeça, que possibilitam que as mãos fiquem livres. </p>
-                                <p><strong>Câmera fotográfica</strong> é importante para registrar momentos e documentar a viagem. Você pode utilizar seu próprio aparelho de celular. </p>
-                                <p><strong>Adaptador universal e powerbank</strong> ajudam a carregar seus dispositivos eletrônicos em qualquer lugar. </p>
-                                <p><strong>Repelente e protetor solar</strong> são indispensáveis para se proteger de insetos e dos raios solares. </p>
-                                <p><strong>Produtos de higiene pessoal</strong>, como álcool em gel, lenço umedecido, escova e creme dental e sabonete, também são imprescindíveis. </p>
-                                <p><strong>Apito</strong> é um item que facilita o trabalho do guia de turismo, especialmente em atividades realizadas com grandes grupos em áreas naturais ou locais movimentados. </p>
-                                <p><strong>Óculos de sol</strong> para proteger os olhos dos raios solares não devem ser esquecidos. </p>
-                                <p><strong>Capa de chuva</strong> poderá ser muito útil para se proteger em casos de mudanças meteorológicas. </p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="botao hvr-grow-shadow"
-                                    data-bs-dismiss="modal">Fechar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p>
-                Além desses itens listados, quando realizar atividades de ecoturismo e turismo de aventura, é fundamental que você considere tanto os equipamentos específicos para as atividades quanto aqueles voltados para sua segurança e proteção. Além disso, há itens básicos que devem ser levados em todas as viagens de ecoturismo. Para aventuras mais específicas, será necessário incluir equipamentos adequados ao estilo da atividade escolhida. Não se esqueça de optar por roupas confortáveis e adequadas ao ambiente e ao clima do local. 
-            </p>
-            <div class="caixa-exp aberta">
-                <p>Alguns itens necessários para atividades de ecoturismo, além dos listados anteriormente, são: </p>
-                <ul class="marcador-padrao">
-                    <li>Mapas e bússolas para mostrar o detalhamento da região em que você guiará e o ajudá-lo a se orientar no terreno </li>
-                    <li>GPS para navegação em áreas remotas e trilhas pouco sinalizadas </li>
-                    <li>Lanternas, principalmente as especiais para atividades que sejam noturnas e em locais com pouca iluminação </li>
-                    <li>Chapéu e boné para se proteger dos raios solares e evitar mal-estar </li>
-                    <li>Tênis ou bota apropriados para o tipo de prática que exercerá com maior segurança e também um par de meias extras, para trocar ao longo do trajeto, dependendo da distância percorrida </li>
-                    <li>Mochilas ou mochilas cargueiras específicas para o tipo de aventura que exercerá e que suportem o peso de todos os seus equipamentos </li>
-                    <li>Garrafas d’água para hidratação durante o guiamento </li>
-                    <li>Manta térmica para emergências </li>
-                    <li>Canivete, objeto útil em diferentes situações durante a atividade </li>
-                </ul>
-                <p>
-                    Para atividades com pernoite em ambiente natural, serão necessários mais itens para garantir a sua segurança e a de seus turistas. Para esses casos, consulte os materiais disponíveis no site da ABETA (Associação Brasileira das Empresas de Ecoturismo e Turismo de Aventura). Nele você encontra materiais específicos para cada tipo de atividade desenvolvida em ambientes naturais, assim como orientações de equipamentos indispensáveis ao guiamento. 
-                </p>
-            </div>
-            <p>
-                Sobre a vestimenta do guia em atividades em ambientes naturais, considere os seguintes artigos: 
-            </p>
-            <ul class="marcador-padrao">
-                <li>Roupas confortáveis e funcionais: preferencialmente de tecidos leves, respiráveis e de secagem rápida, como o poliéster e o náilon (ou <i>nylon</i>) </li>
-                <li>Calçados adequados: tênis de trilha, botas de montanhismo ou sandálias esportivas, dependendo do tipo de atividade </li>
-                <li>Roupa de chuva: impermeável e respirável </li>
-                <li>Roupas térmicas: para atividades em locais com temperaturas mais baixas </li>
-                <li>Chapéu ou boné: para proteção contra o sol e a chuva </li>
-                <li>Mosquetão, freio, cadeirinha, capacete, corda: equipamentos específicos para a segurança na prática de esportes de aventura</li> 
-            </ul>
-            <div class="espera no-print" aria-hidden="true">
-                Espera para oda
-            </div>
-            
-            <a role="button" href="" target="_blank" class="bt-objeto d-block mx-auto my-5 shadow radius no-print">
-                <span class="camada-blur"></span>
-                <span class="sr-only">Acesse</span>
-            </a>
-            <h4>Organização da bagagem do guia </h4>
-            <p>
-                A organização da sua bagagem é fundamental para garantir uma experiência segura e prazerosa tanto para você quanto para seus turistas. Uma bagagem bem planejada permite que você esteja preparado para qualquer desafio que o guiamento possa apresentar. Além disso, é essencial assumir as responsabilidades relacionadas a todos os âmbitos da viagem. Antecipar possíveis imprevistos e tomar medidas para minimizá-los contribui para uma experiência mais tranquila e satisfatória para todos os envolvidos. 
-            </p>
-            <p>
-                Faça uma lista com todos os itens necessários para evitar esquecer algo importante. Adapte sua bagagem ao tipo de atividade planejada e leve apenas o essencial. Antes da viagem, teste todos os equipamentos e certifique-se de que estão funcionando corretamente. 
-            </p>
-
-            <div class="">
-                <div class="destaque gradiente">
-                    <p>Clique ou toque no botão a seguir para fazer o <i>download</i> dos arquivos disponíveis neste conhecimento. </p>
-                    <a role="button" class="botao bt-download hvr-grow-shadow" href="" target="_blank">
-                        Baixar
+                    
+                    <p>Sobre a vestimenta do guia em atividades em ambientes naturais, considere os seguintes artigos:</p>
+                    <ul class="marcador-padrao">
+                        <li>Roupas confortáveis e funcionais: preferencialmente de tecidos leves, respiráveis e de secagem rápida, como o poliéster e o náilon (ou <i>nylon</i>) </li>
+                        <li>Calçados adequados: tênis de trilha, botas de montanhismo ou sandálias esportivas, dependendo do tipo de atividade </li>
+                        <li>Roupa de chuva: impermeável e respirável </li>
+                        <li>Roupas térmicas: para atividades em locais com temperaturas mais baixas </li>
+                        <li>Chapéu ou boné: para proteção contra o sol e a chuva </li>
+                        <li>Mosquetão, freio, cadeirinha, capacete, corda: equipamentos específicos para a segurança na prática de esportes de aventura</li> 
+                    </ul>
+                    
+                    <a role="button" href="" target="_blank" class="bt-objeto d-block mx-auto my-5 shadow radius no-print">
+                        <span class="camada-blur"></span>
+                        <span class="sr-only">Acesse</span>
                     </a>
-                </div>
-            </div>     
-            <h3>Encerramento</h3>
-            <p>A organização eficiente e detalhada é a base do sucesso na atuação de um guia de turismo. É indispensável, para estabelecer relações profissionais transparentes e éticas, compreender e seguir os procedimentos de contratação, respeitando as normas das agências e formalizando as condições por meio de contratos de trabalho. </p>       
-            <p>O entendimento claro das responsabilidades compartilhadas com agências e empresas transportadoras permitirá que cada aspecto reflita a importância do planejamento. Dominar os procedimentos de documentação preliminar, como a organização de listas de passageiros, reservas e <i>vouchers</i>, garante que o guia esteja preparado para atender às demandas do grupo e lidar com eventuais imprevistos. Além disso, o preparo cuidadoso da bagagem, incluindo itens essenciais para o desempenho profissional, é fundamental para uma boa condução de grupos, otimizando seus recursos. </p>
-            <p>Dessa forma, portanto, o guia de turismo se posiciona como um profissional confiável, comprometido com a excelência na prestação de serviços e na experiência do viajante. </p>
 
+                    <div class="gradiente">
+                        <div class="destaque borda-colorida icone dica">
+                            <p>Dicas importantes</p>
+                            <ul class="marcador-padrao">
+                                <li>Organize sua bagagem por categorias, isso facilita na hora de encontrar o que precisa.</li>
+                                <li>Utilize embalagens à vácuo para reduzir o volume das roupas e economizar espaço na mochila.</li>
+                            </ul>
+                        </div>
+                    </div>
 
-
-
-
-
-
-
-
-
-
-                    
-
-                    
-                    
-
-                    
-
-
-
-
-
-
+                    <h4>Organização da bagagem do guia </h4>
+                    <p>A organização da sua bagagem é fundamental para garantir uma experiência segura e prazerosa tanto para você quanto para seus turistas. Uma bagagem bem planejada permite que você esteja preparado para qualquer desafio que o guiamento possa apresentar. Além disso, é essencial assumir as responsabilidades relacionadas a todos os âmbitos da viagem. Antecipar possíveis imprevistos e tomar medidas para minimizá-los contribui para uma experiência mais tranquila e satisfatória para todos os envolvidos.</p>
+                    <p>Faça uma lista com todos os itens necessários para evitar esquecer algo importante. Adapte sua bagagem ao tipo de atividade planejada e leve apenas o essencial. Antes da viagem, teste todos os equipamentos e certifique-se de que estão funcionando corretamente.</p>
+                    <div class="no-print">
+                        <div class="destaque gradiente">
+                            <p>Clique ou toque no botão a seguir para fazer o <i>download</i> dos arquivos disponíveis neste conhecimento. </p>
+                            <a role="button" class="botao bt-download hvr-grow-shadow" href="PDF.pdf" target="_blank">
+                                Baixar
+                            </a>
+                        </div>
+                    </div>     
+                    <h3>Encerramento</h3>
+                    <p>A organização eficiente e detalhada é a base do sucesso na atuação de um guia de turismo. É indispensável, para estabelecer relações profissionais transparentes e éticas, compreender e seguir os procedimentos de contratação, respeitando as normas das agências e formalizando as condições por meio de contratos de trabalho. </p>       
+                    <p>O entendimento claro das responsabilidades compartilhadas com agências e empresas transportadoras permitirá que cada aspecto reflita a importância do planejamento. Dominar os procedimentos de documentação preliminar, como a organização de listas de passageiros, reservas e <i>vouchers</i>, garante que o guia esteja preparado para atender às demandas do grupo e lidar com eventuais imprevistos. Além disso, o preparo cuidadoso da bagagem, incluindo itens essenciais para o desempenho profissional, é fundamental para uma boa condução de grupos, otimizando seus recursos. </p>
+                    <p>Dessa forma, portanto, o guia de turismo se posiciona como um profissional confiável, comprometido com a excelência na prestação de serviços e na experiência do viajante. </p>
                 </div>
                 <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>
             </div>
@@ -832,6 +794,7 @@
     <script src="../assets/atividades/relacionar_colunas/relacionar-colunas.js"></script>
     <!--Scripts gerais-->
     <script src="../assets/js/geral.js"></script>
+    <script src="js/geral.js"></script>
 
     <script>
         // var splide = new Splide('.splide', {

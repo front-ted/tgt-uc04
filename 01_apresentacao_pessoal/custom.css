@@ -22,6 +22,9 @@ h2.titulo_img_header{margin-left: 0;}
 .paralax01{
     background-image: url('img/paralaxe.png');
 }
+.paralax02{
+    background-image: url('img/paralaxe_2.png');
+}
 /* .titulo-ativ{margin-left: 0;} */
 .float-left{
     position: absolute;
@@ -87,15 +90,34 @@ h2.titulo_img_header{margin-left: 0;}
 .ultimo-container{
     padding-top: 0px;
 }
+
+.caixa-exp.aberta{
+    max-height: 2500px;
+}
+
+.citacao{
+    margin: 40px auto;
+}
+.citacao p{
+    margin: 5px 0px;
+}
+
 @media screen and (max-width: 1400px){
     .float-left2{ width: 150px;}
 }
+
 @media screen and (max-width: 1200px){
     .float-left2{ width: 100px;}
 }
+
 @media screen and (max-width: 1120px){
     .float-left2{ width: 50px;}
 }
+
 @media screen and (max-width: 1040px){
     .float-left2{ display: none;}
+}
+
+@media screen and (max-width: 500px){
+    .paralax01, .paralax02{ display: none;}
 }

@@ -1,0 +1,9 @@
+$(".painel_clicavel_bt01").click(function(){
+    $(".check-bt01").css('display','block');
+});
+$(".painel_clicavel_bt02").click(function(){
+    $(".check-bt02").css('display','block');
+});
+$(".painel_clicavel_bt03").click(function(){
+    $(".check-bt03").css('display','block');
+});
