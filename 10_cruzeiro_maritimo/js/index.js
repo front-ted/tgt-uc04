@@ -62,7 +62,7 @@ if (URLHREF.includes("?page")) {
     body.classList.add("overHidden");
     animeCrop.classList.remove("d-none");
     btnsMobile.classList.remove("d-none");
-    p1.querySelector(".btnsDesk").click();
+    //p1.querySelector(".btnsDesk").click();
   }
 }
 const getRandomInt = (max) => {

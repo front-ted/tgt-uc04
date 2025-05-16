@@ -125,6 +125,19 @@ img {
       bottom: 0;
     }
     .back {
+      .logo {
+        position: absolute;
+        filter: drop-shadow(0 0 10px #c01c02);
+        z-index: 1;
+        bottom: 8%;
+        right: 1%;
+        width: 12%;
+        height: auto;
+        @media (max-width: 991px) {
+          bottom: 1%;
+          width: 15%;
+        }
+      }
       .logos {
         position: absolute;
         top: 5%;
@@ -134,10 +147,7 @@ img {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        .logo {
-          width: 30%;
-          filter: drop-shadow(0 0 10px #c01c02);
-        }
+
         .title {
           width: 60%;
         }
@@ -183,15 +193,15 @@ img {
           left: 50%;
           transform: translate(-50%, -100%);
           border-radius: 50%;
-          border: 3px solid rgba(255, 242, 213, 1);
-          background-image: url("../img/animations/circle-question-regular.svg"),
+          border: 3px solid #c01c02;
+          /*background-image: url("../img/animations/circle-question-regular.svg"),
             repeating-linear-gradient(
               0deg,
               rgba(255, 242, 213, 1) 10px,
               rgba(251, 228, 189, 1) 20px
-            );
+            );*/
           background-repeat: no-repeat;
-          background-size: contain;
+          background-size: 35%, contain;
           background-position: center;
           @media (max-width: 991px) {
             display: none;
@@ -201,6 +211,7 @@ img {
           &::before {
             content: "";
             background-image: url("../img/animations/check.svg");
+            background-size: contain;
             background-color: transparent;
             border-color: transparent;
           }
@@ -219,6 +230,14 @@ img {
         grid-column-start: 21;
         grid-row-start: 21;
         animation-duration: 5.5s;
+        &::before {
+          background-image: url("../img/animations/2-solid.svg"),
+            repeating-linear-gradient(
+              0deg,
+              rgba(255, 242, 213, 1) 10px,
+              rgba(251, 228, 189, 1) 20px
+            );
+        }
       }
       .n3 {
         grid-row: span 10 / span 10;
@@ -226,6 +245,14 @@ img {
         grid-column-start: 7;
         grid-row-start: 21;
         animation-duration: 7s;
+        &::before {
+          background-image: url("../img/animations/3-solid.svg"),
+            repeating-linear-gradient(
+              0deg,
+              rgba(255, 242, 213, 1) 10px,
+              rgba(251, 228, 189, 1) 20px
+            );
+        }
       }
       .n4 {
         grid-row: span 4 / span 4;
@@ -255,6 +282,12 @@ img {
         &::before {
           left: 0;
           transform: rotate(30deg) translate(-50%, -100%);
+          background-image: url("../img/animations/5-solid.svg"),
+            repeating-linear-gradient(
+              0deg,
+              rgba(255, 242, 213, 1) 10px,
+              rgba(251, 228, 189, 1) 20px
+            );
         }
       }
       &.wave {
@@ -274,7 +307,8 @@ img {
         &::before {
           left: 0;
           transform: translate(-50%, 0);
-          background-image: url("../img/animations/Camada\ 2.png"),
+          background-size: 30%, contain;
+          background-image: url("../img/animations/1-solid.svg"),
             repeating-linear-gradient(
               0deg,
               rgba(255, 242, 213, 1) 10px,
@@ -310,6 +344,12 @@ img {
           left: 40%;
           top: -40%;
           transform: translate(-50%, -50%);
+          background-image: url("../img/animations/4-solid.svg"),
+            repeating-linear-gradient(
+              0deg,
+              rgba(255, 242, 213, 1) 10px,
+              rgba(251, 228, 189, 1) 20px
+            );
         }
       }
       .mouthMan {
