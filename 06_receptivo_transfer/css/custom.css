@@ -41,3 +41,6 @@
 .bt1:hover::before,.bt2:hover::before,.bt3:hover::before{
     transform: rotate(90deg);
 }
+.citacao p{
+    font-size: .80em;
+}

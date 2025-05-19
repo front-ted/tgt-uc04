@@ -46,3 +46,14 @@ h2, h3, h4, h5 {
 .citacao2{
     font-size: 0.8em;
 }
+@media (max-width: 1300px){
+    .bloco1 > .container, .bloco2 > .container, .bloco6 > .container{
+        background-color: #fff;
+        padding: 20px;
+    }
+}
+@media (min-width: 990px){
+    .box-text{
+        margin-bottom: 25px;
+    }
+}
