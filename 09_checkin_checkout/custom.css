@@ -4,7 +4,8 @@ h2, h3, h4, h5 {
 }
 .paginas{
     background-image: url('img/background.jpg');
-    background-size: 100% 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 .pagina{
     overflow: hidden;
@@ -27,7 +28,9 @@ h2.titulo_img_header{margin-left: 0;}
     margin-right: 30px;
 }
 .relogio_float p{ padding: 10px 0px; font-size: 1.2em;}
-
+.destaque {
+    margin: 50px 0;
+}
 @media screen and (max-width: 800px){
     .relogio_float{
         margin: 50px auto !important;

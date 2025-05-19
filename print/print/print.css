@@ -381,4 +381,17 @@
     max-width: 100% !important;
     width: 100% !important;
   }
+  /* conteudo 07 */
+  .accordion-transcricao, .modal.transcricao {
+    margin: 0!important;
+    padding: 0!important;
+  }
+  
+  .modal-dialog{
+    margin-top: 0 !important;
+  }
+  .modal-header h5{
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+  }
 }

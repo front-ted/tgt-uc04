@@ -175,8 +175,27 @@ h2{margin-top: 0;}
 .box-painel-clicavel .hvr-grow-shadow:active, .box-painel-clicavel .hvr-grow-shadow:focus, .box-painel-clicavel .hvr-grow-shadow:hover {
     box-shadow: none;
 }
-@media screen and (max-width: 1400px){
-    .float-left2{ width: 150px;}
+.container.clearContainer{
+    padding-top: 0!important;
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+    padding-bottom: 0!important;
+}
+.container.clearContainerBottom{
+    margin-bottom: 0!important;
+    padding-bottom: 0!important;
+}
+.container.clearContainerTop{
+    padding-top: 0!important;
+    margin-top: 0!important;
+}
+@media screen and (max-width: 1500px){
+    .float-left{ width: 14%;}
+    .float-left2,.float-left3,.float-left4{ width: 16%;}
+}
+@media screen and (max-width: 1360px){
+    .float-left{ width: 14%;}
+    .float-left2,.float-left3,.float-left4{ width: 12%;}
 }
 @media screen and (max-width: 1200px){
     .float-left2{ width: 100px;}

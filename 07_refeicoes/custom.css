@@ -74,7 +74,6 @@ h2{margin-top: 0;}
 .painel_clicavel_bt01:focus,.painel_clicavel_bt02:focus,.painel_clicavel_bt03:focus,.painel_clicavel_bt04:focus,.painel_clicavel_bt05:focus{
     border-radius: 0px !important;
     background-color: transparent;
-    background-size: cover;
     box-shadow: none;
 }
 .painel_clicavel_bt01, .painel_clicavel_bt01:hover{
@@ -97,10 +96,14 @@ h2{margin-top: 0;}
     background-image: url('img/btn_5.png');
     border-radius: none;
 }
-.painel_clicavel_bt06, .painel_clicavel_bt06:hover{
+.painel_clicavel_bt06{
     background-image: url('img/piramide_btn.png');
     border-radius: none;
     top: 50px;
+}
+.painel_clicavel_bt06:hover{
+    background-image: url('img/piramide_btn.png');
+    border-radius: none;
 }
 .painel_clicavel_bt06.check.visitado::after,
 .painel_clicavel_bt07.check.visitado::after,
@@ -112,26 +115,41 @@ h2{margin-top: 0;}
     top: 0px;
     right: 0px;
 }
-.painel_clicavel_bt07, .painel_clicavel_bt07:hover{
+.painel_clicavel_bt07{
     background-image: url('img/piramide_btn.png');
     border-radius: none;
     top: 120px;
-
 }
-.painel_clicavel_bt08, .painel_clicavel_bt08:hover{
+.painel_clicavel_bt07:hover{
+    background-image: url('img/piramide_btn.png');
+    border-radius: none;
+}
+.painel_clicavel_bt08{
     background-image: url('img/piramide_btn.png');
     border-radius: none;
     top: 195px;
 }
-.painel_clicavel_bt09, .painel_clicavel_bt09:hover{
+.painel_clicavel_bt08:hover{
+    background-image: url('img/piramide_btn.png');
+    border-radius: none;
+}
+.painel_clicavel_bt09{
     background-image: url('img/piramide_btn.png');
     border-radius: none;
     top: 270px;
 }
-.painel_clicavel_bt010, .painel_clicavel_bt010:hover{
+.painel_clicavel_bt09:hover{
+    background-image: url('img/piramide_btn.png');
+    border-radius: none;
+}
+.painel_clicavel_bt010{
     background-image: url('img/piramide_btn.png');
     border-radius: none;
     top: 350px;
+}
+.painel_clicavel_bt010:hover{
+    background-image: url('img/piramide_btn.png');
+    border-radius: none;
 }
 .box-painel-clicavel2{
     position: relative;
@@ -154,6 +172,23 @@ h2{margin-top: 0;}
 .box-painel-clicavel .hvr-grow-shadow:active, .box-painel-clicavel .hvr-grow-shadow:focus, .box-painel-clicavel .hvr-grow-shadow:hover {
     box-shadow: none;
 }
+.container.clearContainer{
+    padding-top: 0!important;
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+    padding-bottom: 0!important;
+}
+.container.clearContainerBottom{
+    margin-bottom: 0!important;
+    padding-bottom: 0!important;
+}
+.container.clearContainerTop{
+    padding-top: 0!important;
+    margin-top: 0!important;
+}
+.max-width100{
+    max-width: 100%;
+}
 @media screen and (max-width: 1400px){
     .float-left2{ width: 150px;}
 }
@@ -165,4 +200,17 @@ h2{margin-top: 0;}
 }
 @media screen and (max-width: 1040px){
     .float-left2{ display: none;}
+}
+@media screen and (max-width: 700px){
+    .painel_clicavel_bt06 {top: 12px;left: -96px;}
+    .painel_clicavel_bt07 {top: 55px;left: -96px;}
+    .painel_clicavel_bt08 {top: 98px;left: -96px;}
+    .painel_clicavel_bt09 {top: 138px;left: -96px;}
+    .painel_clicavel_bt010 {top: 180px;left: -96px;}
+
+    .box-painel-clicavel2 img{
+        width: 360px;
+        margin: 0 auto;
+        margin-left: -15px !important;
+    }
 }
