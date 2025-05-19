@@ -368,4 +368,17 @@
   .modal-body .container{
     padding: 0px;
   }
+  .modal.transcricao{
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: -10px !important;
+  }
+  .accordion-item .accordion-button {
+    font-size: 16px !important;
+  }
+  
+  .pagina img.img100porcento {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
 }

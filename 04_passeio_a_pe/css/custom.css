@@ -204,8 +204,50 @@ body{
 .painel2 button:hover span{
     border: 3px solid #EA7200;
 }
-
+.paragrafoDireita p{ padding-right: 15px;}
+.paragrafoEsquerda p, .paragrafoEsquerda h3{ padding-left: 15px;}
+.paragrafo-destaque-pergunta{font-size: 1.45em;}
 @media (max-width: 990px){
+    .bloco10{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .bloco11{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .bloco3{
+        /* margin-bottom: 0; */
+        padding-bottom: 0;
+    }
+    .bloco4{
+        margin-top: -50px;
+        padding-top: 20px;
+    }
+    .bloco-paragrafo{
+        padding: 0px 0;
+    }
+
+    .bloco6{
+        padding-bottom: 0;
+    }
+    .bloco7{
+        margin-top: 0;
+        margin-top: -50px;
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+    .bloco8{
+        margin-top: 0;
+        margin-top: -50px;
+        padding-top: 20px;
+    }
+    
+    .paragrafo-destaque-pergunta2{
+        margin-bottom: 0;
+    }
+.paragrafoDireita p{ padding-right: 0px;}
+.paragrafoEsquerda p, .paragrafoEsquerda h3{ padding-right: 0px;}
     .bloco1, .bloco3, .bloco7, .bloco10{
         background: #710004;
     }

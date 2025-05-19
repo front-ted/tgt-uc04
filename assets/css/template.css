@@ -369,7 +369,7 @@ tbody td:first-child{border-left: 0;}
     background: #fff;
 }
 
-.bt-objeto::before{
+.bt-objeto.seloPresencialidade::before{
     content: '';
     background: url('../images/selo-presencialidade.png') no-repeat;
     background-size: contain;
