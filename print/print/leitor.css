@@ -763,3 +763,14 @@ ol[type="a"] li{list-style-type: lower-alpha !important;}
 .modal-body .container{
   padding: 0px;
 }
+
+.marcador-custom-ancora.marcador-custom-ancora{
+  list-style-type: "⚓" !important;
+}
+
+.marcador-custom-ancora.marcador-custom-ancora{
+  list-style-image: url("../../10_cruzeiro_maritimo/img/bullet_ancora2.png");
+}
+.marcador-custom-ancora.marcador-custom-ancora li{
+  list-style-image: url("../../10_cruzeiro_maritimo/img/bullet_ancora2.png");
+}

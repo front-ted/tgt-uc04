@@ -1,8 +1,39 @@
 .marcador-custom {
-  list-style-type: "⚓";
+  /* list-style-type: "⚓"; */
+  list-style-image: url("../img/bullet_ancora2.png");
+  background-size: 20px;
   padding-inline-start: 3ch;
 }
-
+.marcador-custom li::marker{
+  width: 20px;
+  height: 20px;
+}
+.bgmodais{
+  background-image: url('../img/bg_modais.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 1px;
+  margin-top: -10px;
+}
+.bgmodais .container {
+  padding-bottom: 30px;
+}
+.flutuante01 {
+  position: absolute;
+  top: 350px;
+  left: 0;
+  width: 200px;
+  height: auto;
+  z-index: 1;
+}
+.flutuante02 {
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  width: 200px;
+  height: auto;
+  z-index: 1;
+}
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +62,11 @@ img {
 .d-none {
   display: none;
 }
+  @media (max-width: 1360px) {
+    .flutuante01, .flutuante02 {
+      display: none;
+    }
+  }
 .btnsMobile {
   display: none;
 

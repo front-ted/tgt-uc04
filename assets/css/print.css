@@ -326,4 +326,14 @@ tbody td:first-child {
 .accordion-transcricao, .modal.transcricao {
   border: 0px solid !important;
 }
+.marcador-custom-ancora.marcador-custom-ancora{
+  list-style-type: "⚓" !important;
+}
+
+.marcador-custom-ancora.marcador-custom-ancora{
+  list-style-image: url("../../10_cruzeiro_maritimo/img/bullet_ancora2.png");
+}
+.marcador-custom-ancora.marcador-custom-ancora li{
+  list-style-image: url("../../10_cruzeiro_maritimo/img/bullet_ancora2.png");
+}
 }

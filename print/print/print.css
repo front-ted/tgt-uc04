@@ -381,6 +381,12 @@
     max-width: 100% !important;
     width: 100% !important;
   }
+  .mt0print{
+    margin-top: 0 !important;
+  }
+  .pt0print{
+    margin-top: 0 !important;
+  }
   /* conteudo 07 */
   .accordion-transcricao, .modal.transcricao {
     margin: 0!important;
@@ -394,4 +400,26 @@
     margin-top: 0px !important;
     padding-top: 0px !important;
   }
+  
+.marcador-custom-ancora.marcador-custom-ancora{
+  list-style-type: "⚓" !important;
+}
+.marcador-custom-ancora.marcador-custom-ancora{
+  list-style-image: url("../../10_cruzeiro_maritimo/img/bullet_ancora2.png");
+}
+.marcador-custom-ancora.marcador-custom-ancora li{
+  list-style-image: url("../../10_cruzeiro_maritimo/img/bullet_ancora2.png");
+}
+  /* .marcador-custom-ancora.marcador-custom-ancora::before{
+    content: "⚓" !important;
+    font-size: 1.5rem !important;
+    margin-right: 0.5rem !important;
+  }
+  .marcador-custom-ancora.marcador-custom-ancora::after{
+    content: "" !important;
+  }
+  
+  .marcador-custom-ancora.marcador-custom-ancora{
+    list-style-type: "⚓" !important;
+  } */
 }

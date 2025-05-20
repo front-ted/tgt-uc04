@@ -233,4 +233,14 @@ h2, h3, h4, h5 {
     .relogio_float{
         margin: 50px auto !important;
     }
+    .bloco1{
+        background-image: unset;
+        color: black;
+    }
+    .bloco1 h2,.bloco1 h3{ color: black !important;}
+}
+@media screen and (max-width: 630px){
+ .painel_clicavel_bt07{
+    margin-top: 50px;
+ }
 }
