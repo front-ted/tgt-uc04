@@ -5,6 +5,11 @@
     padding-top: 20px;
 }
 
+.img-perso-box {
+    width: 37% !important;
+    margin-right: 0px !important;
+}
+
 .audio-player::after {
     display: none;
 }
@@ -237,6 +242,15 @@
 }
 
 /* bts */
+@media screen and (max-width: 600px) {
+    .img-perso-box {
+        width: 25% !important;
+        margin-right: 130px !important;
+        margin-bottom: 25px !important;
+        margin-top: 25px !important;
+    }
+}
+
 @media screen and (max-width: 565px) {
 
     .bt1,
