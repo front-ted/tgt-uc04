@@ -122,8 +122,8 @@ h2.titulo_img_header {
 }
 
 .img-painel-clicavel {
-    max-width: 90%;
-    width: 138px;
+    width: 50% !important;
+    margin-left: 170px !important;
 }
 
 .box-painel-clicavel .hvr-grow-shadow:active,
@@ -169,6 +169,19 @@ h2.titulo_img_header {
 @media screen and (max-width: 1040px) {
     .float-left2 {
         display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .img-painel-clicavel {
+        width: 70% !important;
+        margin-left: 125px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .img-painel-clicavel {
+        display: none !important;
     }
 }
 
