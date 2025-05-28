@@ -5,16 +5,7 @@
     padding-top: 20px;
 }
 
-.img-perso-box {
-    width: 37% !important;
-    margin-right: 0px !important;
-}
-
 .audio-player::after {
-    display: none;
-}
-
-.audio-player::before {
     display: none;
 }
 
