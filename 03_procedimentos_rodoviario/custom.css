@@ -9,6 +9,13 @@
     display: none;
 }
 
+.img-perso-box {
+    width: 40% !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    margin-right: 10px !important;
+}
+
 .box-painel1 {
     max-width: 750px;
     margin: 0 auto 40px auto;
@@ -235,10 +242,11 @@
 /* bts */
 @media screen and (max-width: 600px) {
     .img-perso-box {
-        width: 25% !important;
-        margin-right: 130px !important;
-        margin-bottom: 25px !important;
-        margin-top: 25px !important;
+        display: none !important;
+    }
+
+    .bt1 {
+        margin-top: 15px !important;
     }
 }
 
