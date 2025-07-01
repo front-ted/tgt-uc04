@@ -47,3 +47,37 @@
 .citacao p{
     font-size: .80em;
 }
+.float-img{
+    position: fixed;
+    top: 300px;
+    right: 20px;
+    width: 300px;
+    z-index: 1000;
+}
+.bg-float2{
+    width: 300px;
+    max-width: 40%;
+    float: right;
+}
+.bg-float3{
+   width: 300px;
+   max-width: 100%;
+    margin: 0 auto;
+}
+@media (max-width: 1650px){
+    .float-img{
+        width: 200px;
+    }
+}
+@media (max-width: 1460px){
+    .float-img{
+        width: 150px;
+        right: 5px;
+    }
+
+}
+@media (max-width: 1200px){
+    .float-img{
+        display: none;
+    }
+}

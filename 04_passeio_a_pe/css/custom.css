@@ -6,7 +6,7 @@ body{
 }
 .espera-video{border: 2px solid;}
 .bloco1{
-    background: url(../img/header.png) no-repeat right 50vw center / auto 100% #710004;
+    background: url(../img/header.png) no-repeat right 54vw center / auto 100% #710004;
 }
 .bloco1 *, .bloco3 *, .bloco4 *, 
 .bloco6 *, .bloco7 *, .bloco8 *,
@@ -29,7 +29,7 @@ body{
     background: #710004;
 }
 .bloco5{
-    background: url(../img/layout_04-03.png) no-repeat right 50vw center / auto 100% transparent;
+    background: url(../img/layout_04-03.png) no-repeat right 54vw center / auto 100% transparent;
     position: relative;
 }
 .bloco5::before{
@@ -55,7 +55,7 @@ body{
     left: -100px;
 }
 .bloco7{
-    background: url(../img/foto_3.png) no-repeat left 50vw center / auto 100% #710004;
+    background: url(../img/foto_3.png) no-repeat left 51vw center / auto 100% #710004;
     position: relative;
 }
 .bloco7::before{
@@ -131,7 +131,7 @@ body{
 .painel1 > div:hover::before{display: block;}
 
 .bloco10{
-    background: url(../img/foto_4.png) no-repeat right 50vw center / auto 100% #710004;
+    background: url(../img/foto_4.png) no-repeat right 54vw center / auto 100% #710004;
     position: relative;
 }
 .bloco10::before{
@@ -207,6 +207,24 @@ body{
 .paragrafoDireita p{ padding-right: 15px;}
 .paragrafoEsquerda p, .paragrafoEsquerda h3{ padding-left: 15px;}
 .paragrafo-destaque-pergunta{font-size: 1.45em;}
+
+@media (max-width: 1680px){
+    .bloco1{
+        background: url(../img/header.png) no-repeat right 50vw center / auto 100% #710004;
+    }
+    
+    .bloco5{
+        background: url(../img/layout_04-03.png) no-repeat right 50vw center / auto 100% transparent;
+    }
+    
+    .bloco7{
+        background: url(../img/foto_3.png) no-repeat left 50vw center / auto 100% #710004;
+    }
+    
+    .bloco10{
+        background: url(../img/foto_4.png) no-repeat right 52vw center / auto 100% #710004;
+    }
+}
 @media (max-width: 990px){
     .bloco10{
         margin-bottom: 0;

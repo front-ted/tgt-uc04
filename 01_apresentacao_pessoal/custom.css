@@ -122,8 +122,7 @@ h2.titulo_img_header {
 }
 
 .img-painel-clicavel {
-    width: 50% !important;
-    margin-left: 170px !important;
+   width: 400px;
 }
 
 .box-painel-clicavel .hvr-grow-shadow:active,
@@ -137,7 +136,7 @@ h2.titulo_img_header {
 }
 
 .caixa-exp.aberta {
-    max-height: 2500px;
+    max-height: 22500px;
 }
 
 .citacao {
@@ -170,18 +169,26 @@ h2.titulo_img_header {
     .float-left2 {
         display: none;
     }
+    
+    .img-painel-clicavel {
+    width: 110% !important;
+    display: block !important;
+    margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .img-painel-clicavel {
-        width: 70% !important;
-        margin-left: 125px !important;
+        width: 400px !important;
+        margin-bottom: 20px;
+        /* margin-left: 125px !important; */
     }
 }
 
 @media screen and (max-width: 600px) {
     .img-painel-clicavel {
-        display: none !important;
+        width: 80% !important;
+        margin-bottom: 20px;
     }
 }
 

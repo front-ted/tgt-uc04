@@ -18,8 +18,22 @@ h2, h3, h4, h5 {
     background-image: url('../img/imglateral_01.png');
     background-size: auto 100%;
     background-repeat: no-repeat;
+    background-position: right 62vw center;
     padding-top: 60px;
     padding-bottom: 50px;
+    position: relative;
+}
+.float-img1, .float-img2{
+    position: absolute;
+    right: 0;
+}
+.float-img1{
+    top: 400px;
+    width: 14%;
+}
+.float-img2{
+    top: 2562px;
+    width: 11%;
 }
 .bloco3{
     position: relative;
@@ -30,8 +44,8 @@ h2, h3, h4, h5 {
     padding-bottom: 50px;
 }
 .bloco6{
-    background-image: url('../img/imglateral_01.png');
-    background-size: auto 100%;
+    background-image: url('../img/encerramento.jpg');
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     padding-top: 60px;
     padding-bottom: 50px;
@@ -46,9 +60,24 @@ h2, h3, h4, h5 {
 .citacao2{
     font-size: 0.8em;
 }
+.carousel-control-next, .carousel-control-prev{ background-color: transparent !important;}
 @media (max-width: 1300px){
+    .bloco1, .bloco6{
+    background-color: rgba(255, 119, 0, 0.3);
+    background-image: none;}
+    .bloco5{margin-bottom: 0px;padding-bottom: 1px;}
+    .bloco6{padding-top: 0px;}
+    .bloco3 {
+        background-image: url(../img/bg.jpg);
+    }
+    .bloco3 {
+        margin-top: -50px;
+        padding-top: 30px;
+        background-size: auto 100%;
+    background-repeat: no-repeat;
+    }
     .bloco1 > .container, .bloco2 > .container, .bloco6 > .container{
-        background-color: #fff;
+        /* background-color: #fff; */
         padding: 20px;
     }
 }

@@ -10,10 +10,10 @@
 }
 
 .img-perso-box {
-    width: 40% !important;
+    /* width: 40% !important; */
     margin-top: 10px !important;
     margin-bottom: 10px !important;
-    margin-right: 10px !important;
+    margin-right: -80px !important;
 }
 
 .box-painel1 {
@@ -108,42 +108,54 @@
 .painel_clicavel_bt03,
 .painel_clicavel_bt04,
 .painel_clicavel_bt05 {
-    width: 164px;
-    height: 163px;
-    background-size: 100%;
+    position: absolute;
+    top: 25px;
+    margin: 0 auto;
+    width: 113px;
+    height: 125px;
+    /* background-size: 100%; */
     background-color: transparent;
-    background-image: url('img/painel2_hover.png');
-    /* background-size:170px 137px; */
-    /* background-position: 30px 30px; */
+    background-image: url('img/painel2_bt.png');
+    background-repeat: no-repeat;
     border: 0px;
-    /* margin: 10px 1.9%; */
-    display: inline-block;
+    display: block;
     border-radius: 0px;
     background-repeat: no-repeat;
     z-index: 20;
-    position: relative;
-    transition: all 0.9s;
+    left: 20px;
+    right: 0;
+    /* transition: all 0.9s; */
 }
 
+.painel_clicavel_bt01.botao:hover ,
+.painel_clicavel_bt02.botao:hover ,
+.painel_clicavel_bt03.botao:hover ,
+.painel_clicavel_bt04.botao:hover ,
+.painel_clicavel_bt05.botao:hover {
+    background-image: url('img/painel2_bt.png');
+    background-color: transparent !important;
+    box-shadow: unset;
+    background-repeat: no-repeat;
+} 
 
 .painel_clicavel_bt01 {
-    background-image: url('img/painel2_hover.png');
+    background-image: url('img/painel2_bt.png');
 }
 
 .painel_clicavel_bt02 {
-    background-image: url('img/painel2_hover.png');
+    background-image: url('img/painel2_bt.png');
 }
 
 .painel_clicavel_bt03 {
-    background-image: url('img/painel2_hover.png');
+    background-image: url('img/painel2_bt.png');
 }
 
 .painel_clicavel_bt04 {
-    background-image: url('img/painel2_hover.png');
+    background-image: url('img/painel2_bt.png');
 }
 
 .painel_clicavel_bt05 {
-    background-image: url('img/painel2_hover.png');
+    background-image: url('img/painel2_bt.png');
 }
 
 .painel_clicavel_bt01:hover,
@@ -151,52 +163,70 @@
 .painel_clicavel_bt03:hover,
 .painel_clicavel_bt04:hover,
 .painel_clicavel_bt05:hover {
-    background-image: url('img/painel2_hover.png');
-    transform: rotate(90deg);
-    background-color: transparent !important;
-    box-shadow: none !important;
+    /* background-image: url('img/painel2_hover.png'); */
+    /* transform: rotate(90deg); */
+    /* background-color: transparent !important; */
+    /* box-shadow: none !important; */
 }
-
-.painel_clicavel_bt01::before,
+.layar-rotate{
+    width: 164px;
+    height: 163px;
+    position: relative;
+}
+.box-rotate{
+    width: 164px;
+    height: 163px;
+    background-image: url('img/painel2_hover.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.layar-rotate:hover .box-rotate{
+    animation: rotate 5s linear infinite;
+}
+/* .painel_clicavel_bt01::before,
 .painel_clicavel_bt02::before,
 .painel_clicavel_bt03::before,
 .painel_clicavel_bt04::before,
 .painel_clicavel_bt05::before {
     content: '';
-    z-index: 1;
+    z-index: -1;
     display: block;
     position: relative;
-    background-image: url('img/painel2_bt.png');
-    width: 113px;
-    height: 125px;
+    width: 164px;
+    height: 163px;
+    background-image: url('img/painel2_hover.png');
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: transparent;
-    transition: all 0.9s;
-}
+    transition: opacity 0.4s;
+} */
 
 .painel_clicavel_bt01:hover::before,
 .painel_clicavel_bt02:hover::before,
 .painel_clicavel_bt03:hover::before,
 .painel_clicavel_bt04:hover::before,
 .painel_clicavel_bt05:hover::before {
-    transform: rotate(-90deg);
-    /* background-color: transparent !important; */
-    /* box-shadow: none !important; */
+    animation: rotate 5s linear infinite;
 }
+/* .painel_clicavel_bt01:hover::before,
+.painel_clicavel_bt02:hover::before,
+.painel_clicavel_bt03:hover::before,
+.painel_clicavel_bt04:hover::before,
+.painel_clicavel_bt05:hover::before {
+    transform: rotate(-90deg);
+} */
 
 .painel_clicavel_bt01 span,
 .painel_clicavel_bt02 span,
 .painel_clicavel_bt03 span,
 .painel_clicavel_bt04 span,
 .painel_clicavel_bt05 span {
-    /* position: absolute; */
+    position: absolute;
     display: block;
-    /* bottom: 20px; */
-    /* left: 0;
-    right: 0;
-    margin: auto; */
-    padding: 10px 0px;
+    bottom: -5px;
+    left: -20px;
+    width: 150px;
+    padding: 10px 10px;
     color: var(--cor-primaria);
     font-weight: 600;
     border: 2px solid var(--cor-primaria);
@@ -208,14 +238,13 @@
     transition: all 0.9s;
 }
 
-.painel_clicavel_bt01:hover span,
+/* .painel_clicavel_bt01:hover span,
 .painel_clicavel_bt02:hover span,
 .painel_clicavel_bt03:hover span,
 .painel_clicavel_bt04:hover span,
 .painel_clicavel_bt05:hover span {
     transform: rotate(-90deg) translate(74px, 66px)
-        /* transform-origin: center; */
-}
+} */
 
 .bt1:active,
 .bt2:active,
@@ -240,6 +269,13 @@
 }
 
 /* bts */
+
+@media screen and (max-width: 750px) {
+    .img-perso-box {
+        width: 200px !important;
+        margin-right: -50px !important;
+    }
+}
 @media screen and (max-width: 600px) {
     .img-perso-box {
         display: none !important;
@@ -259,5 +295,16 @@
     .bt5,
     .bt6 {
         margin: 0 auto;
+    }
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }

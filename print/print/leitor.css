@@ -166,6 +166,15 @@
   display: inline-block;
   max-width: 60% !important;
 }
+.pagina img.imgPrint100	{
+  display: inline-block;
+  max-width: 95% !important;
+}
+.pagina img.imgPrint80	{
+  display: inline-block;
+  max-width: 80% !important;
+  width: 80% !important;
+}
 .pagina legend{
   display: block;
   padding-left: 2px;
@@ -209,7 +218,11 @@
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
-}	
+}
+
+/* .pagina p.normalize{
+  font-size: 1em !important;
+} */
 .pagina pre{
   display: block;
   font-family: monospace;

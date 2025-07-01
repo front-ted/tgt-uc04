@@ -31,6 +31,9 @@ h2.titulo_img_header{margin-left: 0;}
 .destaque {
     margin: 50px 0;
 }
+.fontMaior {
+    font-size: 1.2em;
+}
 @media screen and (max-width: 800px){
     .relogio_float{
         margin: 50px auto !important;

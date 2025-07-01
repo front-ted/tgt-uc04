@@ -202,15 +202,15 @@ h2{margin-top: 0;}
     .float-left2{ display: none;}
 }
 @media screen and (max-width: 700px){
-    .painel_clicavel_bt06 {top: 12px;left: -96px;}
-    .painel_clicavel_bt07 {top: 55px;left: -96px;}
-    .painel_clicavel_bt08 {top: 98px;left: -96px;}
-    .painel_clicavel_bt09 {top: 138px;left: -96px;}
-    .painel_clicavel_bt010 {top: 180px;left: -96px;}
+    .painel_clicavel_bt06 {top: 12px;left: -106px;}
+    .painel_clicavel_bt07 {top: 55px;left: -106px;}
+    .painel_clicavel_bt08 {top: 98px;left: -106px;}
+    .painel_clicavel_bt09 {top: 138px;left: -106px;}
+    .painel_clicavel_bt010 {top: 180px;left: -106px;}
 
     .box-painel-clicavel2 img{
         width: 360px;
         margin: 0 auto;
-        margin-left: -15px !important;
+        /* margin-left: -15px !important; */
     }
 }
