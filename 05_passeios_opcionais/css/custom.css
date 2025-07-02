@@ -45,7 +45,8 @@ h2, h3, h4, h5 {
 }
 .bloco6{
     background-image: url('../img/encerramento.jpg');
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     padding-top: 60px;
     padding-bottom: 50px;
